@@ -1,0 +1,10 @@
+openai
+numpy
+pandas
+matplotlib
+pymatgen
+ase
+h5py
+tqdm
+PyYAML
+Pillow
