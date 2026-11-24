@@ -1,0 +1,1 @@
+Delete all atoms within 1.7616895877543133 of the atom at index 29 in the cif file.

@@ -1,0 +1,1 @@
+Rotate all surrounding atoms within 3.420809503314463 angstrom of the center atom at index 2 by 179.59286001705604 degree around the axis [ 0. -1.  0.] in the cif file. The rotation should following the right-hand rule.

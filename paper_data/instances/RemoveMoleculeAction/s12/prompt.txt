@@ -1,0 +1,1 @@
+Remove the molecule(s) inside the structure.

@@ -1,0 +1,1 @@
+Insert Hf between atoms at indices 2 and 19 that are 3.57 Å from 2 in the cif file.

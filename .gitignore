@@ -1,9 +1,14 @@
 __pycache__/
 *.pyc
 .DS_Store
-src/agentv2/runs/
 .env
-
+.venv/
+.pytest_cache/
+src/agent/runs/
+src/agentv2/runs/
 src/results/
 results/
 *.log
+bool_bug_trace.txt
+local_*.json
+artifacts/

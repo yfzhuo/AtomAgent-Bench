@@ -1,0 +1,1 @@
+Move the atom at index 62 towards the atom at index 7 by 1.126425942080598 angstrom in the cif file.

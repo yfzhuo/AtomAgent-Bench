@@ -1,0 +1,1 @@
+Insert Se between atoms at indices 0 and 41 that are 2.18 Å from 0 in the cif file.

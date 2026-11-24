@@ -1,0 +1,1 @@
+Insert Sm between atoms at indices 58 and 1 that are 1.22 Å from 58 in the cif file.

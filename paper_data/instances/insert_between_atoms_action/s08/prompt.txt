@@ -1,0 +1,1 @@
+Insert Fr between atoms at indices 15 and 5 that are 0.59 Å from 15 in the cif file.

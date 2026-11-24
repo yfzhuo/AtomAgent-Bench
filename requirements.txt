@@ -1,10 +1,14 @@
-openai
-numpy
-pandas
-matplotlib
-pymatgen
-ase
-h5py
-tqdm
-PyYAML
-Pillow
+openai==2.15.0
+numpy==2.4.1
+pandas==3.0.3
+matplotlib==3.10.8
+pymatgen==2025.6.14
+ase==3.25.0
+h5py==3.15.1
+scipy==1.17.0
+tqdm==4.67.1
+Pillow==12.3.0
+# Compatible transitive dependencies from the actual offline scoring environment.
+monty==2025.3.3
+python-dateutil==2.9.0.post0
+bibtexparser==1.4.3

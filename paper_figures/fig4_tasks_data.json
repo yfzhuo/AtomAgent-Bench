@@ -1,0 +1,245 @@
+{
+  "source": "论文三张表_1500复评加分子删除原结果.md",
+  "source_sha256": "4bffccb8aedc02ff20044f54dd09d82d229d53dc2518f535857da201240be59c",
+  "variant_source": "delete_below_variants.json",
+  "variant_source_sha256": "c8640afa9cd7e00790a82a68c7fee300fb5f6eb7474eba07174e26d3d07cbd8a",
+  "display_groups": [
+    "Delete Below (Including)",
+    "Delete Below (Excluding)",
+    "Delete Around",
+    "Insert Between",
+    "Move Towards",
+    "Rotate Around",
+    "Remove Molecule"
+  ],
+  "display_group_n_per_model_view": [
+    11,
+    19,
+    30,
+    30,
+    30,
+    30,
+    30
+  ],
+  "scope": "original five tasks post-hoc final audit + Remove Molecule original scores; Delete Below split by prompt without rescoring",
+  "pk_definition": "cumulative retained successes by historical first-pass repair bucket; not an enhanced-online-protocol rerun",
+  "data": {
+    "rows": {
+      "ON": {
+        "delete below (including)": [
+          2,
+          9,
+          14,
+          8,
+          7,
+          1,
+          14
+        ],
+        "delete below (excluding)": [
+          77,
+          13,
+          1,
+          3,
+          1,
+          0,
+          0
+        ],
+        "delete around": [
+          102,
+          24,
+          14,
+          3,
+          0,
+          2,
+          5
+        ],
+        "insert between": [
+          91,
+          30,
+          6,
+          2,
+          4,
+          2,
+          15
+        ],
+        "move towards": [
+          123,
+          18,
+          4,
+          1,
+          1,
+          0,
+          3
+        ],
+        "rotate around": [
+          50,
+          16,
+          6,
+          10,
+          8,
+          2,
+          58
+        ],
+        "remove molecule": [
+          74,
+          34,
+          11,
+          5,
+          4,
+          2,
+          20
+        ]
+      },
+      "OFF": {
+        "delete below (including)": [
+          1,
+          14,
+          17,
+          5,
+          6,
+          2,
+          10
+        ],
+        "delete below (excluding)": [
+          76,
+          16,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "delete around": [
+          93,
+          39,
+          13,
+          2,
+          0,
+          2,
+          1
+        ],
+        "insert between": [
+          98,
+          19,
+          13,
+          5,
+          0,
+          3,
+          12
+        ],
+        "move towards": [
+          125,
+          20,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "rotate around": [
+          42,
+          24,
+          11,
+          4,
+          5,
+          3,
+          61
+        ],
+        "remove molecule": [
+          88,
+          28,
+          4,
+          6,
+          5,
+          2,
+          17
+        ]
+      }
+    },
+    "failure_types": {
+      "ON": {
+        "delete below (including)": [
+          14,
+          0,
+          0
+        ],
+        "delete below (excluding)": [
+          0,
+          0,
+          0
+        ],
+        "delete around": [
+          5,
+          0,
+          0
+        ],
+        "insert between": [
+          3,
+          12,
+          0
+        ],
+        "move towards": [
+          0,
+          2,
+          1
+        ],
+        "rotate around": [
+          0,
+          54,
+          4
+        ],
+        "remove molecule": [
+          20,
+          0,
+          0
+        ]
+      },
+      "OFF": {
+        "delete below (including)": [
+          10,
+          0,
+          0
+        ],
+        "delete below (excluding)": [
+          1,
+          0,
+          0
+        ],
+        "delete around": [
+          1,
+          0,
+          0
+        ],
+        "insert between": [
+          3,
+          9,
+          0
+        ],
+        "move towards": [
+          0,
+          0,
+          0
+        ],
+        "rotate around": [
+          1,
+          60,
+          0
+        ],
+        "remove molecule": [
+          17,
+          0,
+          0
+        ]
+      }
+    },
+    "denominators": {
+      "delete below (including)": 55,
+      "delete below (excluding)": 95,
+      "delete around": 150,
+      "insert between": 150,
+      "move towards": 150,
+      "rotate around": 150,
+      "remove molecule": 150
+    }
+  }
+}

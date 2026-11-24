@@ -1,0 +1,1 @@
+Delete all atoms within 2.226704244372712 of the atom at index 17 in the cif file.

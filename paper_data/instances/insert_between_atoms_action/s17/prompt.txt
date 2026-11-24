@@ -1,0 +1,1 @@
+Insert Nh between atoms at indices 7 and 11 that are 1.86 Å from 7 in the cif file.

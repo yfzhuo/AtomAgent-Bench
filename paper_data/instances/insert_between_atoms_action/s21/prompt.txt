@@ -1,0 +1,1 @@
+Insert Sr between atoms at indices 8 and 15 that are 0.58 Å from 8 in the cif file.

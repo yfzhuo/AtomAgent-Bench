@@ -1,0 +1,39 @@
+data_image0
+_chemical_formula_structural       Bi2Te2O10
+_chemical_formula_sum              "Bi2 Te2 O10"
+_cell_length_a       6.176411
+_cell_length_b       11.652133
+_cell_length_c       16.414383
+_cell_angle_alpha    90.0
+_cell_angle_beta     90.0
+_cell_angle_gamma    90.0
+
+_space_group_name_H-M_alt    "P 1"
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Bi  Bi1       1.0  0.071289  0.17426400000000003  0.788468  1.0000
+  Bi  Bi2       1.0  0.571289  0.325736  0.788468  1.0000
+  Te  Te1       1.0  0.9738429999999999  0.891064  0.893029  1.0000
+  Te  Te2       1.0  0.473843  0.6089360000000001  0.893029  1.0000
+  O   O1        1.0  0.228772  0.537438  0.9257520000000002  1.0000
+  O   O2        1.0  0.274823  0.289991  0.847962  1.0000
+  O   O3        1.0  0.88338  0.800696  0.797831  1.0000
+  O   O4        1.0  0.151338  0.9994630000000002  0.8349670000000002  1.0000
+  O   O5        1.0  0.160348  0.8063250000000002  0.952894  1.0000
+  O   O6        1.0  0.7748229999999999  0.21000900000000006  0.847962  1.0000
+  O   O7        1.0  0.7287719999999999  0.9625620000000003  0.9257520000000002  1.0000
+  O   O8        1.0  0.651338  0.500537  0.8349670000000002  1.0000
+  O   O9        1.0  0.660348  0.693675  0.952894  1.0000
+  O   O10       1.0  0.38338  0.6993040000000003  0.797831  1.0000

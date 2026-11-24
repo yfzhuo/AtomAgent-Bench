@@ -1,0 +1,1 @@
+Insert Mg between atoms at indices 11 and 39 that are 0.77 Å from 11 in the cif file.

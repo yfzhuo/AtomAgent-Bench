@@ -1,0 +1,1 @@
+Delete all atoms whose z coordinate is lower than the atom at index 50 in the cif file. Including itself and atoms with the same z coordinate.

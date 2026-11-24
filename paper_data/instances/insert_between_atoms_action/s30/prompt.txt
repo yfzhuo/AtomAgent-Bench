@@ -1,0 +1,1 @@
+Insert Ru between atoms at indices 12 and 6 that are 1.44 Å from 12 in the cif file.
