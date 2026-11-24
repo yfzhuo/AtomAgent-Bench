@@ -1,0 +1,8 @@
+{
+  "configurations": 1800,
+  "successful_metric_records": 1583,
+  "exact_zero": 37,
+  "task_and_total_rows_verified": 8,
+  "normalized_rmsd": 0.0065852524937566855,
+  "normalized_max": 0.02261184882657651
+}
