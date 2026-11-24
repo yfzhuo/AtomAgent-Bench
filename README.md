@@ -1,20 +1,22 @@
 # AtomAgent-Bench
 
-Interactive crystal-structure editing with multimodal tool-using agents. This release includes the actual current `agentv2` implementation, the enhanced `lattice-noop` scorer, the revised six-task paper data and figure scripts, and a public archive of saved outputs.
+An interactive benchmark for atomic-scale crystal-structure editing by multimodal LLM agents. Agents inspect structures, execute Python operations and submit CIF structures for automated scoring, with iterative feedback available after unsuccessful submissions.
 
-## Paper result scope
+The repository provides the `agentv2` runtime, the `lattice-noop` scorer, evaluated task instances, submitted structures, interaction traces, model configurations and figure-generation scripts.
 
-- Five model configurations × two visual conditions × six tasks × 30 instances = **1800 configurations** (180 task instances, not 1800 distinct materials).
-- Retained first-stage / repaired / failed: **1042 / 541 / 217**; final successes **1583/1800**.
-- Original five tasks: saved final outputs reassessed by the enhanced scorer. Remove Molecule: original results, unchanged under enhanced reassessment (**263/300**).
-- DeepSeek Remove Molecule ON uses the full `20261112_204751` batch; OFF uses `20261112_155831`. Binary-feedback and repeat5 supplements are excluded from this main-result archive.
-- All 1800 configuration identities and candidate mappings are in `paper_data/instance_manifest.json`. **Six configurations have ambiguous historical trajectory identities**, so all their candidates are retained: 1810 logs in total. Candidates are not additional denominator entries or best-of selections.
+## Benchmark and results
 
-The result is a **post-hoc audit of archived final submissions**, not a rerun of the whole historical agent workflow under the new scorer. Retained successes remain classified by the recorded historical first-passing repair stage; these curves do not reconstruct missing repairs after an old early PASS.
+- **Six tasks:** Delete Below, Delete Around, Insert Between, Move Towards, Rotate Around and Remove Molecule.
+- **Five models:** Qwen3-VL-Plus, Qwen3.5-Plus, Qwen3.7-Plus, Qwen3.8-Max and DeepSeek-V4-Flash.
+- **Two visual conditions:** view ON and view OFF.
+- **180 task instances and 1800 configurations:** five models × two visual conditions × six tasks × 30 instances. Configuration counts are not counts of distinct materials.
+- **Initial-stage success / repair-stage success / failure:** 1042 / 541 / 217. Final success: **1583/1800 (87.94%)**. Remove Molecule: **263/300 (87.67%)**.
 
-## Setup
+Results count each configuration once. Successful outputs are grouped by the first accepted stage recorded in their saved traces. `paper_data/instance_manifest.json` maps all 1800 configurations to their submitted structures, trajectories and model configurations; `paper_data/six_task_statistics.json` contains the aggregate counts. Supplementary feedback and repeated-run experiments are separate from the main result set.
 
-Use Python **3.12**. The minimal runtime does not require Torch, Transformers, vLLM, or the full AtomWorld package.
+## Installation
+
+Use Python **3.12**. The runtime does not require Torch, Transformers, vLLM or the full AtomWorld package.
 
 ```bash
 git clone https://github.com/yfzhuo/AtomAgent-Bench.git
@@ -26,28 +28,33 @@ python -m pip check
 python -m pytest tests -q
 ```
 
-`requirements.txt` is the runtime dependency closure; `requirements-test.txt` adds pytest. Locked versions document this release's tested environment, not missing historical server settings. `docs/source_provenance.json` maps the release code to actual local source hashes and lists the environment-key change. Inactive commented implementations were omitted; current agent/scoring/repair logic was preserved.
+`requirements.txt` contains runtime dependencies; `requirements-test.txt` adds pytest. The tested package versions are listed in `docs/tested_environment.lock.txt`.
 
-## New live evaluation
+## Run an evaluation
 
-Set **your own** API key and a compatible provider endpoint. No key is included in the repository. Provider availability and model permissions are separate from offline runtime tests.
+Set your own API key and a compatible provider endpoint. **No API key is included in this repository.** Model access depends on your provider account and permissions.
 
 ```bash
 export DASHSCOPE_API_KEY='YOUR_API_KEY'
 export BASE_URL='https://dashscope.aliyuncs.com/compatible-mode/v1'
-# View ON, error-type feedback, same 30 paper instance indices:
+
+# Qwen3.8-Max, Insert Between, 30 instances, view ON:
 bash bash/run_30.sh
+
 # View OFF:
 bash bash/run_30.sh --no-view
-# Binary submission feedback (view remains ON):
+
+# Binary submission feedback, view ON:
 bash bash/run_30.sh --feedback-mode binary
-# Five separately initialized runs per instance, View OFF:
+
+# Five separately initialized runs per instance, view OFF:
 bash bash/run_30.sh --no-view --repeat 5
-# Remove Molecule on the exact selected inputs:
+
+# Remove Molecule, view ON:
 ACTION=RemoveMoleculeAction bash bash/run_30.sh
 ```
 
-The full explicit command, from the repository root, is:
+The equivalent explicit command, from the repository root, is:
 
 ```bash
 python -m src.agentv2.run_agent_demo \
@@ -60,36 +67,45 @@ python -m src.agentv2.run_agent_demo \
   --feedback-mode error-type
 ```
 
-Add `--no-view` for OFF. Change `--feedback-mode binary` for submission PASS/FAIL-only feedback; code output and execution-error feedback remain available. After one initial stage, at most five repair stages are allowed, each with a 20-interaction cap; successful submission terminates the run. Each repeat starts a fresh structure, conversation and repair count.
+Add `--no-view` to disable visual access. Use `--feedback-mode binary` for PASS/FAIL-only submission feedback; code output and execution-error feedback remain available.
 
-`paper_data/runtime` preserves original sample row numbers with 50 slots: the 30 selected instances contain real data; the other 20 slots are explicitly empty and must not be evaluated. Do not replace the listed original indices with `0..29`.
+Each instance starts with an initial attempt. A failed submission or exhaustion of the stage's 20-interaction budget starts the next repair stage, with at most five repairs. A successful submission terminates the run. Each repeat initializes a new structure, conversation and repair count.
 
-Generate all 60 model–task–view commands without running them:
+`paper_data/runtime` uses stable sample indices in 50 slots: 30 selected slots contain task data and the other 20 are empty. Evaluate only the listed indices; do not replace them with `0..29`.
+
+To print all 60 model–task–view commands without sending API requests:
 
 ```bash
 bash bash/run_1800.sh
-# Explicitly start 1800 NEW, billable runs only when desired:
+```
+
+To execute the full 1800-configuration evaluation, explicitly enable API requests:
+
+```bash
 bash bash/run_1800.sh --execute
 ```
 
-Fresh outputs are written to `src/agent/runs/`. They do not overwrite the public historical archive and are not expected to reproduce identical stochastic model responses.
+API execution may incur charges. Outputs are written to `src/agent/runs/` without overwriting the downloadable result archive. Independent runs need not produce identical model responses.
 
 ## Scoring
 
-Legacy commands default to `--scorer original`. With `--scorer lattice-noop`, every submission, repair decision and final exported CIF uses the same immutable configuration:
+The evaluation commands above explicitly select `--scorer lattice-noop`. Its success condition is:
 
 ```text
-base_PASS AND lattice_same AND NOT near_initial
+reference_match_PASS AND lattice_same AND NOT near_initial
+
+target StructureMatcher stol = 0.5
 noop_stol = 0.05; noop_scale = true
 lattice_rtol = 1e-6; lattice_atol = 1e-6 angstrom
-original target StructureMatcher stol = 0.5, unchanged
 ```
 
-Additional flags: `--noop-stol`, `--noop-scale true|false`, `--lattice-rtol`, `--lattice-atol`. This is not an operation-specific verifier or a physical-stability test. The exact companion `src/agentv2/offline_noop_filter.py` is included; the live adapter calls its helpers.
+The scorer checks CIF output, parsing and elemental atom counts before reference matching, lattice preservation and near-initial exclusion. The same selected scorer is used for submission feedback and final-output scoring.
 
-## Download and verify archived outputs
+Available tolerance options are `--noop-stol`, `--noop-scale true|false`, `--lattice-rtol` and `--lattice-atol`. This score measures agreement with an editing target; it is not an operation-specific verifier or a physical-stability test. The scoring helpers are supplied in `src/agentv2/offline_noop_filter.py`.
 
-The historical archive is supplied as a GitHub Release asset to avoid adding large experiment outputs to Git history. It contains the full saved `run.json` traces, submitted final CIFs, model configurations, all **3398** referenced visual observations, input/target CIFs, prompts, source/redaction audits and checksums. Redundant `run.txt` and duplicate `trajectory.json` copies are omitted: `trajectory` points directly to the unchanged saved `run.json` and its `trace` field.
+## Download and verify results
+
+The result archive is distributed as a GitHub Release asset. It includes saved `run.json` traces, final submitted CIFs, model configurations, input/target CIFs, task prompts, **3398** referenced visual observations, provenance records and checksums. Trajectory entries refer to the saved `run.json` files and their `trace` fields.
 
 ```bash
 python tools/fetch_archive.py
@@ -97,18 +113,20 @@ python tools/verify_release.py --archive ./artifacts --out local_integrity.json
 python tools/recheck_final.py --archive ./artifacts --out local_final_scores.json
 ```
 
-The last command recomputes base and enhanced scoring through the **same evaluator classes as the live runner**. It never executes archived Python or calls model APIs; all candidates must agree and each configuration is counted once. Expected: 1800 configurations, 1810 candidate logs, 1583 PASS, 217 FAIL, zero unresolved, all consistent with the adopted audit. Use `--limit 3` for an initial scoring smoke test.
+The scoring command uses the same evaluator classes as the runtime and evaluates saved final CIFs without executing recorded Python or calling model APIs. Expected totals are **1800 configurations, 1583 PASS, 217 FAIL and zero unresolved results**. All mapped source candidates must agree; each configuration is counted once. Use `--limit 3` for a short scoring check.
 
-## Figures
+## Generate figures
 
 ```bash
 python paper_figures/make_figures.py
 ```
 
-Fig1 is preserved. Fig2–4 read the adopted Markdown tables and supporting per-instance evidence; Delete Below Including/Excluding is split for display without adding instances. Existing PDF/PNG files are the actual paper-style reference figures. Redrawing retains the figure form; on machines without Helvetica, the script uses its documented bundled font fallback, so identical image pixels across operating systems are not promised. No proprietary font is redistributed.
+The figure directory contains the framework figure, six-task plots, supporting data and PDF/PNG outputs. Fig.2–4 read the supplied Markdown tables and per-instance evidence. Delete Below Including/Excluding groups are displayed separately without adding instances or changing model-level denominators. Curves accumulate final outputs that satisfy the scoring criteria, grouped by their recorded first accepted stage.
 
-## Reproducibility boundaries
+The scripts retain the supplied plotting style. If Helvetica is unavailable, the documented font fallback is used; pixel-identical output across operating systems is not guaranteed. No proprietary font is redistributed.
 
-The archived model names, task prompts, structures, traces and available run configurations are supplied. Unrecorded historical decoding parameters, immutable provider snapshots and full API payloads are not invented. Current source defaults are not historical configuration evidence. Archived intermediate submissions are not reconstructed by executing saved code.
+## Execution and reproducibility notes
 
-**Security:** `run_python` executes unrestricted Python in the host process, as in the actual implementation. It is not an OS sandbox and does not establish ground-truth isolation; targets are public for offline verification. Run live agents only in an appropriate disposable environment. The repository contains no real API key. Offline HTTP tests use synthetic code and a deterministic local mock endpoint; they verify SDK transport and the runner, not real Qwen/DeepSeek provider access.
+Recorded model names, prompts, structures, traces and available configuration settings accompany the results. Package installation and runtime checks are documented in `docs/VERIFICATION.md`. Offline HTTP tests use a deterministic local mock endpoint and require no real API credentials.
+
+**Security:** `run_python` executes unrestricted Python in the host process. It is not an OS sandbox and does not enforce ground-truth isolation. Reference structures are public for offline verification. Run model-generated code in an appropriate disposable environment with access controls, and keep credentials outside tracked files.
