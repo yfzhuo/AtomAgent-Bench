@@ -1,8 +1,8 @@
 {
   "source": "current_results.md",
-  "source_sha256": "44110af4b7c2184917a28f3500552557dac23b64c60d14d59e9caec88784c002",
+  "source_sha256": "8240f11f0eae43b789bb194b04143926cbdba09ce7a5150d416c01eae42c4148",
   "variant_source": "delete_below_variants.json",
-  "variant_source_sha256": "0c409e8bf6031389be087c464e60f4761834102c522461645214febe46265c08",
+  "variant_source_sha256": "7f1699e609ac398dfffead4176cf5ec49b1d82a53b834e278ed90cf17bbbe463",
   "display_groups": [
     "Delete Below (Including)",
     "Delete Below (Excluding)",
@@ -21,8 +21,8 @@
     30,
     30
   ],
-  "scope": "Current six-task accepted results; Delete Below online lattice-noop, remaining tasks adopted final-verification records",
-  "pk_definition": "cumulative accepted final outcomes by recorded first accepted stage; Delete Below online, other tasks final-verified archived stages",
+  "scope": "Current six-task results",
+  "pk_definition": "Cumulative accepted final outcomes by recorded first accepted stage",
   "data": {
     "on_counts": [
       [

@@ -13,6 +13,8 @@ Checks performed for this release:
 7. Position-error records are matched to all 1800 current configurations; means use the 1607 successful final outcomes and contain 37 strict-zero matches. The table retains the manuscript's adopted matcher measurements. Recorded online metrics can differ at numerical precision; they are not substituted for the adopted position-error table.
 8. Bash syntax and the 60 generated model–task–view commands were checked. Full evaluation is opt-in and incurs provider API usage.
 
+9. The public repository was cloned into a new directory and all nine tests passed there. The published downloader fetched and checksum-verified the complete 493683117-byte archive. All downloaded inputs, outputs, trajectories and images passed full integrity verification; the public scoring smoke test matched the expected configurations.
+
 No real model API requests were made during these verification steps, and archived model-generated Python was not executed. Offline mock tests establish runnable code and HTTP/tool flow; provider account access and stochastic responses require the user's own credentials. `run_python` executes in the host process and is not an OS sandbox.
 
 Only the current Delete Below inputs, prompts and references are distributed in `paper_data/runtime/delete_below_atom_action.json`. Runtime defaults resolve to the current canonical data directory. The public files contain no real API key.

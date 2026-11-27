@@ -1,6 +1,6 @@
 # Six-task evaluation: current accepted results
 
-Each model/view contains 180 task instances. Delete Below contains 10 Including and 20 Excluding instances. Counts are assigned to the recorded first accepted stage and verified against final submissions. Delete Below uses online lattice-noop scoring; other task entries retain their adopted final-verification results.
+Each model/view contains 180 task instances. Delete Below contains 10 Including and 20 Excluding instances. Counts are assigned to the recorded first accepted stage and verified against final submissions.
 
 ## 1. Seven-count table
 
