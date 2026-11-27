@@ -1,15 +1,3 @@
-"""Current agentv2 implementation; see docs/source_provenance.json for release transformations."""
-"""
-VisionModelingAgent: 多模态 + function-calling 闭环。
-每步: 模型选 view(看图) 或 run_python(写代码改结构) -> 环境执行 -> 回灌
-(看图回图,写代码回 stdout) -> 直到 submit 或步数耗尽。
-trace 记全过程; self.usage 汇总 #view / #code / 步数。
-submit 时若传入 score_fn,则打分:PASS 收尾;FAIL 注入真实错误类型让 agent 再改,
-直到用尽 max_repairs。打分回调持有答案,但只回传 passed/wrong_type/message,
-绝不回传答案结构(防作弊)。
-use_view=False 时彻底移除 view 工具(更彻底的无视觉消融):agent 只剩
-run_python + submit,且初始图也不渲染。
-"""
 import os
 import json
 import re
@@ -49,11 +37,6 @@ class VisionModelingAgent:
         self.repair_history = []
 
     def _binary_retry_feedback(self):
-        """Only submission FAIL is exposed; no scorer/export error details.
-
-        Tool execution feedback, true scores in trace/history, and all stopping
-        and budget rules are retained. This is not a no-feedback retry mode.
-        """
         tools_hint = 'view / run_python' if self.use_view else 'run_python'
         fb = f'Your submission was FAILED.\nA NEW attempt starts now with a fresh {self.max_steps}-step budget. Do NOT submit again immediately. First inspect the current structure ({tools_hint}) to find what is wrong, fix it, and only then submit.'
         return {'role': 'user', 'content': fb}
@@ -105,7 +88,6 @@ class VisionModelingAgent:
         return None
 
     def _dispatch(self, env, name: str, kwargs: dict):
-        """执行单个工具调用,返回 (obs, is_submit)。"""
         if name == 'submit':
             return (None, True)
         base = {'image_base64': None, 'stdout': '', 'n_atoms': len(env.structure), 'counts': {'view': env.view_calls, 'code': env.code_calls}}
@@ -149,14 +131,6 @@ class VisionModelingAgent:
         return env.structure
 
     def run(self, init_cif, task_prompt, log_dir=None, score_fn=None, max_repairs=0):
-        """
-        每次 attempt(首发 或 每次 repair)独立拥有 self.max_steps 预算，
-        step 计数在每次 attempt 开始时重置。
-        整体 step 上限 = self.max_steps * (max_repairs + 1)。
-
-        score_fn: 可选打分回调，签名 score_fn(cif_str) -> (passed, wrong_type, message)。
-        max_repairs: submit 打分 FAIL 后最多再让 agent 改几次。0=不重试。
-        """
         env = StructureEnvironment(init_cif, allow_imaging=self.allow_imaging)
         self._log(f'[Task] {task_prompt}')
         self._log(f'[Init] {len(env.structure)} atoms')
@@ -200,17 +174,14 @@ class VisionModelingAgent:
         def _record_and_feedback(rec, channel, name, kwargs, obs, step):
             img_file = _save_img(obs.get('image_base64'), f's{step}_{name}')
             rec['actions'].append({'channel': channel, 'name': name, 'args': kwargs, 'result': obs.get('message'), 'stdout': obs.get('stdout'), 'n_atoms': obs.get('n_atoms'), 'counts': obs.get('counts'), 'image_file': img_file})
-            txt = f"[{name}] {obs.get('message')}. n_atoms={obs.get('n_atoms')}."
+            txt = f'[{name}] {obs.get('message')}. n_atoms={obs.get('n_atoms')}.'
             if obs.get('stdout'):
-                txt += f"\nstdout:\n{obs['stdout']}"
+                txt += f'\nstdout:\n{obs['stdout']}'
             if obs.get('image_base64'):
                 return _image_msg(txt, obs['image_base64'])
             return {'role': 'user', 'content': txt}
 
         def _handle_submit():
-            """提交时打分。返回 (done, feedback_msg_or_None)。
-            done=True  -> 整个任务结束(PASS，或已用尽 max_repairs)。
-            done=False -> FAIL 且还有重试额度，feedback_msg 注入让 agent 再改。"""
             try:
                 cif_now = env.export_cif()
             except Exception as e:
@@ -259,7 +230,7 @@ class VisionModelingAgent:
                 resp = self._create(messages)
                 msg = resp.choices[0].message
                 print(f'>>> content={msg.content!r}')
-                print(f">>> tool_calls={getattr(msg, 'tool_calls', 'NO_ATTR')!r}")
+                print(f'>>> tool_calls={getattr(msg, 'tool_calls', 'NO_ATTR')!r}')
                 messages.append(msg)
                 rec = {'step': step, 'inner_step': inner_step, 'attempt': attempt_id, 'model_content': msg.content, 'model_tool_calls': [{'name': tc.function.name, 'arguments': tc.function.arguments} for tc in msg.tool_calls or []], 'actions': []}
                 if not msg.tool_calls:
@@ -280,13 +251,13 @@ class VisionModelingAgent:
                             messages.append(fb)
                             restart_attempt = True
                             break
-                        self._log(f"  -> {obs['message']} (n={obs.get('n_atoms')})")
+                        self._log(f'  -> {obs['message']} (n={obs.get('n_atoms')})')
                         fb = _record_and_feedback(rec, 'text-fallback', name, kwargs, obs, step)
                         self.trace.append(rec)
                         messages.append(fb)
                         continue
                     no_call_streak += 1
-                    self._log(f"[Step {step}] (no tool call x{no_call_streak}) {(msg.content or '')[:100]}")
+                    self._log(f'[Step {step}] (no tool call x{no_call_streak}) {(msg.content or '')[:100]}')
                     rec['actions'].append({'channel': 'none', 'note': f'no tool call x{no_call_streak}'})
                     self.trace.append(rec)
                     if no_call_streak >= 3:
@@ -327,12 +298,12 @@ class VisionModelingAgent:
                         else:
                             pending_feedback = fb
                             continue
-                    self._log(f"  -> {obs['message']} (n={obs.get('n_atoms')})")
+                    self._log(f'  -> {obs['message']} (n={obs.get('n_atoms')})')
                     img_file = _save_img(obs.get('image_base64'), f's{step}_{name}')
                     rec['actions'].append({'channel': 'native', 'name': name, 'args': kwargs, 'result': obs.get('message'), 'stdout': obs.get('stdout'), 'n_atoms': obs.get('n_atoms'), 'counts': obs.get('counts'), 'image_file': img_file})
-                    txt = f"[{name}] {obs.get('message')}. n_atoms={obs.get('n_atoms')}."
+                    txt = f'[{name}] {obs.get('message')}. n_atoms={obs.get('n_atoms')}.'
                     if obs.get('stdout'):
-                        txt += f"\nstdout:\n{obs['stdout']}"
+                        txt += f'\nstdout:\n{obs['stdout']}'
                     messages.append({'role': 'tool', 'tool_call_id': tc.id, 'content': txt})
                     if obs.get('image_base64'):
                         messages.append(_image_msg(f'[{name}] rendered image above.', obs['image_base64']))

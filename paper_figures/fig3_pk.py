@@ -50,7 +50,7 @@ for ax, m in zip(axes, models):
     ax.grid(color="#dddddd", lw=.5); ax.set_axisbelow(True)
     for sp in ["top", "right"]: ax.spines[sp].set_visible(False)
     if ax is not axes[0]: ax.set_yticklabels([])
-axes[0].set_ylabel("Cumulative retained rate $P(k)$ (%)", fontsize=9)
+axes[0].set_ylabel("Cumulative rate $P(k)$ (%)", fontsize=9)
 axes[2].set_xlabel("Repair round $k$ (0 = first attempt)", fontsize=9)
 handles = [plt.Line2D([0],[0], color=C_ON, marker="o", ls="-", lw=1.6, label="view ON"),
            plt.Line2D([0],[0], color=C_OFF, marker="s", ls="--", lw=1.6, mfc="white",
@@ -68,8 +68,8 @@ for k, (v, n) in enumerate(zip(rescue_rate, round_pass)):
              fontsize=7.8, linespacing=1.15)
 ax.set_ylim(45,100)
 axb.set_xticks(np.arange(1,6)); axb.set_xticklabels([f"repair {i}" for i in range(1,6)], fontsize=8)
-axb.set_ylim(0,46); axb.set_ylabel("Per-round retained fraction (%)", fontsize=9)
-axb.set_title("(f) Retained successes per repair round (all configs pooled)", fontsize=9.5,
+axb.set_ylim(0,46); axb.set_ylabel("Per-round success fraction (%)", fontsize=9)
+axb.set_title("(f) New successes per repair round (all configs pooled)", fontsize=9.5,
               fontweight="bold", pad=4)
 axb.grid(axis="y", color="#dddddd", lw=.5); axb.set_axisbelow(True)
 for sp in ["top","right"]: axb.spines[sp].set_visible(False)

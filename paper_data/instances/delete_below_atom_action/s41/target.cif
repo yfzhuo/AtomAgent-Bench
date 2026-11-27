@@ -1,38 +1,37 @@
-data_image0
-_chemical_formula_structural       MgFe2P2O8
-_chemical_formula_sum              "Mg1 Fe2 P2 O8"
-_cell_length_a       8.87978472
-_cell_length_b       8.87978472
-_cell_length_c       16.5475992
-_cell_angle_alpha    61.44010649
-_cell_angle_beta     61.44010649
-_cell_angle_gamma    33.57190670999999
-
-_space_group_name_H-M_alt    "P 1"
-_space_group_IT_number       1
-
+# generated using pymatgen
+data_MgFePO8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.87978472
+_cell_length_b   8.87978472
+_cell_length_c   16.54759920
+_cell_angle_alpha   61.44010649
+_cell_angle_beta   61.44010649
+_cell_angle_gamma   33.57190671
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MgFePO8
+_chemical_formula_sum   'Mg1 Fe1 P1 O8'
+_cell_volume   625.12812439
+_cell_formula_units_Z   1
 loop_
-  _space_group_symop_operation_xyz
-  'x, y, z'
-
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
 loop_
-  _atom_site_type_symbol
-  _atom_site_label
-  _atom_site_symmetry_multiplicity
-  _atom_site_fract_x
-  _atom_site_fract_y
-  _atom_site_fract_z
-  _atom_site_occupancy
-  Mg  Mg1       1.0  0.8583899999999999  0.44082300000000013  0.876406  1.0000
-  Fe  Fe1       1.0  0.6058189999999998  0.20379600000000006  0.966015  1.0000
-  Fe  Fe2       1.0  0.5748010000000001  0.4251989999999999  0.75  1.0000
-  P   P1        1.0  0.5125999999999997  0.06353100000000006  0.855836  1.0000
-  P   P2        1.0  0.22186900000000007  0.820119  0.888795  1.0000
-  O   O1        1.0  0.19975800000000007  0.27490799999999993  0.90052  1.0000
-  O   O2        1.0  0.6746539999999999  0.7849459999999999  0.927518  1.0000
-  O   O3        1.0  0.929514  0.1320750000000001  0.895344  1.0000
-  O   O4        1.0  0.604541  0.15716800000000006  0.855906  1.0000
-  O   O5        1.0  0.42663299999999976  0.739289  0.919445  1.0000
-  O   O6        1.0  0.1910240000000001  0.6466219999999999  0.958896  1.0000
-  O   O7        1.0  0.341957  0.7626849999999998  0.789805  1.0000
-  O   O8        1.0  0.5683149999999998  0.028832000000000028  0.761184  1.0000
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  1  0.85839000  0.44082300  0.87640600  1
+  Fe  Fe1  1  0.60581900  0.20379600  0.96601500  1
+  P  P2  1  0.22186900  0.82011900  0.88879500  1
+  O  O3  1  0.19975800  0.27490800  0.90052000  1
+  O  O4  1  0.67465400  0.78494600  0.92751800  1
+  O  O5  1  0.92951400  0.13207500  0.89534400  1
+  O  O6  1  0.60454100  0.15716800  0.85590600  1
+  O  O7  1  0.97116800  0.43168500  0.73881600  1
+  O  O8  1  0.42663300  0.73928900  0.91944500  1
+  O  O9  1  0.19102400  0.64662200  0.95889600  1
+  O  O10  1  0.34195700  0.76268500  0.78980500  1

@@ -1,0 +1,782 @@
+[
+  {
+    "cluster": "crystal_inputs:0",
+    "stratum": "crystal_inputs",
+    "sample": 0,
+    "input_cif_sha256": "72f0a31b85703439c443d9bcac3610f9254f57d909d58c29010e25e9d7ea2fdb",
+    "input_atoms": 80,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s0_r0/run.json",
+        "sha256": "58b641f81664c5ff1462fac78c40024211912bc958897b95242c97cd273cb6a6"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:2",
+    "stratum": "crystal_inputs",
+    "sample": 2,
+    "input_cif_sha256": "3dc9388f40f9f2b5393394ff9c40eaeeb95896430c5b9dfb23571c645edcb6fc",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s2_r0/run.json",
+        "sha256": "46bfb515ff14d925d9ce1cbfb1de771bf92dfb5af9916f2de83cafba68f2b72f"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:4",
+    "stratum": "crystal_inputs",
+    "sample": 4,
+    "input_cif_sha256": "c77999ffb8550bc7de02dfc26e4358702dafbda3d1ea06c922f04890b8460f98",
+    "input_atoms": 40,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s4_r0/run.json",
+        "sha256": "6719f69056a50eef59d83899ab34e354db95fbf8d0509be4e71dc7903a438ece"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:5",
+    "stratum": "crystal_inputs",
+    "sample": 5,
+    "input_cif_sha256": "3f15cb3cd97cc14bfec99726459d2a84c00f4f43ab10161fec3d7afdd63a6b03",
+    "input_atoms": 76,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s5_r0/run.json",
+        "sha256": "b0bfd22b5ae48f47f89ac10231c0b87c8986496b45b68ce0258e13e5fc96e212"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:6",
+    "stratum": "crystal_inputs",
+    "sample": 6,
+    "input_cif_sha256": "eb0a7cd32b9fcf5ddeef0570f36fb0b85057b201923942357a29946e547a6df5",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s6_r0/run.json",
+        "sha256": "415bce1a64c2effd4df2bba69fd0e7801a60caf00c7a672e2fccb00f932aa3d4"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:8",
+    "stratum": "crystal_inputs",
+    "sample": 8,
+    "input_cif_sha256": "1e424b5fe20d7e29055f090adfe3c11f9b49ebfaa1b90093db83c0635bf91dea",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s8_r0/run.json",
+        "sha256": "2bb65ea2e387f07ea8f842e6f43bd2f13b11b1bbc2f65791fb8f6772500b35b1"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:10",
+    "stratum": "crystal_inputs",
+    "sample": 10,
+    "input_cif_sha256": "009f864b896adc3579a0677a272f3f723ab534534f05f03df83822df593cc89a",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152721_qwen3-vl-plus_delete_around_atom_action_samples_10-27-39-46-49/s10_r0/run.json",
+        "sha256": "19bd927cca6439043ecd4f9fe8c7e18bb55eaa1c29f0e33529c77d0bd542cfc9"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:12",
+    "stratum": "crystal_inputs",
+    "sample": 12,
+    "input_cif_sha256": "6e86eb1749dee2a1ebd6a20fcbc2595582b885f920d7e5f090d6ed96e9417186",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s12_r0/run.json",
+        "sha256": "3f0b5c4a23fd992639b23d63d80b2fd5aed26a670306d7463397d084d8ab9c43"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:15",
+    "stratum": "crystal_inputs",
+    "sample": 15,
+    "input_cif_sha256": "f127a9f5d7cb8b97320dcd65404b9ee09827a3db0b3a4fc6add4d15a0e10046f",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s15_r0/run.json",
+        "sha256": "6d0da4be87bc9ab5ceba41fda70ad2e32a3b4b0d4d2d8e6d28b503e77c477e87"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:17",
+    "stratum": "crystal_inputs",
+    "sample": 17,
+    "input_cif_sha256": "0944a5428de92b85f649791bdf9784dd08774dd7ce7a0883a0397c452e70309a",
+    "input_atoms": 12,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s17_r0/run.json",
+        "sha256": "b4410c82631bdd2777a0d7457a81ac66f02e81698892a1d66e2339b15de358fd"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:18",
+    "stratum": "crystal_inputs",
+    "sample": 18,
+    "input_cif_sha256": "84939b9e89545a1a81717be79cacd159d50b105b9d27b842b965d9a77af69840",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s18_r0/run.json",
+        "sha256": "1587cd3380a48653ad1175c5abd317c67a0dc544a2e6cbf3ccf46a76d50957e9"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:21",
+    "stratum": "crystal_inputs",
+    "sample": 21,
+    "input_cif_sha256": "f38a8e3658957be3eaab5965fb3578b7f6f147103889798b90d13f23d1a83713",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s21_r0/run.json",
+        "sha256": "cfeb9d530b5508cdd634ce9848f640e7d06c656f2f5bd1149c11aa94fa8ea9f9"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:24",
+    "stratum": "crystal_inputs",
+    "sample": 24,
+    "input_cif_sha256": "b7afe17575e27757d52eb13f3f0d2c746844b7064d742d51d0229e64f984fbaa",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s24_r0/run.json",
+        "sha256": "b12711de8c3b8a1d94ba60f5294666aa222f7a15642f757959ad41d7e20a9ce5"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:25",
+    "stratum": "crystal_inputs",
+    "sample": 25,
+    "input_cif_sha256": "09644dc1d388e89dda711ed95c904f4aa6110f7d3e19908038d18f26706c49b9",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s25_r0/run.json",
+        "sha256": "05a02804d0bb8ef9a1625d206aeaa6835e302e74deecf4f0c405ed0bd1330016"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:26",
+    "stratum": "crystal_inputs",
+    "sample": 26,
+    "input_cif_sha256": "f0d5aebbb906f92c622c11822c5d8d59877c9f63cab4b873ce7e07cb3940c02f",
+    "input_atoms": 12,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s26_r0/run.json",
+        "sha256": "e3cf69df133fe9409c422ffe9ea267d74964f4de8abe9dbec0e03dd60e7a7bf7"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:27",
+    "stratum": "crystal_inputs",
+    "sample": 27,
+    "input_cif_sha256": "141fd3843a33a54ef374522742c3819e58ba204fa72b26d866a7ce30952ac4d0",
+    "input_atoms": 12,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152721_qwen3-vl-plus_delete_around_atom_action_samples_10-27-39-46-49/s27_r0/run.json",
+        "sha256": "77cfc802c1d726e4227c918adcc257fdb125bc903f0d6e683302ec3d98a612c5"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:30",
+    "stratum": "crystal_inputs",
+    "sample": 30,
+    "input_cif_sha256": "ea556e93314a69a1fcf9e2ad80432b19bf3ef1b618557cbdff01455eacfc9dfe",
+    "input_atoms": 16,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s30_r0/run.json",
+        "sha256": "c28e3f31d7a963f0748a48f4793e11bada2bb8fb0bb0b64d32a89228fd29b5ea"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:32",
+    "stratum": "crystal_inputs",
+    "sample": 32,
+    "input_cif_sha256": "b55d8b757b641b494ca64273a088e0f7d147b2cb7e9c91e8abf5ad383d89bb2c",
+    "input_atoms": 32,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s32_r0/run.json",
+        "sha256": "846e4c9c8e931668d5111c2ad01346155953dcf5f1a1856f6dbe3f18530220bc"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:35",
+    "stratum": "crystal_inputs",
+    "sample": 35,
+    "input_cif_sha256": "29d374cec582243ed59961990a413a4894ddd2d54ad813b012959a80e620a5ef",
+    "input_atoms": 64,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s35_r0/run.json",
+        "sha256": "f07a8eb7e2766693513fe069b25aefbd5280111d443dc8f54962d2164894e70a"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:36",
+    "stratum": "crystal_inputs",
+    "sample": 36,
+    "input_cif_sha256": "bdc7562dae10f3fc8de200b20c2801f1ca1d667c29db284a1c6222dddb029585",
+    "input_atoms": 64,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s36_r0/run.json",
+        "sha256": "580a5360b96654d57bd1b7af1f38476a8511f9877ef3a663c41b18c7a9c4d4c2"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:39",
+    "stratum": "crystal_inputs",
+    "sample": 39,
+    "input_cif_sha256": "50109a0e3c507398202fe050721b6ef8b9d6a3cc36148587ba9b812d89351e9d",
+    "input_atoms": 64,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152721_qwen3-vl-plus_delete_around_atom_action_samples_10-27-39-46-49/s39_r0/run.json",
+        "sha256": "ef877d86bf123021d71fbd7c4ee80bdeae737ed1347e79a72ed5fe2e7a222135"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:40",
+    "stratum": "crystal_inputs",
+    "sample": 40,
+    "input_cif_sha256": "af84fbcdaac6901dd208428540fddf327a264b8f664fc2ddecfe03142ca55d77",
+    "input_atoms": 64,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s40_r0/run.json",
+        "sha256": "6a1e218c5c0703a5093025bc41f6f6d30483b6be8b6fc32d1efcf7310b99a914"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:41",
+    "stratum": "crystal_inputs",
+    "sample": 41,
+    "input_cif_sha256": "bc1d16c9df3fb24d3afd749dbc4fff3d0a75a5634356114ec7324ff3407d9950",
+    "input_atoms": 52,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s41_r0/run.json",
+        "sha256": "ecb391e55f2316fd5cf23d0b8d1e1efd89b9f14de6001457b027a0ca9ae1f5b1"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:43",
+    "stratum": "crystal_inputs",
+    "sample": 43,
+    "input_cif_sha256": "54cbadee63df36382f388875902e9dc2cc1853054f28e68f0f150aedd6365b6c",
+    "input_atoms": 42,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s43_r0/run.json",
+        "sha256": "bcb05a6e124fb68b0472cf133ec7abbbddb2972e256786f2a7d24079cfb3ae0a"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:44",
+    "stratum": "crystal_inputs",
+    "sample": 44,
+    "input_cif_sha256": "de0b87be3a4e408ca26ef9b79d4f968210196eb69a999aa8da0156357880950b",
+    "input_atoms": 14,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s44_r0/run.json",
+        "sha256": "8af32ea27e3bff4cdac0b774a62fba8dbdd6dd82e5789d8a9c4ee39ea9226572"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:45",
+    "stratum": "crystal_inputs",
+    "sample": 45,
+    "input_cif_sha256": "0e44d1c8d017978061dc5c784cd2f951d45cd336671d21bf0cb390afd39be848",
+    "input_atoms": 28,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s45_r0/run.json",
+        "sha256": "66e18e0899936abe7600cdecb872587f04e2b8019c8e1991ec1358b4b67e9960"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:46",
+    "stratum": "crystal_inputs",
+    "sample": 46,
+    "input_cif_sha256": "2d55ead8f6ea47e48d41f2ca48c29adce97676107cfbe17db1e69624b6e9315d",
+    "input_atoms": 24,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152721_qwen3-vl-plus_delete_around_atom_action_samples_10-27-39-46-49/s46_r0/run.json",
+        "sha256": "cafbed7e7f0a1dfabe531ed16a85d29c79192118a9c4d1846cc9450f14a68211"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:47",
+    "stratum": "crystal_inputs",
+    "sample": 47,
+    "input_cif_sha256": "10117184bad01e123fff45632b652f08642156efdfa31a42badb22744d27dc4e",
+    "input_atoms": 56,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152714_qwen3-vl-plus_delete_around_atom_action_samples_5-6-17-24-25-35-40-43-44-47/s47_r0/run.json",
+        "sha256": "ac5314ea5d6b4a3304763aeb7792cc4a2669d11a9f09ec24c2e6c7a841bb24b9"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:48",
+    "stratum": "crystal_inputs",
+    "sample": 48,
+    "input_cif_sha256": "59a41eb2231ffb7a5dcdd8df522b858231a302a63f8076a7407ec491919fee55",
+    "input_atoms": 64,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152731_qwen3-vl-plus_delete_around_atom_action_samples_0-2-4-8-12-15-18-21-26-30-32-36-41-45-48/s48_r0/run.json",
+        "sha256": "1060f77d5c06d50366831666c0d499c3f1cdd9a99f8b2ddf655f3410caa5dda2"
+      }
+    ]
+  },
+  {
+    "cluster": "crystal_inputs:49",
+    "stratum": "crystal_inputs",
+    "sample": 49,
+    "input_cif_sha256": "9bf8d7fcfab56a305e084395835671707f5ee5bfb77963767885cfab96dfb702",
+    "input_atoms": 22,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20260902_152721_qwen3-vl-plus_delete_around_atom_action_samples_10-27-39-46-49/s49_r0/run.json",
+        "sha256": "8165c14b42a790acf3b05701effc5ebe30079b984e5e02b757dbcb77b6d9c147"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:0",
+    "stratum": "molecule_inputs",
+    "sample": 0,
+    "input_cif_sha256": "a7742db6885cc98dab7c95514956463170db6845e42fa970bbbd50076ddc3ec1",
+    "input_atoms": 540,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s0_r0/run.json",
+        "sha256": "d8e9c4e99c6f5f0d3e084930170f48150071f36f61827e08ce769c1e70895c94"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:2",
+    "stratum": "molecule_inputs",
+    "sample": 2,
+    "input_cif_sha256": "b2f84377aa8f827efa19ff78002396e55084285e1982d5196b341d3eeec567d2",
+    "input_atoms": 1097,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s2_r0/run.json",
+        "sha256": "678a191a9ba2e2d225a469bb0d9a121c80f8b3ae1f2b0a3db2991b84e9ea2918"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:4",
+    "stratum": "molecule_inputs",
+    "sample": 4,
+    "input_cif_sha256": "e6cf052a8a59c56a7b7e4451ae0b9486774af725d545a60d8a82f95b8c061a33",
+    "input_atoms": 347,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s4_r0/run.json",
+        "sha256": "e76bcfe10c8102b4c6b8cff1e472d2ebb025ea62a8cad5103073b093495f9d7b"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:5",
+    "stratum": "molecule_inputs",
+    "sample": 5,
+    "input_cif_sha256": "033dfb89905cb96a2b8916f18ac76441f0f6a62b729e2d0aa2f8311297d4928b",
+    "input_atoms": 1196,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s5_r0/run.json",
+        "sha256": "9e7aa4fbf6588c14d5ab9814a9bd94928b925bda94d6a3fb1761285916780112"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:6",
+    "stratum": "molecule_inputs",
+    "sample": 6,
+    "input_cif_sha256": "d71022b2ce0f3aec9008f4078fc663db28155b54f5a89b85e4aa40a784bf881d",
+    "input_atoms": 2065,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s6_r0/run.json",
+        "sha256": "cc2cceaa0698c8ca9a6218c57049a27170e177e66c9c12c14c3c411768c6d0f3"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:8",
+    "stratum": "molecule_inputs",
+    "sample": 8,
+    "input_cif_sha256": "eae7fa89db9ded3b2426731ee94508d23db4408a10a9b308bf46023a1a029297",
+    "input_atoms": 989,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s8_r0/run.json",
+        "sha256": "5e1e8e8bfa9bedacb4cc74147f074e9cae9d1187bc01a451a42a971ae8c818ee"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:10",
+    "stratum": "molecule_inputs",
+    "sample": 10,
+    "input_cif_sha256": "344f4a6d5e540a3fe14ac675ef4fe65281e3302094b1f6affcbd684545e93e04",
+    "input_atoms": 918,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s10_r0/run.json",
+        "sha256": "46575a39321dfd5939ae1567f27d99d0bbb3b82e12b193de66ccfb3e9b767cc8"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:12",
+    "stratum": "molecule_inputs",
+    "sample": 12,
+    "input_cif_sha256": "da8e896d27e1a393dabf165ea0fd4a20d4b50a906139e31509fe399efcf8879b",
+    "input_atoms": 906,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s12_r0/run.json",
+        "sha256": "777499fd1774642cdfb2a50f030134735ebd4d5482b0c255a804a07037df2f47"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:15",
+    "stratum": "molecule_inputs",
+    "sample": 15,
+    "input_cif_sha256": "7bfe89e0c1bb003d3f42bb70bfb527711ac426bec12249f409bada62b1829635",
+    "input_atoms": 463,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s15_r0/run.json",
+        "sha256": "241559d589b46c2ed4763fcf983f59a1300033a27314bc9727a22bc4ce44b1da"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:17",
+    "stratum": "molecule_inputs",
+    "sample": 17,
+    "input_cif_sha256": "70f5b6bd3b9cfb05caeb7e51211af53376bca3076b20db8a74a73ae35fdc3b36",
+    "input_atoms": 975,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s17_r0/run.json",
+        "sha256": "238115f9ff9bf697e08a7429f7e84ce6c87856318c7199dbc74a3dfd077dd48f"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:18",
+    "stratum": "molecule_inputs",
+    "sample": 18,
+    "input_cif_sha256": "8f07d435f4a81559cffcbcc177d210deb0e25b3b2640d1202064f92bc412a18a",
+    "input_atoms": 563,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s18_r0/run.json",
+        "sha256": "5dbec7f239357965d81722621d5a433ccc3fc2f39982ea27611357120e03d75e"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:21",
+    "stratum": "molecule_inputs",
+    "sample": 21,
+    "input_cif_sha256": "70a8cd76cfc1bab57b96afac3c18671ac82706b4bbe33821f88dbbf167d5ab6d",
+    "input_atoms": 193,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s21_r0/run.json",
+        "sha256": "d390231b00a10638c97634fda4f907988daf411a20c1885bfe34e93ec7b2ab7c"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:24",
+    "stratum": "molecule_inputs",
+    "sample": 24,
+    "input_cif_sha256": "956718b95fa76df529d3d6bd4fdbd1258954fd057f3b1ef77491bec4eba4910f",
+    "input_atoms": 972,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s24_r0/run.json",
+        "sha256": "573379f22579b369f3320bc99b7d89a96421a71806a66e01288c7c4eee820173"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:25",
+    "stratum": "molecule_inputs",
+    "sample": 25,
+    "input_cif_sha256": "2cdbef09f0a97053880eb89d66e2549f7ad0feec1e7aaff5db79c7d2f6db9678",
+    "input_atoms": 1734,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s25_r0/run.json",
+        "sha256": "a9e87873307bd530483cc0eeca280077d3318bf796bcdf3cb27c0cba5a591432"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:26",
+    "stratum": "molecule_inputs",
+    "sample": 26,
+    "input_cif_sha256": "2f30ad2e57b1033150d516943c541113a5caed74f5777a2d5184c9b3aec6f9f3",
+    "input_atoms": 568,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s26_r0/run.json",
+        "sha256": "a6306cc732b31185274f6fa4e62617176817124ed6a334d710268dac2a69247c"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:27",
+    "stratum": "molecule_inputs",
+    "sample": 27,
+    "input_cif_sha256": "aed95b7fcff55dbdb33875477b2d453169dfd4214be6d7b81e71869fe7a8884c",
+    "input_atoms": 963,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s27_r0/run.json",
+        "sha256": "2fcf58d3905d4e7f80e99737ec42c5e7b3c6a63fc28e0d044cecfeb61d1eb79c"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:30",
+    "stratum": "molecule_inputs",
+    "sample": 30,
+    "input_cif_sha256": "2ac2c04cf8c1482d74dd39630479ebc8ef137a8758dbebb24dd9a918e802d9d0",
+    "input_atoms": 2711,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s30_r0/run.json",
+        "sha256": "7213c14cb6c970fb32793d055027a2e2b74a6c6373cea0165ef3a8bf6886511f"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:32",
+    "stratum": "molecule_inputs",
+    "sample": 32,
+    "input_cif_sha256": "1a0851c660e71ba7f7c3de0e9eb4019288e0a4681fbf702be88215282da2afc7",
+    "input_atoms": 1192,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s32_r0/run.json",
+        "sha256": "9b7f7a1cff4fa2dc186aecc8ca2fb0aaa013278e893dba6541b16d31df80b4b9"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:35",
+    "stratum": "molecule_inputs",
+    "sample": 35,
+    "input_cif_sha256": "1c912b6bda1428f26264cdb8708bd1b4fc7e2bd111ba306ca96d9fe7c5767178",
+    "input_atoms": 1736,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s35_r0/run.json",
+        "sha256": "1b07f641eb25d89a4c2c5e83f981825ed8c28e46fe895d314b696374bf8584f2"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:36",
+    "stratum": "molecule_inputs",
+    "sample": 36,
+    "input_cif_sha256": "67e7ccda437e67ae22fa3dadbf101587e81e2188756daf06bc795e967aee3ceb",
+    "input_atoms": 291,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s36_r0/run.json",
+        "sha256": "cea3bb44f16cb2da3ecaf09e6de0bc51c141be0501f0aa0d8a55001d95a66cb7"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:39",
+    "stratum": "molecule_inputs",
+    "sample": 39,
+    "input_cif_sha256": "1052aa7a5e0758e3995bad541ae9ce79ebddd17fc04dd273cf78f02cc5f6cc2d",
+    "input_atoms": 596,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s39_r0/run.json",
+        "sha256": "cfcee4ae72b83661cbed262e1cf7e8da16dc1c4056426205ad786b5473ea32d0"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:40",
+    "stratum": "molecule_inputs",
+    "sample": 40,
+    "input_cif_sha256": "46c3c8f90c8197ff208438304d618704519f7122e033354afab7825ba2793fc8",
+    "input_atoms": 548,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s40_r0/run.json",
+        "sha256": "f47c6c0c1d4eeb4bf45aea8115b79ed7fcf41d25e989488ae4bee05e45b71654"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:41",
+    "stratum": "molecule_inputs",
+    "sample": 41,
+    "input_cif_sha256": "0776a05b49c71c065e7081f7088f7c81def03e462a0cd8c91c3f9c8c27d54807",
+    "input_atoms": 654,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s41_r0/run.json",
+        "sha256": "87b519a994b3802d665ba9ee5e56d52392b75fbebed43e4cb148081d0d279ec5"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:43",
+    "stratum": "molecule_inputs",
+    "sample": 43,
+    "input_cif_sha256": "4ced87c8fccf38d7b35a47aedb0452ab194e7877210a80e19116234d7c3dbd6e",
+    "input_atoms": 356,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s43_r0/run.json",
+        "sha256": "7bab7f3c8806fbfa40edfcec3bd0de273dafd74aa73fbef6d439ccc2268ce7a2"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:44",
+    "stratum": "molecule_inputs",
+    "sample": 44,
+    "input_cif_sha256": "3bba3068876d8789093e395dba2d5cdafc6db05e7cfc4267f45f892b92637ff9",
+    "input_atoms": 1096,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s44_r0/run.json",
+        "sha256": "a952e5e09ad1369df6d82832f2cf541c4e8ea218efda8d7967b4a6b98dc628eb"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:45",
+    "stratum": "molecule_inputs",
+    "sample": 45,
+    "input_cif_sha256": "42aacd5ef799acff3964b55a26f92a93506b3c58292414efccbfaa3353dde160",
+    "input_atoms": 441,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s45_r0/run.json",
+        "sha256": "3228bc925b692faf7d17095bafbab46ffbd3f2d0814a21d526db35c7eac6d76f"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:46",
+    "stratum": "molecule_inputs",
+    "sample": 46,
+    "input_cif_sha256": "d5026b3b59faa7b647d9d587e3e3aad0ebd2dab8b0614c610ea1c3218dffc2db",
+    "input_atoms": 675,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s46_r0/run.json",
+        "sha256": "60bd8147636de0a823c054ca7b4df169d24c456f36037960ef2d07d73be60b93"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:47",
+    "stratum": "molecule_inputs",
+    "sample": 47,
+    "input_cif_sha256": "57bd2f593e6f99997e8aaf318a9e50d879d5978599eeea35a9a5b90eb4c35c12",
+    "input_atoms": 671,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s47_r0/run.json",
+        "sha256": "0cf8ac74964261282cd5b3623a09bf47e32f32c72b164dfab45ea3fba27fae4f"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:48",
+    "stratum": "molecule_inputs",
+    "sample": 48,
+    "input_cif_sha256": "3a7997bc46ba1d90a3524c88770ace04bdaae240011a503c8962509ea2c19cb0",
+    "input_atoms": 1529,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s48_r0/run.json",
+        "sha256": "810b3e0edd6a71c0ad694214afacde2c2bafc76367ec9a1e471544f71c6faba7"
+      }
+    ]
+  },
+  {
+    "cluster": "molecule_inputs:49",
+    "stratum": "molecule_inputs",
+    "sample": 49,
+    "input_cif_sha256": "11396e15839d8a8b9f95630294fd259c39fecc287654937c2293f57c28ddc1ef",
+    "input_atoms": 269,
+    "source_paths": [
+      {
+        "path": "src/agent/runs/20261112_155630_qwen3-vl-plus_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3/s49_r0/run.json",
+        "sha256": "5caf5c261e417ef97c1165a256e52f0dbcf37700bd063f97ff86c7cf4cd14257"
+      }
+    ]
+  }
+]

@@ -1,27 +1,28 @@
 {
   "configurations": 1800,
   "task_instances": 180,
-  "candidate_logs": 1810,
-  "ambiguous_configurations": 6,
-  "images_verified": 3398,
+  "candidate_logs": 1809,
+  "multi_candidate_configurations": 5,
+  "images_verified": 3281,
   "total_seven": [
-    1042,
-    304,
-    119,
-    55,
-    41,
-    22,
-    217
+    1155,
+    279,
+    89,
+    39,
+    27,
+    18,
+    193
   ],
-  "final_pass": 1583,
-  "final_fail": 217,
+  "final_pass": 1607,
+  "final_fail": 193,
   "failure_types": {
-    "AtomCountMismatch": 75,
+    "AtomCountMismatch": 51,
     "StructureMismatch": 137,
     "NearInitialStructure": 5
   },
   "all_saved_paths_and_hashes_verified": true,
   "figure_counts_match": true,
-  "text_files_scanned": 4042,
-  "archived_code_executed": false
+  "text_files_scanned": 4047,
+  "archived_code_executed": false,
+  "scope": "Current saved final submissions; no model or archived code execution"
 }

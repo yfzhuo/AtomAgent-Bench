@@ -1,6 +1,6 @@
 """
 Figure 4: task-level differences, split by visual condition.
-(a) P(k) per display group, view ON (5 models pooled; 55/95/150 instances)
+(a) P(k) per display group, view ON (5 models pooled; 50/100/150 instances)
 (b) P(k) per display group, view OFF
 (c) final failures by type, view ON
 (d) final failures by type, view OFF
@@ -52,11 +52,11 @@ for j, view in enumerate(["ON", "OFF"]):
         excluding = '(excluding)' in name
         ax.plot(ks, pk, "--s" if excluding else "-o", color=c, lw=1.8, ms=4.0,
                 mfc='white' if excluding else c)
-    ax.set_title(f"({'ab'[j]}) Cumulative retained rate, view {view}",
+    ax.set_title(f"({'ab'[j]}) Cumulative pass rate, view {view}",
                  fontsize=11, fontweight="bold", pad=6)
     ax.set_xticks(ks); ax.set_ylim(0, 103); ax.set_xlim(-0.15, 5.15)
     ax.set_xlabel("Repair round $k$ (0 = first attempt)", fontsize=9.5)
-    if j == 0: ax.set_ylabel("Cumulative retained rate $P(k)$ (%)", fontsize=9.5)
+    if j == 0: ax.set_ylabel("Cumulative pass rate $P(k)$ (%)", fontsize=9.5)
     ax.grid(color="#dddddd", lw=.5); ax.set_axisbelow(True)
     ax.tick_params(labelsize=8.5)
     for sp in ["top", "right"]: ax.spines[sp].set_visible(False)

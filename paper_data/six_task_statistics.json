@@ -1,721 +1,42 @@
 {
   "models": [
+    "deepseek-v4-flash-0731",
     "qwen3-vl-plus",
     "qwen3.5-plus",
     "qwen3.7-plus",
-    "qwen3.8-max",
-    "deepseek-v4-flash-0731"
+    "qwen3.8-max"
   ],
   "actions": [
-    "delete_below_atom_action",
     "delete_around_atom_action",
     "insert_between_atoms_action",
     "move_towards_atom_action",
     "rotate_around_atom_action",
-    "RemoveMoleculeAction"
+    "RemoveMoleculeAction",
+    "delete_below_atom_action"
   ],
   "total": {
     "n": 1800,
-    "old_success": 1588,
-    "retained_success": 1583,
-    "old_fail": 212,
-    "revoked": 5,
-    "unresolved": 0,
-    "old_seven": [
-      1045,
-      304,
-      119,
-      55,
-      42,
-      23,
-      212
-    ],
-    "posthoc_final_seven": [
-      1042,
-      304,
-      119,
-      55,
-      41,
-      22,
-      217
-    ]
-  },
-  "remove_total": {
-    "n": 300,
-    "old_success": 263,
-    "retained_success": 263,
-    "old_fail": 37,
-    "revoked": 0,
-    "unresolved": 0,
-    "old_seven": [
-      162,
-      62,
-      15,
-      11,
-      9,
-      4,
-      37
-    ],
-    "posthoc_final_seven": [
-      162,
-      62,
-      15,
-      11,
-      9,
-      4,
-      37
+    "initial_success": 1155,
+    "repair_success": 452,
+    "final_pass": 1607,
+    "final_fail": 193,
+    "seven": [
+      1155,
+      279,
+      89,
+      39,
+      27,
+      18,
+      193
     ]
   },
   "groups": [
     {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "ALL",
-      "n": 1800,
-      "old_success": 1588,
-      "retained_success": 1583,
-      "old_fail": 212,
-      "revoked": 5,
-      "unresolved": 0,
-      "old_seven": [
-        1045,
-        304,
-        119,
-        55,
-        42,
-        23,
-        212
-      ],
-      "posthoc_final_seven": [
-        1042,
-        304,
-        119,
-        55,
-        41,
-        22,
-        217
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "RemoveMoleculeAction",
-      "n": 300,
-      "old_success": 263,
-      "retained_success": 263,
-      "old_fail": 37,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        162,
-        62,
-        15,
-        11,
-        9,
-        4,
-        37
-      ],
-      "posthoc_final_seven": [
-        162,
-        62,
-        15,
-        11,
-        9,
-        4,
-        37
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "delete_around_atom_action",
-      "n": 300,
-      "old_success": 294,
-      "retained_success": 294,
-      "old_fail": 6,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        195,
-        63,
-        27,
-        5,
-        0,
-        4,
-        6
-      ],
-      "posthoc_final_seven": [
-        195,
-        63,
-        27,
-        5,
-        0,
-        4,
-        6
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "delete_below_atom_action",
-      "n": 300,
-      "old_success": 275,
-      "retained_success": 275,
-      "old_fail": 25,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        156,
-        52,
-        33,
-        16,
-        14,
-        4,
-        25
-      ],
-      "posthoc_final_seven": [
-        156,
-        52,
-        33,
-        16,
-        14,
-        4,
-        25
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "insert_between_atoms_action",
-      "n": 300,
-      "old_success": 273,
-      "retained_success": 273,
-      "old_fail": 27,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        189,
-        49,
-        19,
-        7,
-        4,
-        5,
-        27
-      ],
-      "posthoc_final_seven": [
-        189,
-        49,
-        19,
-        7,
-        4,
-        5,
-        27
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "move_towards_atom_action",
-      "n": 300,
-      "old_success": 298,
-      "retained_success": 297,
-      "old_fail": 2,
-      "revoked": 1,
-      "unresolved": 0,
-      "old_seven": [
-        248,
-        38,
-        8,
-        2,
-        1,
-        1,
-        2
-      ],
-      "posthoc_final_seven": [
-        248,
-        38,
-        8,
-        2,
-        1,
-        0,
-        3
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ALL",
-      "action": "rotate_around_atom_action",
-      "n": 300,
-      "old_success": 185,
-      "retained_success": 181,
-      "old_fail": 115,
-      "revoked": 4,
-      "unresolved": 0,
-      "old_seven": [
-        95,
-        40,
-        17,
-        14,
-        14,
-        5,
-        115
-      ],
-      "posthoc_final_seven": [
-        92,
-        40,
-        17,
-        14,
-        13,
-        5,
-        119
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "ALL",
-      "n": 900,
-      "old_success": 798,
-      "retained_success": 798,
-      "old_fail": 102,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        523,
-        160,
-        63,
-        23,
-        16,
-        13,
-        102
-      ],
-      "posthoc_final_seven": [
-        523,
-        160,
-        63,
-        23,
-        16,
-        13,
-        102
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "RemoveMoleculeAction",
-      "n": 150,
-      "old_success": 133,
-      "retained_success": 133,
-      "old_fail": 17,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        88,
-        28,
-        4,
-        6,
-        5,
-        2,
-        17
-      ],
-      "posthoc_final_seven": [
-        88,
-        28,
-        4,
-        6,
-        5,
-        2,
-        17
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "delete_around_atom_action",
-      "n": 150,
-      "old_success": 149,
-      "retained_success": 149,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        93,
-        39,
-        13,
-        2,
-        0,
-        2,
-        1
-      ],
-      "posthoc_final_seven": [
-        93,
-        39,
-        13,
-        2,
-        0,
-        2,
-        1
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "delete_below_atom_action",
-      "n": 150,
-      "old_success": 139,
-      "retained_success": 139,
-      "old_fail": 11,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        77,
-        30,
-        18,
-        5,
-        6,
-        3,
-        11
-      ],
-      "posthoc_final_seven": [
-        77,
-        30,
-        18,
-        5,
-        6,
-        3,
-        11
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "insert_between_atoms_action",
-      "n": 150,
-      "old_success": 138,
-      "retained_success": 138,
-      "old_fail": 12,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        98,
-        19,
-        13,
-        5,
-        0,
-        3,
-        12
-      ],
-      "posthoc_final_seven": [
-        98,
-        19,
-        13,
-        5,
-        0,
-        3,
-        12
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "move_towards_atom_action",
-      "n": 150,
-      "old_success": 150,
-      "retained_success": 150,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        125,
-        20,
-        4,
-        1,
-        0,
-        0,
-        0
-      ],
-      "posthoc_final_seven": [
-        125,
-        20,
-        4,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "OFF",
-      "action": "rotate_around_atom_action",
-      "n": 150,
-      "old_success": 89,
-      "retained_success": 89,
-      "old_fail": 61,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        42,
-        24,
-        11,
-        4,
-        5,
-        3,
-        61
-      ],
-      "posthoc_final_seven": [
-        42,
-        24,
-        11,
-        4,
-        5,
-        3,
-        61
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "ALL",
-      "n": 900,
-      "old_success": 790,
-      "retained_success": 785,
-      "old_fail": 110,
-      "revoked": 5,
-      "unresolved": 0,
-      "old_seven": [
-        522,
-        144,
-        56,
-        32,
-        26,
-        10,
-        110
-      ],
-      "posthoc_final_seven": [
-        519,
-        144,
-        56,
-        32,
-        25,
-        9,
-        115
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "RemoveMoleculeAction",
-      "n": 150,
-      "old_success": 130,
-      "retained_success": 130,
-      "old_fail": 20,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        74,
-        34,
-        11,
-        5,
-        4,
-        2,
-        20
-      ],
-      "posthoc_final_seven": [
-        74,
-        34,
-        11,
-        5,
-        4,
-        2,
-        20
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "delete_around_atom_action",
-      "n": 150,
-      "old_success": 145,
-      "retained_success": 145,
-      "old_fail": 5,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        102,
-        24,
-        14,
-        3,
-        0,
-        2,
-        5
-      ],
-      "posthoc_final_seven": [
-        102,
-        24,
-        14,
-        3,
-        0,
-        2,
-        5
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "delete_below_atom_action",
-      "n": 150,
-      "old_success": 136,
-      "retained_success": 136,
-      "old_fail": 14,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        79,
-        22,
-        15,
-        11,
-        8,
-        1,
-        14
-      ],
-      "posthoc_final_seven": [
-        79,
-        22,
-        15,
-        11,
-        8,
-        1,
-        14
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "insert_between_atoms_action",
-      "n": 150,
-      "old_success": 135,
-      "retained_success": 135,
-      "old_fail": 15,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        91,
-        30,
-        6,
-        2,
-        4,
-        2,
-        15
-      ],
-      "posthoc_final_seven": [
-        91,
-        30,
-        6,
-        2,
-        4,
-        2,
-        15
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "move_towards_atom_action",
-      "n": 150,
-      "old_success": 148,
-      "retained_success": 147,
-      "old_fail": 2,
-      "revoked": 1,
-      "unresolved": 0,
-      "old_seven": [
-        123,
-        18,
-        4,
-        1,
-        1,
-        1,
-        2
-      ],
-      "posthoc_final_seven": [
-        123,
-        18,
-        4,
-        1,
-        1,
-        0,
-        3
-      ]
-    },
-    {
-      "model": "ALL",
-      "view": "ON",
-      "action": "rotate_around_atom_action",
-      "n": 150,
-      "old_success": 96,
-      "retained_success": 92,
-      "old_fail": 54,
-      "revoked": 4,
-      "unresolved": 0,
-      "old_seven": [
-        53,
-        16,
-        6,
-        10,
-        9,
-        2,
-        54
-      ],
-      "posthoc_final_seven": [
-        50,
-        16,
-        6,
-        10,
-        8,
-        2,
-        58
-      ]
-    },
-    {
-      "model": "deepseek-v4-flash-0731",
-      "view": "OFF",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 167,
-      "retained_success": 167,
-      "old_fail": 13,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        105,
-        41,
-        14,
-        5,
-        0,
-        2,
-        13
-      ],
-      "posthoc_final_seven": [
-        105,
-        41,
-        14,
-        5,
-        0,
-        2,
-        13
-      ]
-    },
-    {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "OFF",
       "action": "RemoveMoleculeAction",
       "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         20,
         7,
         1,
@@ -724,27 +45,15 @@
         0,
         1
       ],
-      "posthoc_final_seven": [
-        20,
-        7,
-        1,
-        1,
-        0,
-        0,
-        1
-      ]
+      "final_pass": 29,
+      "final_fail": 1
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "OFF",
       "action": "delete_around_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         15,
         11,
         3,
@@ -753,56 +62,32 @@
         1,
         0
       ],
-      "posthoc_final_seven": [
-        15,
-        11,
-        3,
-        0,
-        0,
-        1,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "OFF",
       "action": "delete_below_atom_action",
       "n": 30,
-      "old_success": 28,
-      "retained_success": 28,
-      "old_fail": 2,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        18,
-        6,
-        3,
-        0,
-        0,
+      "seven": [
+        24,
+        5,
         1,
-        2
+        0,
+        0,
+        0,
+        0
       ],
-      "posthoc_final_seven": [
-        18,
-        6,
-        3,
-        0,
-        0,
-        1,
-        2
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "OFF",
       "action": "insert_between_atoms_action",
       "n": 30,
-      "old_success": 28,
-      "retained_success": 28,
-      "old_fail": 2,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         16,
         6,
         5,
@@ -811,27 +96,15 @@
         0,
         2
       ],
-      "posthoc_final_seven": [
-        16,
-        6,
-        5,
-        1,
-        0,
-        0,
-        2
-      ]
+      "final_pass": 28,
+      "final_fail": 2
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "OFF",
       "action": "move_towards_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         24,
         4,
         2,
@@ -840,27 +113,15 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        24,
-        4,
-        2,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "OFF",
       "action": "rotate_around_atom_action",
       "n": 30,
-      "old_success": 22,
-      "retained_success": 22,
-      "old_fail": 8,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         12,
         7,
         0,
@@ -869,56 +130,15 @@
         0,
         8
       ],
-      "posthoc_final_seven": [
-        12,
-        7,
-        0,
-        3,
-        0,
-        0,
-        8
-      ]
+      "final_pass": 22,
+      "final_fail": 8
     },
     {
-      "model": "deepseek-v4-flash-0731",
-      "view": "ON",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 171,
-      "retained_success": 171,
-      "old_fail": 9,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        110,
-        32,
-        16,
-        5,
-        6,
-        2,
-        9
-      ],
-      "posthoc_final_seven": [
-        110,
-        32,
-        16,
-        5,
-        6,
-        2,
-        9
-      ]
-    },
-    {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "ON",
       "action": "RemoveMoleculeAction",
       "n": 30,
-      "old_success": 26,
-      "retained_success": 26,
-      "old_fail": 4,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         13,
         7,
         4,
@@ -927,27 +147,15 @@
         1,
         4
       ],
-      "posthoc_final_seven": [
-        13,
-        7,
-        4,
-        1,
-        0,
-        1,
-        4
-      ]
+      "final_pass": 26,
+      "final_fail": 4
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "ON",
       "action": "delete_around_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         23,
         6,
         1,
@@ -956,1274 +164,644 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        23,
-        6,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "deepseek-v4-flash-0731",
+      "model": "DeepSeek-V4-Flash",
       "view": "ON",
       "action": "delete_below_atom_action",
       "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        17,
-        5,
-        4,
-        1,
-        2,
-        0,
-        1
-      ],
-      "posthoc_final_seven": [
-        17,
-        5,
-        4,
-        1,
-        2,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "deepseek-v4-flash-0731",
-      "view": "ON",
-      "action": "insert_between_atoms_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        19,
-        6,
-        3,
-        0,
-        1,
-        1,
-        0
-      ],
-      "posthoc_final_seven": [
-        19,
-        6,
-        3,
-        0,
-        1,
-        1,
-        0
-      ]
-    },
-    {
-      "model": "deepseek-v4-flash-0731",
-      "view": "ON",
-      "action": "move_towards_atom_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        26,
-        3,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "posthoc_final_seven": [
-        26,
-        3,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "deepseek-v4-flash-0731",
-      "view": "ON",
-      "action": "rotate_around_atom_action",
-      "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        12,
-        5,
-        4,
-        3,
-        3,
-        0,
-        3
-      ],
-      "posthoc_final_seven": [
-        12,
-        5,
-        4,
-        3,
-        3,
-        0,
-        3
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 143,
-      "retained_success": 143,
-      "old_fail": 37,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        90,
+      "seven": [
         29,
-        15,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "view": "ON",
+      "action": "insert_between_atoms_action",
+      "n": 30,
+      "seven": [
+        19,
+        6,
+        3,
+        0,
+        1,
+        1,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "view": "ON",
+      "action": "move_towards_atom_action",
+      "n": 30,
+      "seven": [
+        26,
+        3,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "view": "ON",
+      "action": "rotate_around_atom_action",
+      "n": 30,
+      "seven": [
+        12,
+        5,
+        4,
+        3,
+        3,
+        0,
+        3
+      ],
+      "final_pass": 27,
+      "final_fail": 3
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "OFF",
+      "action": "RemoveMoleculeAction",
+      "n": 30,
+      "seven": [
+        13,
+        2,
+        0,
+        1,
+        1,
+        0,
+        13
+      ],
+      "final_pass": 17,
+      "final_fail": 13
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "OFF",
+      "action": "delete_around_atom_action",
+      "n": 30,
+      "seven": [
+        11,
+        10,
+        6,
+        1,
+        0,
+        1,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "OFF",
+      "action": "delete_below_atom_action",
+      "n": 30,
+      "seven": [
+        28,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "OFF",
+      "action": "insert_between_atoms_action",
+      "n": 30,
+      "seven": [
+        19,
+        6,
+        3,
+        0,
+        0,
+        0,
+        2
+      ],
+      "final_pass": 28,
+      "final_fail": 2
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "OFF",
+      "action": "move_towards_atom_action",
+      "n": 30,
+      "seven": [
+        25,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "OFF",
+      "action": "rotate_around_atom_action",
+      "n": 30,
+      "seven": [
+        6,
+        2,
+        2,
+        0,
+        0,
+        0,
+        20
+      ],
+      "final_pass": 10,
+      "final_fail": 20
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "ON",
+      "action": "RemoveMoleculeAction",
+      "n": 30,
+      "seven": [
+        13,
+        2,
+        0,
+        0,
+        2,
+        0,
+        13
+      ],
+      "final_pass": 17,
+      "final_fail": 13
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "ON",
+      "action": "delete_around_atom_action",
+      "n": 30,
+      "seven": [
+        18,
+        4,
+        4,
+        0,
+        0,
+        1,
+        3
+      ],
+      "final_pass": 27,
+      "final_fail": 3
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "ON",
+      "action": "delete_below_atom_action",
+      "n": 30,
+      "seven": [
+        27,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "ON",
+      "action": "insert_between_atoms_action",
+      "n": 30,
+      "seven": [
+        12,
+        9,
+        1,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_pass": 22,
+      "final_fail": 8
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "ON",
+      "action": "move_towards_atom_action",
+      "n": 30,
+      "seven": [
+        25,
+        3,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3-VL-Plus",
+      "view": "ON",
+      "action": "rotate_around_atom_action",
+      "n": 30,
+      "seven": [
+        6,
+        2,
+        0,
+        2,
+        0,
+        0,
+        20
+      ],
+      "final_pass": 10,
+      "final_fail": 20
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "OFF",
+      "action": "RemoveMoleculeAction",
+      "n": 30,
+      "seven": [
+        17,
+        5,
+        3,
+        2,
+        2,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "OFF",
+      "action": "delete_around_atom_action",
+      "n": 30,
+      "seven": [
+        22,
+        4,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "OFF",
+      "action": "delete_below_atom_action",
+      "n": 30,
+      "seven": [
+        25,
+        4,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "OFF",
+      "action": "insert_between_atoms_action",
+      "n": 30,
+      "seven": [
+        24,
+        0,
+        0,
+        2,
+        0,
+        0,
+        4
+      ],
+      "final_pass": 26,
+      "final_fail": 4
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "OFF",
+      "action": "move_towards_atom_action",
+      "n": 30,
+      "seven": [
+        27,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "OFF",
+      "action": "rotate_around_atom_action",
+      "n": 30,
+      "seven": [
+        11,
+        3,
+        2,
+        0,
+        2,
+        1,
+        11
+      ],
+      "final_pass": 19,
+      "final_fail": 11
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "ON",
+      "action": "RemoveMoleculeAction",
+      "n": 30,
+      "seven": [
+        16,
+        4,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "final_pass": 27,
+      "final_fail": 3
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "ON",
+      "action": "delete_around_atom_action",
+      "n": 30,
+      "seven": [
+        16,
+        6,
+        4,
+        3,
+        0,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "ON",
+      "action": "delete_below_atom_action",
+      "n": 30,
+      "seven": [
+        24,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "ON",
+      "action": "insert_between_atoms_action",
+      "n": 30,
+      "seven": [
+        20,
+        4,
+        1,
+        0,
+        1,
+        0,
+        4
+      ],
+      "final_pass": 26,
+      "final_fail": 4
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "ON",
+      "action": "move_towards_atom_action",
+      "n": 30,
+      "seven": [
+        23,
+        2,
+        3,
+        1,
+        0,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3.5-Plus",
+      "view": "ON",
+      "action": "rotate_around_atom_action",
+      "n": 30,
+      "seven": [
+        12,
+        0,
+        0,
+        1,
+        3,
+        2,
+        12
+      ],
+      "final_pass": 18,
+      "final_fail": 12
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "OFF",
+      "action": "RemoveMoleculeAction",
+      "n": 30,
+      "seven": [
+        18,
+        9,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "OFF",
+      "action": "delete_around_atom_action",
+      "n": 30,
+      "seven": [
+        22,
+        7,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "OFF",
+      "action": "delete_below_atom_action",
+      "n": 30,
+      "seven": [
+        27,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "OFF",
+      "action": "insert_between_atoms_action",
+      "n": 30,
+      "seven": [
+        23,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "OFF",
+      "action": "move_towards_atom_action",
+      "n": 30,
+      "seven": [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "OFF",
+      "action": "rotate_around_atom_action",
+      "n": 30,
+      "seven": [
+        9,
         3,
         4,
-        2,
-        37
+        1,
+        1,
+        1,
+        11
       ],
-      "posthoc_final_seven": [
-        90,
+      "final_pass": 19,
+      "final_fail": 11
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "ON",
+      "action": "RemoveMoleculeAction",
+      "n": 30,
+      "seven": [
+        14,
+        12,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "final_pass": 30,
+      "final_fail": 0
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "ON",
+      "action": "delete_around_atom_action",
+      "n": 30,
+      "seven": [
+        19,
+        5,
+        4,
+        0,
+        0,
+        1,
+        1
+      ],
+      "final_pass": 29,
+      "final_fail": 1
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "view": "ON",
+      "action": "delete_below_atom_action",
+      "n": 30,
+      "seven": [
         29,
-        15,
-        3,
-        4,
-        2,
-        37
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "RemoveMoleculeAction",
-      "n": 30,
-      "old_success": 17,
-      "retained_success": 17,
-      "old_fail": 13,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        13,
-        2,
-        0,
         1,
-        1,
-        0,
-        13
-      ],
-      "posthoc_final_seven": [
-        13,
-        2,
-        0,
-        1,
-        1,
-        0,
-        13
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "delete_around_atom_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        11,
-        10,
-        6,
-        1,
-        0,
-        1,
-        1
-      ],
-      "posthoc_final_seven": [
-        11,
-        10,
-        6,
-        1,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "delete_below_atom_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        16,
-        4,
-        4,
-        1,
-        3,
-        1,
-        1
-      ],
-      "posthoc_final_seven": [
-        16,
-        4,
-        4,
-        1,
-        3,
-        1,
-        1
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "insert_between_atoms_action",
-      "n": 30,
-      "old_success": 28,
-      "retained_success": 28,
-      "old_fail": 2,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        19,
-        6,
-        3,
-        0,
-        0,
-        0,
-        2
-      ],
-      "posthoc_final_seven": [
-        19,
-        6,
-        3,
-        0,
-        0,
-        0,
-        2
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "move_towards_atom_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        25,
-        5,
         0,
         0,
         0,
         0,
         0
       ],
-      "posthoc_final_seven": [
-        25,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3-vl-plus",
-      "view": "OFF",
-      "action": "rotate_around_atom_action",
-      "n": 30,
-      "old_success": 10,
-      "retained_success": 10,
-      "old_fail": 20,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        6,
-        2,
-        2,
-        0,
-        0,
-        0,
-        20
-      ],
-      "posthoc_final_seven": [
-        6,
-        2,
-        2,
-        0,
-        0,
-        0,
-        20
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "ON",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 134,
-      "retained_success": 132,
-      "old_fail": 46,
-      "revoked": 2,
-      "unresolved": 0,
-      "old_seven": [
-        91,
-        26,
-        6,
-        4,
-        5,
-        2,
-        46
-      ],
-      "posthoc_final_seven": [
-        89,
-        26,
-        6,
-        4,
-        5,
-        2,
-        48
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "ON",
-      "action": "RemoveMoleculeAction",
-      "n": 30,
-      "old_success": 17,
-      "retained_success": 17,
-      "old_fail": 13,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        13,
-        2,
-        0,
-        0,
-        2,
-        0,
-        13
-      ],
-      "posthoc_final_seven": [
-        13,
-        2,
-        0,
-        0,
-        2,
-        0,
-        13
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "ON",
-      "action": "delete_around_atom_action",
-      "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        18,
-        4,
-        4,
-        0,
-        0,
-        1,
-        3
-      ],
-      "posthoc_final_seven": [
-        18,
-        4,
-        4,
-        0,
-        0,
-        1,
-        3
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "ON",
-      "action": "delete_below_atom_action",
-      "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        15,
-        6,
-        1,
-        2,
-        2,
-        1,
-        3
-      ],
-      "posthoc_final_seven": [
-        15,
-        6,
-        1,
-        2,
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
+      "model": "Qwen3.7-Plus",
       "view": "ON",
       "action": "insert_between_atoms_action",
       "n": 30,
-      "old_success": 22,
-      "retained_success": 22,
-      "old_fail": 8,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        12,
-        9,
-        1,
-        0,
-        0,
-        0,
-        8
-      ],
-      "posthoc_final_seven": [
-        12,
-        9,
-        1,
-        0,
-        0,
-        0,
-        8
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "ON",
-      "action": "move_towards_atom_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        25,
-        3,
-        0,
-        0,
-        1,
-        0,
-        1
-      ],
-      "posthoc_final_seven": [
-        25,
-        3,
-        0,
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "qwen3-vl-plus",
-      "view": "ON",
-      "action": "rotate_around_atom_action",
-      "n": 30,
-      "old_success": 12,
-      "retained_success": 10,
-      "old_fail": 18,
-      "revoked": 2,
-      "unresolved": 0,
-      "old_seven": [
-        8,
-        2,
-        0,
-        2,
-        0,
-        0,
-        18
-      ],
-      "posthoc_final_seven": [
-        6,
-        2,
-        0,
-        2,
-        0,
-        0,
-        20
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 161,
-      "retained_success": 161,
-      "old_fail": 19,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        118,
-        18,
-        12,
-        6,
-        5,
-        2,
-        19
-      ],
-      "posthoc_final_seven": [
-        118,
-        18,
-        12,
-        6,
-        5,
-        2,
-        19
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "RemoveMoleculeAction",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        17,
-        5,
-        3,
-        2,
-        2,
-        0,
-        1
-      ],
-      "posthoc_final_seven": [
-        17,
-        5,
-        3,
-        2,
-        2,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "delete_around_atom_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        22,
-        4,
-        3,
-        1,
-        0,
-        0,
-        0
-      ],
-      "posthoc_final_seven": [
-        22,
-        4,
-        3,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "delete_below_atom_action",
-      "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        17,
-        4,
-        3,
-        1,
-        1,
-        1,
-        3
-      ],
-      "posthoc_final_seven": [
-        17,
-        4,
-        3,
-        1,
-        1,
-        1,
-        3
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "insert_between_atoms_action",
-      "n": 30,
-      "old_success": 26,
-      "retained_success": 26,
-      "old_fail": 4,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        24,
-        0,
-        0,
-        2,
-        0,
-        0,
-        4
-      ],
-      "posthoc_final_seven": [
-        24,
-        0,
-        0,
-        2,
-        0,
-        0,
-        4
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "move_towards_atom_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        27,
-        2,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "posthoc_final_seven": [
-        27,
-        2,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "OFF",
-      "action": "rotate_around_atom_action",
-      "n": 30,
-      "old_success": 19,
-      "retained_success": 19,
-      "old_fail": 11,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        11,
-        3,
-        2,
-        0,
-        2,
-        1,
-        11
-      ],
-      "posthoc_final_seven": [
-        11,
-        3,
-        2,
-        0,
-        2,
-        1,
-        11
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 155,
-      "retained_success": 153,
-      "old_fail": 25,
-      "revoked": 2,
-      "unresolved": 0,
-      "old_seven": [
-        101,
-        20,
-        11,
-        10,
-        9,
-        4,
-        25
-      ],
-      "posthoc_final_seven": [
-        101,
-        20,
-        11,
-        10,
-        8,
-        3,
-        27
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "RemoveMoleculeAction",
-      "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        16,
-        4,
-        3,
-        1,
-        2,
-        1,
-        3
-      ],
-      "posthoc_final_seven": [
-        16,
-        4,
-        3,
-        1,
-        2,
-        1,
-        3
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "delete_around_atom_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        16,
-        6,
-        4,
-        3,
-        0,
-        0,
-        1
-      ],
-      "posthoc_final_seven": [
-        16,
-        6,
-        4,
-        3,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "delete_below_atom_action",
-      "n": 30,
-      "old_success": 24,
-      "retained_success": 24,
-      "old_fail": 6,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        14,
-        4,
-        0,
-        4,
-        2,
-        0,
-        6
-      ],
-      "posthoc_final_seven": [
-        14,
-        4,
-        0,
-        4,
-        2,
-        0,
-        6
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "insert_between_atoms_action",
-      "n": 30,
-      "old_success": 26,
-      "retained_success": 26,
-      "old_fail": 4,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        20,
-        4,
-        1,
-        0,
-        1,
-        0,
-        4
-      ],
-      "posthoc_final_seven": [
-        20,
-        4,
-        1,
-        0,
-        1,
-        0,
-        4
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "move_towards_atom_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 29,
-      "old_fail": 0,
-      "revoked": 1,
-      "unresolved": 0,
-      "old_seven": [
-        23,
-        2,
-        3,
-        1,
-        0,
-        1,
-        0
-      ],
-      "posthoc_final_seven": [
-        23,
-        2,
-        3,
-        1,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "qwen3.5-plus",
-      "view": "ON",
-      "action": "rotate_around_atom_action",
-      "n": 30,
-      "old_success": 19,
-      "retained_success": 18,
-      "old_fail": 11,
-      "revoked": 1,
-      "unresolved": 0,
-      "old_seven": [
-        12,
-        0,
-        0,
-        1,
-        4,
-        2,
-        11
-      ],
-      "posthoc_final_seven": [
-        12,
-        0,
-        0,
-        1,
-        3,
-        2,
-        12
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 164,
-      "retained_success": 164,
-      "old_fail": 16,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        114,
-        30,
-        10,
-        5,
-        2,
-        3,
-        16
-      ],
-      "posthoc_final_seven": [
-        114,
-        30,
-        10,
-        5,
-        2,
-        3,
-        16
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "RemoveMoleculeAction",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        18,
-        9,
-        0,
-        1,
-        1,
-        0,
-        1
-      ],
-      "posthoc_final_seven": [
-        18,
-        9,
-        0,
-        1,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "delete_around_atom_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        22,
-        7,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "posthoc_final_seven": [
-        22,
-        7,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "delete_below_atom_action",
-      "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        12,
-        9,
-        4,
-        2,
-        0,
-        0,
-        3
-      ],
-      "posthoc_final_seven": [
-        12,
-        9,
-        4,
-        2,
-        0,
-        0,
-        3
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "insert_between_atoms_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        23,
-        2,
-        1,
-        1,
-        0,
-        2,
-        1
-      ],
-      "posthoc_final_seven": [
-        23,
-        2,
-        1,
-        1,
-        0,
-        2,
-        1
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "move_towards_atom_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        30,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "posthoc_final_seven": [
-        30,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "OFF",
-      "action": "rotate_around_atom_action",
-      "n": 30,
-      "old_success": 19,
-      "retained_success": 19,
-      "old_fail": 11,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        9,
-        3,
-        4,
-        1,
-        1,
-        1,
-        11
-      ],
-      "posthoc_final_seven": [
-        9,
-        3,
-        4,
-        1,
-        1,
-        1,
-        11
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "ON",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 166,
-      "retained_success": 165,
-      "old_fail": 14,
-      "revoked": 1,
-      "unresolved": 0,
-      "old_seven": [
-        105,
-        39,
-        13,
-        4,
-        4,
-        1,
-        14
-      ],
-      "posthoc_final_seven": [
-        104,
-        39,
-        13,
-        4,
-        4,
-        1,
-        15
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "ON",
-      "action": "RemoveMoleculeAction",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        14,
-        12,
-        2,
-        2,
-        0,
-        0,
-        0
-      ],
-      "posthoc_final_seven": [
-        14,
-        12,
-        2,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "ON",
-      "action": "delete_around_atom_action",
-      "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        19,
-        5,
-        4,
-        0,
-        0,
-        1,
-        1
-      ],
-      "posthoc_final_seven": [
-        19,
-        5,
-        4,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "ON",
-      "action": "delete_below_atom_action",
-      "n": 30,
-      "old_success": 28,
-      "retained_success": 28,
-      "old_fail": 2,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        14,
-        6,
-        6,
-        0,
-        2,
-        0,
-        2
-      ],
-      "posthoc_final_seven": [
-        14,
-        6,
-        6,
-        0,
-        2,
-        0,
-        2
-      ]
-    },
-    {
-      "model": "qwen3.7-plus",
-      "view": "ON",
-      "action": "insert_between_atoms_action",
-      "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         24,
         5,
         0,
@@ -2232,27 +810,15 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        24,
-        5,
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.7-plus",
+      "model": "Qwen3.7-Plus",
       "view": "ON",
       "action": "move_towards_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         24,
         5,
         1,
@@ -2261,36 +827,15 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        24,
-        5,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.7-plus",
+      "model": "Qwen3.7-Plus",
       "view": "ON",
       "action": "rotate_around_atom_action",
       "n": 30,
-      "old_success": 19,
-      "retained_success": 18,
-      "old_fail": 11,
-      "revoked": 1,
-      "unresolved": 0,
-      "old_seven": [
-        10,
-        6,
-        0,
-        2,
-        1,
-        0,
-        11
-      ],
-      "posthoc_final_seven": [
+      "seven": [
         9,
         6,
         0,
@@ -2298,48 +843,16 @@
         1,
         0,
         12
-      ]
-    },
-    {
-      "model": "qwen3.8-max",
-      "view": "OFF",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 163,
-      "retained_success": 163,
-      "old_fail": 17,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        96,
-        42,
-        12,
-        4,
-        5,
-        4,
-        17
       ],
-      "posthoc_final_seven": [
-        96,
-        42,
-        12,
-        4,
-        5,
-        4,
-        17
-      ]
+      "final_pass": 18,
+      "final_fail": 12
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "OFF",
       "action": "RemoveMoleculeAction",
       "n": 30,
-      "old_success": 29,
-      "retained_success": 29,
-      "old_fail": 1,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         20,
         5,
         0,
@@ -2348,27 +861,15 @@
         2,
         1
       ],
-      "posthoc_final_seven": [
-        20,
-        5,
-        0,
-        1,
-        1,
-        2,
-        1
-      ]
+      "final_pass": 29,
+      "final_fail": 1
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "OFF",
       "action": "delete_around_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         23,
         7,
         0,
@@ -2377,56 +878,32 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        23,
-        7,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "OFF",
       "action": "delete_below_atom_action",
       "n": 30,
-      "old_success": 28,
-      "retained_success": 28,
-      "old_fail": 2,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        14,
-        7,
+      "seven": [
+        26,
         4,
-        1,
-        2,
         0,
-        2
+        0,
+        0,
+        0,
+        0
       ],
-      "posthoc_final_seven": [
-        14,
-        7,
-        4,
-        1,
-        2,
-        0,
-        2
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "OFF",
       "action": "insert_between_atoms_action",
       "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         16,
         5,
         4,
@@ -2435,27 +912,15 @@
         1,
         3
       ],
-      "posthoc_final_seven": [
-        16,
-        5,
-        4,
-        1,
-        0,
-        1,
-        3
-      ]
+      "final_pass": 27,
+      "final_fail": 3
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "OFF",
       "action": "move_towards_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         19,
         9,
         1,
@@ -2464,27 +929,15 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        19,
-        9,
-        1,
-        1,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "OFF",
       "action": "rotate_around_atom_action",
       "n": 30,
-      "old_success": 19,
-      "retained_success": 19,
-      "old_fail": 11,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         4,
         9,
         3,
@@ -2493,56 +946,15 @@
         1,
         11
       ],
-      "posthoc_final_seven": [
-        4,
-        9,
-        3,
-        0,
-        2,
-        1,
-        11
-      ]
+      "final_pass": 19,
+      "final_fail": 11
     },
     {
-      "model": "qwen3.8-max",
-      "view": "ON",
-      "action": "ALL",
-      "n": 180,
-      "old_success": 164,
-      "retained_success": 164,
-      "old_fail": 16,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        115,
-        27,
-        10,
-        9,
-        2,
-        1,
-        16
-      ],
-      "posthoc_final_seven": [
-        115,
-        27,
-        10,
-        9,
-        2,
-        1,
-        16
-      ]
-    },
-    {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "ON",
       "action": "RemoveMoleculeAction",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         18,
         9,
         2,
@@ -2551,27 +963,15 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        18,
-        9,
-        2,
-        1,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "ON",
       "action": "delete_around_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         26,
         3,
         1,
@@ -2580,56 +980,32 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        26,
-        3,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "ON",
       "action": "delete_below_atom_action",
       "n": 30,
-      "old_success": 28,
-      "retained_success": 28,
-      "old_fail": 2,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
-        19,
-        1,
-        4,
-        4,
+      "seven": [
+        30,
         0,
         0,
-        2
+        0,
+        0,
+        0,
+        0
       ],
-      "posthoc_final_seven": [
-        19,
-        1,
-        4,
-        4,
-        0,
-        0,
-        2
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "ON",
       "action": "insert_between_atoms_action",
       "n": 30,
-      "old_success": 27,
-      "retained_success": 27,
-      "old_fail": 3,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         16,
         6,
         1,
@@ -2638,27 +1014,15 @@
         1,
         3
       ],
-      "posthoc_final_seven": [
-        16,
-        6,
-        1,
-        2,
-        1,
-        1,
-        3
-      ]
+      "final_pass": 27,
+      "final_fail": 3
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "ON",
       "action": "move_towards_atom_action",
       "n": 30,
-      "old_success": 30,
-      "retained_success": 30,
-      "old_fail": 0,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         25,
         5,
         0,
@@ -2667,27 +1031,15 @@
         0,
         0
       ],
-      "posthoc_final_seven": [
-        25,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "final_pass": 30,
+      "final_fail": 0
     },
     {
-      "model": "qwen3.8-max",
+      "model": "Qwen3.8-Max",
       "view": "ON",
       "action": "rotate_around_atom_action",
       "n": 30,
-      "old_success": 19,
-      "retained_success": 19,
-      "old_fail": 11,
-      "revoked": 0,
-      "unresolved": 0,
-      "old_seven": [
+      "seven": [
         11,
         3,
         2,
@@ -2696,165 +1048,8 @@
         0,
         11
       ],
-      "posthoc_final_seven": [
-        11,
-        3,
-        2,
-        2,
-        1,
-        0,
-        11
-      ]
+      "final_pass": 19,
+      "final_fail": 11
     }
-  ],
-  "replacement": {
-    "policy": "Complete DeepSeek ON batch replacement explicitly requested by user; not API-only replacement or per-instance best-of",
-    "included_prefix": "20261112_204751",
-    "excluded_prefix": "20261112_155827",
-    "off_prefix": "20261112_155831",
-    "excluded_folder": "<BENCHMARK_ROOT>/src/agent/runs/20261112_155827_deepseek-v4-flash-0731_RemoveMoleculeAction_samples_0-2-4-5-6-8-10-12-15-17-18-21-24-25-26-27-30-32-35-3",
-    "excluded_seven": [
-      7,
-      8,
-      7,
-      1,
-      1,
-      1,
-      5
-    ],
-    "input_target_prompt_equal_all_30": true,
-    "bucket_changes": [
-      {
-        "sample": 0,
-        "excluded_bucket": 0,
-        "included_bucket": 1
-      },
-      {
-        "sample": 2,
-        "excluded_bucket": 0,
-        "included_bucket": 1
-      },
-      {
-        "sample": 4,
-        "excluded_bucket": 1,
-        "included_bucket": 0
-      },
-      {
-        "sample": 5,
-        "excluded_bucket": 2,
-        "included_bucket": 1
-      },
-      {
-        "sample": 6,
-        "excluded_bucket": 3,
-        "included_bucket": 1
-      },
-      {
-        "sample": 8,
-        "excluded_bucket": 1,
-        "included_bucket": 0
-      },
-      {
-        "sample": 10,
-        "excluded_bucket": 1,
-        "included_bucket": 0
-      },
-      {
-        "sample": 12,
-        "excluded_bucket": 1,
-        "included_bucket": 6
-      },
-      {
-        "sample": 15,
-        "excluded_bucket": 1,
-        "included_bucket": 0
-      },
-      {
-        "sample": 17,
-        "excluded_bucket": 2,
-        "included_bucket": 1
-      },
-      {
-        "sample": 18,
-        "excluded_bucket": 1,
-        "included_bucket": 2
-      },
-      {
-        "sample": 21,
-        "excluded_bucket": 2,
-        "included_bucket": 0
-      },
-      {
-        "sample": 24,
-        "excluded_bucket": 4,
-        "included_bucket": 6
-      },
-      {
-        "sample": 25,
-        "excluded_bucket": 2,
-        "included_bucket": 1
-      },
-      {
-        "sample": 26,
-        "excluded_bucket": 5,
-        "included_bucket": 0
-      },
-      {
-        "sample": 27,
-        "excluded_bucket": 1,
-        "included_bucket": 0
-      },
-      {
-        "sample": 39,
-        "excluded_bucket": 2,
-        "included_bucket": 3
-      },
-      {
-        "sample": 40,
-        "excluded_bucket": 1,
-        "included_bucket": 2
-      },
-      {
-        "sample": 41,
-        "excluded_bucket": 6,
-        "included_bucket": 2
-      },
-      {
-        "sample": 43,
-        "excluded_bucket": 0,
-        "included_bucket": 2
-      },
-      {
-        "sample": 44,
-        "excluded_bucket": 6,
-        "included_bucket": 5
-      },
-      {
-        "sample": 45,
-        "excluded_bucket": 2,
-        "included_bucket": 0
-      },
-      {
-        "sample": 46,
-        "excluded_bucket": 2,
-        "included_bucket": 1
-      },
-      {
-        "sample": 49,
-        "excluded_bucket": 6,
-        "included_bucket": 0
-      }
-    ]
-  },
-  "scorer_config": {
-    "name": "lattice-noop",
-    "version": "lattice_and_noop_v1",
-    "noop_stol": 0.05,
-    "noop_scale": true,
-    "lattice_rtol": 1e-06,
-    "lattice_atol": 1e-06,
-    "formula": "base_pass AND lattice_same AND NOT near_initial",
-    "guard_script_sha256": "0f96198f60246b23098a3694e22415dbfe372ce549d3b7e2eab27107aac128fb",
-    "target_matching": "unchanged original AtomWorldEvaluator"
-  }
+  ]
 }

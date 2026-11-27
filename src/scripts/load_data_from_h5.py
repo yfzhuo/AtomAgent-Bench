@@ -1,7 +1,6 @@
 import h5py
 import os
 
-
 def load_cifs_from_hdf5(hdf5_filepath):
     cif_data = {}
     with h5py.File(hdf5_filepath, 'r') as f:

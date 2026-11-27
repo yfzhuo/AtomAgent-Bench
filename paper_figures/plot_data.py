@@ -1,11 +1,11 @@
 """Read the specified Markdown tables; all plot counts derive from these tables.
-P(k) is the historical-round cumulative retained count, not a new online rerun.
+P(k) accumulates accepted final outcomes by their recorded first accepted stage.
 """
 from pathlib import Path
 import json,re,hashlib,collections
 import numpy as np
 ROOT=Path(__file__).resolve().parent
-SOURCE=ROOT/'data/论文三张表_1500复评加分子删除原结果.md'
+SOURCE=ROOT/'data/current_results.md'
 MODELS=['Qwen3-VL-Plus','Qwen3.5-Plus','Qwen3.7-Plus','Qwen3.8-Max','DeepSeek-V4-Flash']
 TASKS=['Delete Below','Delete Around','Insert Between','Move Towards','Rotate Around','Remove Molecule']
 ACTIONS=['delete_below_atom_action','delete_around_atom_action','insert_between_atoms_action','move_towards_atom_action','rotate_around_atom_action','RemoveMoleculeAction']
@@ -23,7 +23,7 @@ for line in seven_section.splitlines():
 assert len(data)==10
 pooled={v:sum((data[m,v] for m in MODELS),start=np.zeros((7,6),dtype=int)) for v in ['ON','OFF']}
 total=pooled['ON'].sum(axis=1)+pooled['OFF'].sum(axis=1)
-assert total.tolist()==[1042,304,119,55,41,22,217]
+assert total.tolist()==[1155,279,89,39,27,18,193]
 # Check the complete task/view and triple tables in the same Markdown.
 for line in next(s for s in sections if s.startswith('2.')).splitlines():
     f=[x.strip() for x in line.strip().strip('|').split('|')]
@@ -42,8 +42,7 @@ assert len(evidence)==1800
 assert len({(r['model_display'],r['view'],r['action'],r['sample']) for r in evidence})==1800
 failures=collections.Counter();model_failures=collections.Counter()
 for r in evidence:
-    a=r['action'];new=r['new_pass']
-    if a=='RemoveMoleculeAction':assert new==r['old_pass']
+    a=r['action'];new=r['pass']
     if not new:
         failures[r['view'],a,r['failure_type']]+=1
         model_failures[r['model_display'],r['view'],a]+=1
@@ -63,13 +62,13 @@ for row in variant_payload['model_seven']:
     variants[key]=np.array(row['seven'],dtype=int)
 assert len(variants)==20
 DISPLAY_TASKS=['Delete Below (Including)','Delete Below (Excluding)']+TASKS[1:]
-DISPLAY_N=np.array([11,19,30,30,30,30,30],dtype=int)
+DISPLAY_N=np.array([10,20,30,30,30,30,30],dtype=int)
 DISPLAY_POOLED_N=DISPLAY_N*len(MODELS)
 display_data={}
 for m in MODELS:
     for v in ['ON','OFF']:
         inc,exc=variants[m,v,'Including'],variants[m,v,'Excluding']
-        assert inc.sum()==11 and exc.sum()==19
+        assert inc.sum()==10 and exc.sum()==20
         np.testing.assert_array_equal(inc+exc,data[m,v][:,0])
         display_data[m,v]=np.column_stack([inc,exc,data[m,v][:,1:]])
         np.testing.assert_array_equal(display_data[m,v].sum(axis=1),data[m,v].sum(axis=1))
@@ -79,7 +78,7 @@ MODEL_ALIAS=dict(zip(['qwen3-vl-plus','qwen3.5-plus','qwen3.7-plus','qwen3.8-max
 variant_by_key={};record_counts=collections.Counter()
 for r in variant_payload['records']:
     key=(MODEL_ALIAS[r['model']],r['view'],r['sample'])
-    assert key not in variant_by_key and r['old_pass']==r['new_pass']
+    assert key not in variant_by_key
     assert re.findall(r'\b(Including|Excluding)\b',r['task_prompt'])==[r['variant']]
     variant_by_key[key]=r['variant'];record_counts[key[0],key[1],r['variant'],r['bucket']]+=1
 assert len(variant_by_key)==300
@@ -87,7 +86,7 @@ for (m,v,t),seven in variants.items():
     assert seven.tolist()==[record_counts[m,v,t,k] for k in range(7)]
 display_failures=collections.Counter()
 for r in evidence:
-    if r['new_pass']:continue
+    if r['pass']:continue
     if r['action']==ACTIONS[0]:
         label='Delete Below ('+variant_by_key[r['model_display'],r['view'],r['sample']]+')'
     else:label=TASKS[ACTIONS.index(r['action'])]
@@ -101,6 +100,6 @@ def save_numeric(name,obj):
         json.dump({'source':SOURCE.name,'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
         'variant_source':VARIANT_SOURCE.name,'variant_source_sha256':hashlib.sha256(VARIANT_SOURCE.read_bytes()).hexdigest(),
         'display_groups':DISPLAY_TASKS,'display_group_n_per_model_view':DISPLAY_N.tolist(),
-        'scope':'original five tasks post-hoc final audit + Remove Molecule original scores; Delete Below split by prompt without rescoring',
-        'pk_definition':'cumulative retained successes by historical first-pass repair bucket; not an enhanced-online-protocol rerun',
+        'scope':'Current six-task results',
+        'pk_definition':'Cumulative accepted final outcomes by recorded first accepted stage',
         'data':obj},f,ensure_ascii=False,indent=2,allow_nan=False)

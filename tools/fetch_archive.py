@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download and safely unpack the public, checksum-verified historical archive."""
+"""Download and safely unpack the public, checksum-verified result archive."""
 from pathlib import Path
 import argparse,hashlib,json,shutil,tempfile,urllib.request,zipfile,ssl
 import certifi

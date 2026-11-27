@@ -8,7 +8,8 @@
     "target_cif_sha256": "7aa4d04ae4aecd4055d4e31844a3f33379cf8d069faad44e4319558d27ebcf15",
     "initial": "instances/RemoveMoleculeAction/s00/initial.cif",
     "target": "instances/RemoveMoleculeAction/s00/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s00/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s00/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s02",
@@ -19,7 +20,8 @@
     "target_cif_sha256": "5c6ea1e39817caa551e5491646c37afbc7d638e81e26cab1d241cf66535a0f99",
     "initial": "instances/RemoveMoleculeAction/s02/initial.cif",
     "target": "instances/RemoveMoleculeAction/s02/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s02/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s02/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s04",
@@ -30,7 +32,8 @@
     "target_cif_sha256": "702fe2c62f94689c415807fc1cc6e5e78e3b5c88fbd4b2e55531006751ddd4db",
     "initial": "instances/RemoveMoleculeAction/s04/initial.cif",
     "target": "instances/RemoveMoleculeAction/s04/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s04/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s04/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s05",
@@ -41,7 +44,8 @@
     "target_cif_sha256": "b6e5bbcd6f78561939ddf5c15cc3b043dfde1d07baeec0233cc63ccb6232e8dc",
     "initial": "instances/RemoveMoleculeAction/s05/initial.cif",
     "target": "instances/RemoveMoleculeAction/s05/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s05/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s05/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s06",
@@ -52,7 +56,8 @@
     "target_cif_sha256": "5442bb56e76899e4090f816c6f4a35379ee8e78ef16e0325aae9b7cb1de841da",
     "initial": "instances/RemoveMoleculeAction/s06/initial.cif",
     "target": "instances/RemoveMoleculeAction/s06/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s06/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s06/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s08",
@@ -63,7 +68,8 @@
     "target_cif_sha256": "8839c25e6c93bf10b4fda0804ac3b2d845f293e19b86e5dd919bff12a29b76c8",
     "initial": "instances/RemoveMoleculeAction/s08/initial.cif",
     "target": "instances/RemoveMoleculeAction/s08/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s08/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s08/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s10",
@@ -74,7 +80,8 @@
     "target_cif_sha256": "7d5af544fa797d3bcac5afe7f9ca61d806302e509dd02efa3f37da732a171c91",
     "initial": "instances/RemoveMoleculeAction/s10/initial.cif",
     "target": "instances/RemoveMoleculeAction/s10/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s10/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s10/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s12",
@@ -85,7 +92,8 @@
     "target_cif_sha256": "1bf76314f655918b69e5badbbbbbb2306a9f4bee499e87953283583ab360da32",
     "initial": "instances/RemoveMoleculeAction/s12/initial.cif",
     "target": "instances/RemoveMoleculeAction/s12/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s12/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s12/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s15",
@@ -96,7 +104,8 @@
     "target_cif_sha256": "bae9ec1eec1637d09997ca1f818b191c40bee81db6324334f32491a706c8e5be",
     "initial": "instances/RemoveMoleculeAction/s15/initial.cif",
     "target": "instances/RemoveMoleculeAction/s15/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s15/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s15/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s17",
@@ -107,7 +116,8 @@
     "target_cif_sha256": "45535965c018fe55f8004a1701e569a2ea4bac863db473467c02dc9fd828f018",
     "initial": "instances/RemoveMoleculeAction/s17/initial.cif",
     "target": "instances/RemoveMoleculeAction/s17/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s17/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s17/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s18",
@@ -118,7 +128,8 @@
     "target_cif_sha256": "8469214d98cbd547382bdc5178dee7c2855c8456abd230420aeca37d751ce09f",
     "initial": "instances/RemoveMoleculeAction/s18/initial.cif",
     "target": "instances/RemoveMoleculeAction/s18/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s18/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s18/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s21",
@@ -129,7 +140,8 @@
     "target_cif_sha256": "f62a17d5b813cc6b7c622f481467023765c860d9e8ed3cfef4e59f6558e7f0f0",
     "initial": "instances/RemoveMoleculeAction/s21/initial.cif",
     "target": "instances/RemoveMoleculeAction/s21/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s21/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s21/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s24",
@@ -140,7 +152,8 @@
     "target_cif_sha256": "09e2f8ef0510ffaaa5625059d12c02627749c8658811f42dceba13c516529513",
     "initial": "instances/RemoveMoleculeAction/s24/initial.cif",
     "target": "instances/RemoveMoleculeAction/s24/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s24/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s24/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s25",
@@ -151,7 +164,8 @@
     "target_cif_sha256": "94bd56f540a5f1836f75272fad369f95d7116e6a256ad9cec00d0d2e31504c26",
     "initial": "instances/RemoveMoleculeAction/s25/initial.cif",
     "target": "instances/RemoveMoleculeAction/s25/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s25/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s25/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s26",
@@ -162,7 +176,8 @@
     "target_cif_sha256": "55d3f6e269ca8d56048786fda9b8b9d344b369c640f587e6e8301def90a010ac",
     "initial": "instances/RemoveMoleculeAction/s26/initial.cif",
     "target": "instances/RemoveMoleculeAction/s26/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s26/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s26/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s27",
@@ -173,7 +188,8 @@
     "target_cif_sha256": "50283d64b876206ecb4098f1a9765092c6710e4bb8e1bbafc3eafe59ccdbe319",
     "initial": "instances/RemoveMoleculeAction/s27/initial.cif",
     "target": "instances/RemoveMoleculeAction/s27/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s27/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s27/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s30",
@@ -184,7 +200,8 @@
     "target_cif_sha256": "c5b2aa0409e076ce13ede5d6a82d1d9db314d84af3da69344d28b297b1bd94a0",
     "initial": "instances/RemoveMoleculeAction/s30/initial.cif",
     "target": "instances/RemoveMoleculeAction/s30/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s30/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s30/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s32",
@@ -195,7 +212,8 @@
     "target_cif_sha256": "e19766f6cd42727c1d26aa6eb704770090d96f2ee8fb5e302c42e77f753971a0",
     "initial": "instances/RemoveMoleculeAction/s32/initial.cif",
     "target": "instances/RemoveMoleculeAction/s32/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s32/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s32/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s35",
@@ -206,7 +224,8 @@
     "target_cif_sha256": "d5f32b7a46c8905c61ce669f95b713a12b6256e72b6ef26574e96c6018b8aad1",
     "initial": "instances/RemoveMoleculeAction/s35/initial.cif",
     "target": "instances/RemoveMoleculeAction/s35/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s35/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s35/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s36",
@@ -217,7 +236,8 @@
     "target_cif_sha256": "089ec644733c92529ffef351634787faf8ef8fbc8369fc623043e58ad87122f5",
     "initial": "instances/RemoveMoleculeAction/s36/initial.cif",
     "target": "instances/RemoveMoleculeAction/s36/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s36/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s36/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s39",
@@ -228,7 +248,8 @@
     "target_cif_sha256": "2b4582cb4d5225453b237dca9fa95c29e974f29f25c12c313f3a887594a6e71b",
     "initial": "instances/RemoveMoleculeAction/s39/initial.cif",
     "target": "instances/RemoveMoleculeAction/s39/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s39/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s39/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s40",
@@ -239,7 +260,8 @@
     "target_cif_sha256": "7ce964f4cb27b51d832b2046db894bb0768f12fc41e0603f918c8e10f14c4238",
     "initial": "instances/RemoveMoleculeAction/s40/initial.cif",
     "target": "instances/RemoveMoleculeAction/s40/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s40/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s40/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s41",
@@ -250,7 +272,8 @@
     "target_cif_sha256": "0d3d90cada4202cbad35ac67ca14ddf82589a87f5178b305a28ccba9c62cddc0",
     "initial": "instances/RemoveMoleculeAction/s41/initial.cif",
     "target": "instances/RemoveMoleculeAction/s41/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s41/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s41/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s43",
@@ -261,7 +284,8 @@
     "target_cif_sha256": "39284d5d194ab4ef94539cfc115576d39a38a012ecbf4be9f1215151a75b2505",
     "initial": "instances/RemoveMoleculeAction/s43/initial.cif",
     "target": "instances/RemoveMoleculeAction/s43/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s43/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s43/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s44",
@@ -272,7 +296,8 @@
     "target_cif_sha256": "afbc6db414a63d778f77b5713c8cdaa8a2d15c893d39e378da6eaef90b8efd7f",
     "initial": "instances/RemoveMoleculeAction/s44/initial.cif",
     "target": "instances/RemoveMoleculeAction/s44/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s44/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s44/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s45",
@@ -283,7 +308,8 @@
     "target_cif_sha256": "80a33d2207183c207b730aed8bebcefd83785d9be9cbd991f0cc868288dd8f5b",
     "initial": "instances/RemoveMoleculeAction/s45/initial.cif",
     "target": "instances/RemoveMoleculeAction/s45/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s45/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s45/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s46",
@@ -294,7 +320,8 @@
     "target_cif_sha256": "827997b0d3a6187a5574df03e86becd12da841b7b116783e48c6fecc7de7ec50",
     "initial": "instances/RemoveMoleculeAction/s46/initial.cif",
     "target": "instances/RemoveMoleculeAction/s46/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s46/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s46/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s47",
@@ -305,7 +332,8 @@
     "target_cif_sha256": "fa1946e30c9d32d1fcfd3e3e82410856c7a47ce4a15d9b0bf180c50872591ba9",
     "initial": "instances/RemoveMoleculeAction/s47/initial.cif",
     "target": "instances/RemoveMoleculeAction/s47/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s47/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s47/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s48",
@@ -316,7 +344,8 @@
     "target_cif_sha256": "8f561373fe8360eb3efd759267df33fcaa084fa6727074e5716dc18175c55a0f",
     "initial": "instances/RemoveMoleculeAction/s48/initial.cif",
     "target": "instances/RemoveMoleculeAction/s48/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s48/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s48/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "RemoveMoleculeAction/s49",
@@ -327,7 +356,8 @@
     "target_cif_sha256": "a2b67d681a79e2011961511ef97a66d35c49fea4ed7040cf5a37c06b02d8d78e",
     "initial": "instances/RemoveMoleculeAction/s49/initial.cif",
     "target": "instances/RemoveMoleculeAction/s49/target.cif",
-    "prompt": "instances/RemoveMoleculeAction/s49/prompt.txt"
+    "prompt": "instances/RemoveMoleculeAction/s49/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s00",
@@ -338,7 +368,8 @@
     "target_cif_sha256": "7ebf69fd2ace0805ad4b831f8a63a4f069e321899d7fee926941ae478cb21a86",
     "initial": "instances/delete_around_atom_action/s00/initial.cif",
     "target": "instances/delete_around_atom_action/s00/target.cif",
-    "prompt": "instances/delete_around_atom_action/s00/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s00/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s02",
@@ -349,7 +380,8 @@
     "target_cif_sha256": "0fafe518d2ee05a00d2e60e678fce9277c0eca3a7a69bfe5907aa88cd0a6ef6c",
     "initial": "instances/delete_around_atom_action/s02/initial.cif",
     "target": "instances/delete_around_atom_action/s02/target.cif",
-    "prompt": "instances/delete_around_atom_action/s02/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s02/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s04",
@@ -360,7 +392,8 @@
     "target_cif_sha256": "fb7ed912914ee5c2fc92edd327e5fbecc651e18f9e018e36e9c0fe01f63418c9",
     "initial": "instances/delete_around_atom_action/s04/initial.cif",
     "target": "instances/delete_around_atom_action/s04/target.cif",
-    "prompt": "instances/delete_around_atom_action/s04/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s04/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s05",
@@ -371,7 +404,8 @@
     "target_cif_sha256": "aff60c0a2837a3f9fdbf4c862b261d0dba7aef8813dde9c2d5e0a7c2772a8f3c",
     "initial": "instances/delete_around_atom_action/s05/initial.cif",
     "target": "instances/delete_around_atom_action/s05/target.cif",
-    "prompt": "instances/delete_around_atom_action/s05/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s05/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s06",
@@ -382,7 +416,8 @@
     "target_cif_sha256": "d449d3842a184b6cd6d067d50a604d8b22589fc6228534caaa58b6ccf5ca5c05",
     "initial": "instances/delete_around_atom_action/s06/initial.cif",
     "target": "instances/delete_around_atom_action/s06/target.cif",
-    "prompt": "instances/delete_around_atom_action/s06/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s06/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s08",
@@ -393,7 +428,8 @@
     "target_cif_sha256": "20b760da93f92e16407696414d1c01cd6bd46a63857d9fea87a5cc7dfbdfc607",
     "initial": "instances/delete_around_atom_action/s08/initial.cif",
     "target": "instances/delete_around_atom_action/s08/target.cif",
-    "prompt": "instances/delete_around_atom_action/s08/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s08/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s10",
@@ -404,7 +440,8 @@
     "target_cif_sha256": "49ed1c935d780b70bb81e3cabe54486bbc157843a407ccb59298c63a26aac2b1",
     "initial": "instances/delete_around_atom_action/s10/initial.cif",
     "target": "instances/delete_around_atom_action/s10/target.cif",
-    "prompt": "instances/delete_around_atom_action/s10/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s10/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s12",
@@ -415,7 +452,8 @@
     "target_cif_sha256": "24a761745f5674d682b46dc5b7b9ba6928a6cab35838e3e7d69eb06af70595c3",
     "initial": "instances/delete_around_atom_action/s12/initial.cif",
     "target": "instances/delete_around_atom_action/s12/target.cif",
-    "prompt": "instances/delete_around_atom_action/s12/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s12/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s15",
@@ -426,7 +464,8 @@
     "target_cif_sha256": "b5c10671a10b9498d56155438a0190634db7ab9b40383f2281b1a12ca3947d19",
     "initial": "instances/delete_around_atom_action/s15/initial.cif",
     "target": "instances/delete_around_atom_action/s15/target.cif",
-    "prompt": "instances/delete_around_atom_action/s15/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s15/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s17",
@@ -437,7 +476,8 @@
     "target_cif_sha256": "1befde813cae8e237cf7fa33a59905716a9cf01fd6b677e6bfd9856793fedc0a",
     "initial": "instances/delete_around_atom_action/s17/initial.cif",
     "target": "instances/delete_around_atom_action/s17/target.cif",
-    "prompt": "instances/delete_around_atom_action/s17/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s17/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s18",
@@ -448,7 +488,8 @@
     "target_cif_sha256": "e62fd29edfb33c9b61b73467e4730fe1a65612b2975423d8cb5d30e960b8f878",
     "initial": "instances/delete_around_atom_action/s18/initial.cif",
     "target": "instances/delete_around_atom_action/s18/target.cif",
-    "prompt": "instances/delete_around_atom_action/s18/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s18/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s21",
@@ -459,7 +500,8 @@
     "target_cif_sha256": "d32f463fe5b9ffbbfd606c923c74a4a17975563506c55bdfcfa7cf1c2019ddd2",
     "initial": "instances/delete_around_atom_action/s21/initial.cif",
     "target": "instances/delete_around_atom_action/s21/target.cif",
-    "prompt": "instances/delete_around_atom_action/s21/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s21/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s24",
@@ -470,7 +512,8 @@
     "target_cif_sha256": "e5e952c96595eefc563fcd4c9d3308f21a95dd01605c666c9ecde564257f0b04",
     "initial": "instances/delete_around_atom_action/s24/initial.cif",
     "target": "instances/delete_around_atom_action/s24/target.cif",
-    "prompt": "instances/delete_around_atom_action/s24/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s24/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s25",
@@ -481,7 +524,8 @@
     "target_cif_sha256": "7e46403437c9c09cbd5fcf0bf36a2cd71091a6a0829c83f945e36370bfe3e266",
     "initial": "instances/delete_around_atom_action/s25/initial.cif",
     "target": "instances/delete_around_atom_action/s25/target.cif",
-    "prompt": "instances/delete_around_atom_action/s25/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s25/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s26",
@@ -492,7 +536,8 @@
     "target_cif_sha256": "2b250502195caa0a468774bef03e183a95c78c956623a4602e38db69a76c1337",
     "initial": "instances/delete_around_atom_action/s26/initial.cif",
     "target": "instances/delete_around_atom_action/s26/target.cif",
-    "prompt": "instances/delete_around_atom_action/s26/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s26/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s27",
@@ -503,7 +548,8 @@
     "target_cif_sha256": "828fb96ed93293d0c85e1e93b581d1e7d0cc969b6cc56fe6b7674d622e50751e",
     "initial": "instances/delete_around_atom_action/s27/initial.cif",
     "target": "instances/delete_around_atom_action/s27/target.cif",
-    "prompt": "instances/delete_around_atom_action/s27/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s27/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s30",
@@ -514,7 +560,8 @@
     "target_cif_sha256": "1993a71f723d6bddbcc3ed7856bb53f58439a39261ee0ef619c82b8bb2a0a8ac",
     "initial": "instances/delete_around_atom_action/s30/initial.cif",
     "target": "instances/delete_around_atom_action/s30/target.cif",
-    "prompt": "instances/delete_around_atom_action/s30/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s30/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s32",
@@ -525,7 +572,8 @@
     "target_cif_sha256": "fb1292975d3536125a9a84077892314818a8e55f7d37eef15ddfe5c393e38fef",
     "initial": "instances/delete_around_atom_action/s32/initial.cif",
     "target": "instances/delete_around_atom_action/s32/target.cif",
-    "prompt": "instances/delete_around_atom_action/s32/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s32/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s35",
@@ -536,7 +584,8 @@
     "target_cif_sha256": "3060dea65fc91451dbd67fda49dc64b325b46b2cf49301a77d1520e4e5b1d122",
     "initial": "instances/delete_around_atom_action/s35/initial.cif",
     "target": "instances/delete_around_atom_action/s35/target.cif",
-    "prompt": "instances/delete_around_atom_action/s35/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s35/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s36",
@@ -547,7 +596,8 @@
     "target_cif_sha256": "5f4dd98868e6a569ba6a1701bf59230a5a5073a0d4840a87cf725270cf89bd45",
     "initial": "instances/delete_around_atom_action/s36/initial.cif",
     "target": "instances/delete_around_atom_action/s36/target.cif",
-    "prompt": "instances/delete_around_atom_action/s36/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s36/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s39",
@@ -558,7 +608,8 @@
     "target_cif_sha256": "9740722065e934948d9ce69f85db9c9c0d9ee20a9d24a4b5d072092f60546ac0",
     "initial": "instances/delete_around_atom_action/s39/initial.cif",
     "target": "instances/delete_around_atom_action/s39/target.cif",
-    "prompt": "instances/delete_around_atom_action/s39/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s39/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s40",
@@ -569,7 +620,8 @@
     "target_cif_sha256": "dfa9653a47ad0b7cf3000a9448b266f98e239cee0f3e670b6282b6979bb5983f",
     "initial": "instances/delete_around_atom_action/s40/initial.cif",
     "target": "instances/delete_around_atom_action/s40/target.cif",
-    "prompt": "instances/delete_around_atom_action/s40/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s40/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s41",
@@ -580,7 +632,8 @@
     "target_cif_sha256": "a34ad83e6bb8bc9548ee0a804353eb920c043dba177d6ee8ba96c355f4dda87e",
     "initial": "instances/delete_around_atom_action/s41/initial.cif",
     "target": "instances/delete_around_atom_action/s41/target.cif",
-    "prompt": "instances/delete_around_atom_action/s41/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s41/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s43",
@@ -591,7 +644,8 @@
     "target_cif_sha256": "dbf24280d50ba78fe81e2ecd35142f7cf9e4ac2c36751f90c327f8375619a662",
     "initial": "instances/delete_around_atom_action/s43/initial.cif",
     "target": "instances/delete_around_atom_action/s43/target.cif",
-    "prompt": "instances/delete_around_atom_action/s43/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s43/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s44",
@@ -602,7 +656,8 @@
     "target_cif_sha256": "ea5504f869fb3f97e2d9f0e7a7fcc292362753fc8c74a550c1760fb7f137aa54",
     "initial": "instances/delete_around_atom_action/s44/initial.cif",
     "target": "instances/delete_around_atom_action/s44/target.cif",
-    "prompt": "instances/delete_around_atom_action/s44/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s44/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s45",
@@ -613,7 +668,8 @@
     "target_cif_sha256": "d79b9c27c26a7c8086fccd9c0c5acadd32867315804def72463d90cec359fda5",
     "initial": "instances/delete_around_atom_action/s45/initial.cif",
     "target": "instances/delete_around_atom_action/s45/target.cif",
-    "prompt": "instances/delete_around_atom_action/s45/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s45/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s46",
@@ -624,7 +680,8 @@
     "target_cif_sha256": "915c8ae8f6d0df03df9d76fadfe9b02786744fc5b71745c654f200147593a7ee",
     "initial": "instances/delete_around_atom_action/s46/initial.cif",
     "target": "instances/delete_around_atom_action/s46/target.cif",
-    "prompt": "instances/delete_around_atom_action/s46/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s46/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s47",
@@ -635,7 +692,8 @@
     "target_cif_sha256": "db89b23ebb26aa71038b94248b748667e8efaf49a1fac33bda05c6687a9df675",
     "initial": "instances/delete_around_atom_action/s47/initial.cif",
     "target": "instances/delete_around_atom_action/s47/target.cif",
-    "prompt": "instances/delete_around_atom_action/s47/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s47/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s48",
@@ -646,7 +704,8 @@
     "target_cif_sha256": "a6c6a49812f0df4ada7a4217a91471fa344fccc7e627b73c8634271c4b07479a",
     "initial": "instances/delete_around_atom_action/s48/initial.cif",
     "target": "instances/delete_around_atom_action/s48/target.cif",
-    "prompt": "instances/delete_around_atom_action/s48/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s48/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_around_atom_action/s49",
@@ -657,337 +716,368 @@
     "target_cif_sha256": "a8d6a5252560c0f9480fd11706407c694f13f024d385333cd026cb4f1629c053",
     "initial": "instances/delete_around_atom_action/s49/initial.cif",
     "target": "instances/delete_around_atom_action/s49/target.cif",
-    "prompt": "instances/delete_around_atom_action/s49/prompt.txt"
+    "prompt": "instances/delete_around_atom_action/s49/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "delete_below_atom_action/s00",
     "action": "delete_below_atom_action",
     "sample": 0,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 39 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 39 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "72f0a31b85703439c443d9bcac3610f9254f57d909d58c29010e25e9d7ea2fdb",
-    "target_cif_sha256": "643a52c57ad5bf938ba45aa1fafa8f6dbdd2ff1f8c5bc247f506d1e50e262f8b",
+    "target_cif_sha256": "cc2dd070561b364eb5e8fd2218cac3a86781ba8363d8aca225882abe0476303a",
     "initial": "instances/delete_below_atom_action/s00/initial.cif",
     "target": "instances/delete_below_atom_action/s00/target.cif",
-    "prompt": "instances/delete_below_atom_action/s00/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s00/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s02",
     "action": "delete_below_atom_action",
     "sample": 2,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 13 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 13 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "3dc9388f40f9f2b5393394ff9c40eaeeb95896430c5b9dfb23571c645edcb6fc",
-    "target_cif_sha256": "e79a2a726a0f267e6c7cef6cd29ba771902138876061cc307d1caceb74df2a0b",
+    "target_cif_sha256": "ed110fba51b0dd1095e57c15e05e258aee782ba160c60947c92e8bdd0378042b",
     "initial": "instances/delete_below_atom_action/s02/initial.cif",
     "target": "instances/delete_below_atom_action/s02/target.cif",
-    "prompt": "instances/delete_below_atom_action/s02/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s02/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s04",
     "action": "delete_below_atom_action",
     "sample": 4,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 27 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 27 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "c77999ffb8550bc7de02dfc26e4358702dafbda3d1ea06c922f04890b8460f98",
-    "target_cif_sha256": "3b560def9b3f5c1f48ea62ba7a6dafcc05ab5fb55e6a2bfb8b4c7debbd5466fb",
+    "target_cif_sha256": "1fee26c0de048b8ce5157e35eb9cea5d4a06a3d8a13213c91850d406b4e4a4df",
     "initial": "instances/delete_below_atom_action/s04/initial.cif",
     "target": "instances/delete_below_atom_action/s04/target.cif",
-    "prompt": "instances/delete_below_atom_action/s04/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s04/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s05",
     "action": "delete_below_atom_action",
     "sample": 5,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 65 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 65 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "3f15cb3cd97cc14bfec99726459d2a84c00f4f43ab10161fec3d7afdd63a6b03",
-    "target_cif_sha256": "6d582cc2a516eb56452bce3db1e7c92cd4245c6963424791067a70b9b699a26a",
+    "target_cif_sha256": "27f473ff326b7ce4dcadfcf1b998d167dc3bef896ea57c319239590d4b6ea664",
     "initial": "instances/delete_below_atom_action/s05/initial.cif",
     "target": "instances/delete_below_atom_action/s05/target.cif",
-    "prompt": "instances/delete_below_atom_action/s05/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s05/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s06",
     "action": "delete_below_atom_action",
     "sample": 6,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 3 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 3 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "eb0a7cd32b9fcf5ddeef0570f36fb0b85057b201923942357a29946e547a6df5",
-    "target_cif_sha256": "e8de35938440e1d73c821f40f7606b15091c860e380c0c98c2cc63eb0814647f",
+    "target_cif_sha256": "d1274fa96962fb10a80772ef714e2388ef7cadd6ff1359afd333b630e7b879ef",
     "initial": "instances/delete_below_atom_action/s06/initial.cif",
     "target": "instances/delete_below_atom_action/s06/target.cif",
-    "prompt": "instances/delete_below_atom_action/s06/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s06/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s08",
     "action": "delete_below_atom_action",
     "sample": 8,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 8 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 8 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "1e424b5fe20d7e29055f090adfe3c11f9b49ebfaa1b90093db83c0635bf91dea",
-    "target_cif_sha256": "90e50dd8760540b490693886af593b2bb5297bc3aa8b3967b56db3ddc3bc6e39",
+    "target_cif_sha256": "b23f1cc46762960cad50b85ef880eb220e95ddbc24f1a960682003eceb3b0eef",
     "initial": "instances/delete_below_atom_action/s08/initial.cif",
     "target": "instances/delete_below_atom_action/s08/target.cif",
-    "prompt": "instances/delete_below_atom_action/s08/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s08/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s10",
     "action": "delete_below_atom_action",
     "sample": 10,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 4 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 4 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "009f864b896adc3579a0677a272f3f723ab534534f05f03df83822df593cc89a",
-    "target_cif_sha256": "6be45077f6b45c3f83cc22c41443e2903d3fafead01e363cf981940d23b09da3",
+    "target_cif_sha256": "bbec56ff85d72982db592dfda3f3bbc0e1f5b8bc8fe39077e8d734b795222154",
     "initial": "instances/delete_below_atom_action/s10/initial.cif",
     "target": "instances/delete_below_atom_action/s10/target.cif",
-    "prompt": "instances/delete_below_atom_action/s10/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s10/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s12",
     "action": "delete_below_atom_action",
     "sample": 12,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "6e86eb1749dee2a1ebd6a20fcbc2595582b885f920d7e5f090d6ed96e9417186",
-    "target_cif_sha256": "56c8c846b28c5b60b23e40ec20c62907afb1445652de71b59c4641ba542da17f",
+    "target_cif_sha256": "e9f04131e746a3a45c4e8a3179053e3e1463725020498fcd1ed8a7853723cfd2",
     "initial": "instances/delete_below_atom_action/s12/initial.cif",
     "target": "instances/delete_below_atom_action/s12/target.cif",
-    "prompt": "instances/delete_below_atom_action/s12/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s12/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s15",
     "action": "delete_below_atom_action",
     "sample": 15,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 4 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 4 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "f127a9f5d7cb8b97320dcd65404b9ee09827a3db0b3a4fc6add4d15a0e10046f",
-    "target_cif_sha256": "d3ba320e0cee203b4448221fc694e4a887b2670c003207bc28c14490f286fce4",
+    "target_cif_sha256": "23169f3f74984b02c3f77bd8934f939ef8f138dd9bd805aeaafea73402e83a2c",
     "initial": "instances/delete_below_atom_action/s15/initial.cif",
     "target": "instances/delete_below_atom_action/s15/target.cif",
-    "prompt": "instances/delete_below_atom_action/s15/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s15/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s17",
     "action": "delete_below_atom_action",
     "sample": 17,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 4 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 4 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "0944a5428de92b85f649791bdf9784dd08774dd7ce7a0883a0397c452e70309a",
-    "target_cif_sha256": "1d2b51d3b631c38d02a97478c49fbbfdfad4cd27e67aeb30ce5f563141c1e71c",
+    "target_cif_sha256": "977dbf4e614834f93462eda9180aea0f2fe97be887317eebe075161e9911cb9d",
     "initial": "instances/delete_below_atom_action/s17/initial.cif",
     "target": "instances/delete_below_atom_action/s17/target.cif",
-    "prompt": "instances/delete_below_atom_action/s17/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s17/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s18",
     "action": "delete_below_atom_action",
     "sample": 18,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 3 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 3 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "84939b9e89545a1a81717be79cacd159d50b105b9d27b842b965d9a77af69840",
-    "target_cif_sha256": "00239b64ffa7429e5b1ce83fd4a67aba90214df75bbb4dadd020c7e1dddabad8",
+    "target_cif_sha256": "67fd58cf090e5634b04dd16297567d2942580c2ccc346fe0f8ba5af5721ad3d9",
     "initial": "instances/delete_below_atom_action/s18/initial.cif",
     "target": "instances/delete_below_atom_action/s18/target.cif",
-    "prompt": "instances/delete_below_atom_action/s18/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s18/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s21",
     "action": "delete_below_atom_action",
     "sample": 21,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 9 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 9 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "f38a8e3658957be3eaab5965fb3578b7f6f147103889798b90d13f23d1a83713",
-    "target_cif_sha256": "65c1c38f83b49c4e975e29ade0aae3a2286a2f34a0d8fa9b000bffa7dfce88a8",
+    "target_cif_sha256": "523c1007e4025e15d2473b24cd242753a3217c00466736503046c281ce40cacc",
     "initial": "instances/delete_below_atom_action/s21/initial.cif",
     "target": "instances/delete_below_atom_action/s21/target.cif",
-    "prompt": "instances/delete_below_atom_action/s21/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s21/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s24",
     "action": "delete_below_atom_action",
     "sample": 24,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "b7afe17575e27757d52eb13f3f0d2c746844b7064d742d51d0229e64f984fbaa",
-    "target_cif_sha256": "6bdf1721d7390578d476afb49a8fe09b88aea936801ff358e5221d17dc5b3c8f",
+    "target_cif_sha256": "c64028fe423725d2b0e06ecad7fa17cce9cbf18967efdf49d1a7fda90cf096a3",
     "initial": "instances/delete_below_atom_action/s24/initial.cif",
     "target": "instances/delete_below_atom_action/s24/target.cif",
-    "prompt": "instances/delete_below_atom_action/s24/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s24/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s25",
     "action": "delete_below_atom_action",
     "sample": 25,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 5 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 5 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "09644dc1d388e89dda711ed95c904f4aa6110f7d3e19908038d18f26706c49b9",
-    "target_cif_sha256": "42f9c2b945dd360653f0734297bf6128a116e95e74c2ea64d36b64f1765b47f8",
+    "target_cif_sha256": "077525e168ae85f7d2d7fbd7fd68cbb675a5affa5b7ba95415ef6b53e632865b",
     "initial": "instances/delete_below_atom_action/s25/initial.cif",
     "target": "instances/delete_below_atom_action/s25/target.cif",
-    "prompt": "instances/delete_below_atom_action/s25/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s25/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s26",
     "action": "delete_below_atom_action",
     "sample": 26,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 6 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 6 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "f0d5aebbb906f92c622c11822c5d8d59877c9f63cab4b873ce7e07cb3940c02f",
-    "target_cif_sha256": "731da96a70b994c2959f5e954331b2ab44bd1608add0b3752fca82c98b0515ef",
+    "target_cif_sha256": "14964ea2b50b1056ff9a3e8a5fe610585615abf0cccb311578602f3a84574086",
     "initial": "instances/delete_below_atom_action/s26/initial.cif",
     "target": "instances/delete_below_atom_action/s26/target.cif",
-    "prompt": "instances/delete_below_atom_action/s26/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s26/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s27",
     "action": "delete_below_atom_action",
     "sample": 27,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "141fd3843a33a54ef374522742c3819e58ba204fa72b26d866a7ce30952ac4d0",
-    "target_cif_sha256": "dcfda27256192896cabfa3dce5b0ee2b7b41d85e879b7f837df22b841876b304",
+    "target_cif_sha256": "57d033df8b6731be107475ffb02380470d387c5b62f36187d4bfa3f8ea0d0ee6",
     "initial": "instances/delete_below_atom_action/s27/initial.cif",
     "target": "instances/delete_below_atom_action/s27/target.cif",
-    "prompt": "instances/delete_below_atom_action/s27/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s27/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s30",
     "action": "delete_below_atom_action",
     "sample": 30,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 2 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 2 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "ea556e93314a69a1fcf9e2ad80432b19bf3ef1b618557cbdff01455eacfc9dfe",
-    "target_cif_sha256": "eb7fb9d84fd27e2804f86d92a6eec0b666848fd7503c74829f4f4eccef604fdc",
+    "target_cif_sha256": "030465c4d3ae295254b81e292f0a22a8e747ef42375ef663141223d0f3bef00a",
     "initial": "instances/delete_below_atom_action/s30/initial.cif",
     "target": "instances/delete_below_atom_action/s30/target.cif",
-    "prompt": "instances/delete_below_atom_action/s30/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s30/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s32",
     "action": "delete_below_atom_action",
     "sample": 32,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 6 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 6 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "b55d8b757b641b494ca64273a088e0f7d147b2cb7e9c91e8abf5ad383d89bb2c",
-    "target_cif_sha256": "50091fb1af2e99b34e7e8e1ce1855dbc91c6c33d406289fe95ce16c8098aa3d6",
+    "target_cif_sha256": "61383213173f63f387cbbf8adf3fa13bb5d25b3b05584d34845e59e793d33ebf",
     "initial": "instances/delete_below_atom_action/s32/initial.cif",
     "target": "instances/delete_below_atom_action/s32/target.cif",
-    "prompt": "instances/delete_below_atom_action/s32/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s32/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s35",
     "action": "delete_below_atom_action",
     "sample": 35,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 13 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 13 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "29d374cec582243ed59961990a413a4894ddd2d54ad813b012959a80e620a5ef",
-    "target_cif_sha256": "ee9702e5667b1ee6a0190ef04931aa59cb39a99af3c651d51b3338f7afdaea47",
+    "target_cif_sha256": "c106c6cde646650b6bc9e887cb34dd68b0ef9dcddc8b45532f6e38deedb5bfe8",
     "initial": "instances/delete_below_atom_action/s35/initial.cif",
     "target": "instances/delete_below_atom_action/s35/target.cif",
-    "prompt": "instances/delete_below_atom_action/s35/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s35/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s36",
     "action": "delete_below_atom_action",
     "sample": 36,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 27 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 27 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "bdc7562dae10f3fc8de200b20c2801f1ca1d667c29db284a1c6222dddb029585",
-    "target_cif_sha256": "93e5bf995ee07ebffbdbcd84f74af53b17110b1ea54f6415a7aca9f984e77ef3",
+    "target_cif_sha256": "6e567e58eb53ed3b11c11a9eb6a9a4c89a72d3f4cbf0b5795baf641374b341f3",
     "initial": "instances/delete_below_atom_action/s36/initial.cif",
     "target": "instances/delete_below_atom_action/s36/target.cif",
-    "prompt": "instances/delete_below_atom_action/s36/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s36/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s39",
     "action": "delete_below_atom_action",
     "sample": 39,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 50 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 50 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "50109a0e3c507398202fe050721b6ef8b9d6a3cc36148587ba9b812d89351e9d",
-    "target_cif_sha256": "70a1bf59132149a39e9232b2a888b5d8994a32e64b02d3bd4c3b4c13e9489f74",
+    "target_cif_sha256": "ab4d74cd970dc0453ff4d85e97e4789226572f791d6877660c4c84049b166330",
     "initial": "instances/delete_below_atom_action/s39/initial.cif",
     "target": "instances/delete_below_atom_action/s39/target.cif",
-    "prompt": "instances/delete_below_atom_action/s39/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s39/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s40",
     "action": "delete_below_atom_action",
     "sample": 40,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 44 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 44 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "af84fbcdaac6901dd208428540fddf327a264b8f664fc2ddecfe03142ca55d77",
-    "target_cif_sha256": "9655c3a75e1bdc0b236df3226d04f65dee093d9ce409d7c8856f581d105be035",
+    "target_cif_sha256": "cf1b7b34f33868f6b593c2cbbeaa0eeb4e77d023f69147c32963b82328688a16",
     "initial": "instances/delete_below_atom_action/s40/initial.cif",
     "target": "instances/delete_below_atom_action/s40/target.cif",
-    "prompt": "instances/delete_below_atom_action/s40/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s40/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s41",
     "action": "delete_below_atom_action",
     "sample": 41,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 9 in the cif file. Including itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 9 in the cif file. Including itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "bc1d16c9df3fb24d3afd749dbc4fff3d0a75a5634356114ec7324ff3407d9950",
-    "target_cif_sha256": "be32faae4ca9a1d45e7168a0a73f0471b3ac0f59799a6166a84a45dfda54d22d",
+    "target_cif_sha256": "0ecc8266831cbde68e956f0957e4b1985dd2e9cdf6eae85394014b760ab8c38c",
     "initial": "instances/delete_below_atom_action/s41/initial.cif",
     "target": "instances/delete_below_atom_action/s41/target.cif",
-    "prompt": "instances/delete_below_atom_action/s41/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s41/prompt.txt",
+    "variant": "Including"
   },
   {
     "instance_id": "delete_below_atom_action/s43",
     "action": "delete_below_atom_action",
     "sample": 43,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 22 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 22 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "54cbadee63df36382f388875902e9dc2cc1853054f28e68f0f150aedd6365b6c",
-    "target_cif_sha256": "82e33f5c040e0fd7a7581ae187ef455798589dd7fbfb6c9211fc36261cff7f7e",
+    "target_cif_sha256": "1b4fbadbaa37ed4fb075a827b9c24331c82f52f5d6cf45ed81f06ec446d33ced",
     "initial": "instances/delete_below_atom_action/s43/initial.cif",
     "target": "instances/delete_below_atom_action/s43/target.cif",
-    "prompt": "instances/delete_below_atom_action/s43/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s43/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s44",
     "action": "delete_below_atom_action",
     "sample": 44,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 2 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 2 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "de0b87be3a4e408ca26ef9b79d4f968210196eb69a999aa8da0156357880950b",
-    "target_cif_sha256": "7553b7fb31496f8da5bd79050f9b0e8a224a2ca7e153b2e797e191ebe9cc2abb",
+    "target_cif_sha256": "d91caf769b9393a036c98e44c4016622567dbd3f19ffb7ae33d6da5507ecd070",
     "initial": "instances/delete_below_atom_action/s44/initial.cif",
     "target": "instances/delete_below_atom_action/s44/target.cif",
-    "prompt": "instances/delete_below_atom_action/s44/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s44/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s45",
     "action": "delete_below_atom_action",
     "sample": 45,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "0e44d1c8d017978061dc5c784cd2f951d45cd336671d21bf0cb390afd39be848",
-    "target_cif_sha256": "d88427fc9162ea682546d516f7490405794b5b921aa6fe4f68c53b6256fb16e9",
+    "target_cif_sha256": "786aa543ef0cad60bcb07464c4ddefd8d9724c64861857f3370893ce60a8ca42",
     "initial": "instances/delete_below_atom_action/s45/initial.cif",
     "target": "instances/delete_below_atom_action/s45/target.cif",
-    "prompt": "instances/delete_below_atom_action/s45/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s45/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s46",
     "action": "delete_below_atom_action",
     "sample": 46,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 6 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 6 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "2d55ead8f6ea47e48d41f2ca48c29adce97676107cfbe17db1e69624b6e9315d",
-    "target_cif_sha256": "c5ff1864315b244eddeaa2990ce39802551e39705c87e911252de8fbc9ca8ad0",
+    "target_cif_sha256": "a58015f7bf9a3c56f572a677f3738092f02aa625bc8bb86751ec4b247982ea41",
     "initial": "instances/delete_below_atom_action/s46/initial.cif",
     "target": "instances/delete_below_atom_action/s46/target.cif",
-    "prompt": "instances/delete_below_atom_action/s46/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s46/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s47",
     "action": "delete_below_atom_action",
     "sample": 47,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 1 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 1 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "10117184bad01e123fff45632b652f08642156efdfa31a42badb22744d27dc4e",
-    "target_cif_sha256": "5e60e07566ce2fc27a3704d2819a1360a25b7973c4f312cf34539dd0a049c16d",
+    "target_cif_sha256": "bfa4b038777e784df76a5cec9e1970608de110dc0f0bf30936a9c72a3935a285",
     "initial": "instances/delete_below_atom_action/s47/initial.cif",
     "target": "instances/delete_below_atom_action/s47/target.cif",
-    "prompt": "instances/delete_below_atom_action/s47/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s47/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s48",
     "action": "delete_below_atom_action",
     "sample": 48,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 52 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 52 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "59a41eb2231ffb7a5dcdd8df522b858231a302a63f8076a7407ec491919fee55",
-    "target_cif_sha256": "fed0c11d43cc5864923dd048c6e226099c5d3125ef93649382cdc1600d4c6e7d",
+    "target_cif_sha256": "81896599e022f5faae80ce5916092575d327140c3422d5b1058f27375967ea1a",
     "initial": "instances/delete_below_atom_action/s48/initial.cif",
     "target": "instances/delete_below_atom_action/s48/target.cif",
-    "prompt": "instances/delete_below_atom_action/s48/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s48/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "delete_below_atom_action/s49",
     "action": "delete_below_atom_action",
     "sample": 49,
-    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 12 in the cif file. Excluding itself and atoms with the same z coordinate.",
+    "task_prompt": "Delete all atoms whose z coordinate is lower than the atom at index 12 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.",
     "input_cif_sha256": "9bf8d7fcfab56a305e084395835671707f5ee5bfb77963767885cfab96dfb702",
-    "target_cif_sha256": "b7c21aecce466c61bcc8c1b9f629cfa6956dc73602b7b690cd25a09ad16ed2b0",
+    "target_cif_sha256": "d566cefe6171d0c54dc2a2e896992c062b75a5ac9657a914308c63ab8bcc8612",
     "initial": "instances/delete_below_atom_action/s49/initial.cif",
     "target": "instances/delete_below_atom_action/s49/target.cif",
-    "prompt": "instances/delete_below_atom_action/s49/prompt.txt"
+    "prompt": "instances/delete_below_atom_action/s49/prompt.txt",
+    "variant": "Excluding"
   },
   {
     "instance_id": "insert_between_atoms_action/s00",
@@ -998,7 +1088,8 @@
     "target_cif_sha256": "4e292de70d31bbde641e27507d9dc50590b4270b3cf60921c7062bdf6813f324",
     "initial": "instances/insert_between_atoms_action/s00/initial.cif",
     "target": "instances/insert_between_atoms_action/s00/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s00/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s00/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s02",
@@ -1009,7 +1100,8 @@
     "target_cif_sha256": "414e2f16a9011c5f8882fcb0348fd39683f8f9c49d4a9b3dd04cadd64c937b9d",
     "initial": "instances/insert_between_atoms_action/s02/initial.cif",
     "target": "instances/insert_between_atoms_action/s02/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s02/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s02/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s04",
@@ -1020,7 +1112,8 @@
     "target_cif_sha256": "0976f2e1a4473e7296efc87307c55ec658d7f5218b87539b931e2b145a274da8",
     "initial": "instances/insert_between_atoms_action/s04/initial.cif",
     "target": "instances/insert_between_atoms_action/s04/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s04/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s04/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s05",
@@ -1031,7 +1124,8 @@
     "target_cif_sha256": "4bbb2e16990678da9e21cc1571caf5ab4a7c865f115915b617e48069e50fced0",
     "initial": "instances/insert_between_atoms_action/s05/initial.cif",
     "target": "instances/insert_between_atoms_action/s05/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s05/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s05/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s06",
@@ -1042,7 +1136,8 @@
     "target_cif_sha256": "5d2e77b92c14d2bcec8e1e49f59b58651f86f169110c59aa24f1fcbad7153c52",
     "initial": "instances/insert_between_atoms_action/s06/initial.cif",
     "target": "instances/insert_between_atoms_action/s06/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s06/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s06/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s08",
@@ -1053,7 +1148,8 @@
     "target_cif_sha256": "517eb987711ec518bf131a86cbb08f77bcfdd5f7bc80484f0e0206351d8d5103",
     "initial": "instances/insert_between_atoms_action/s08/initial.cif",
     "target": "instances/insert_between_atoms_action/s08/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s08/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s08/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s10",
@@ -1064,7 +1160,8 @@
     "target_cif_sha256": "4d756fdf9a4b3426afaaf8d11a493a94c6f20eb8cec284d9eabf434b7727df24",
     "initial": "instances/insert_between_atoms_action/s10/initial.cif",
     "target": "instances/insert_between_atoms_action/s10/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s10/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s10/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s12",
@@ -1075,7 +1172,8 @@
     "target_cif_sha256": "834f3402484676bc92c6e4a2576cde6f7551f1f39fb0488c2e597bfaede966de",
     "initial": "instances/insert_between_atoms_action/s12/initial.cif",
     "target": "instances/insert_between_atoms_action/s12/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s12/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s12/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s15",
@@ -1086,7 +1184,8 @@
     "target_cif_sha256": "7d89de384639a2a50a687fd59e2bd6f676496bbc593a99eb4b8d2e509d427489",
     "initial": "instances/insert_between_atoms_action/s15/initial.cif",
     "target": "instances/insert_between_atoms_action/s15/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s15/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s15/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s17",
@@ -1097,7 +1196,8 @@
     "target_cif_sha256": "f767cf6332ebe9643f7f266da6b5dbeb0c7ccec813ccca02c7f616e0e92a3434",
     "initial": "instances/insert_between_atoms_action/s17/initial.cif",
     "target": "instances/insert_between_atoms_action/s17/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s17/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s17/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s18",
@@ -1108,7 +1208,8 @@
     "target_cif_sha256": "ff8f39294e01c3e004220527f4fb9e65c9c4d12d5c094a90efa92feef1f4e1a6",
     "initial": "instances/insert_between_atoms_action/s18/initial.cif",
     "target": "instances/insert_between_atoms_action/s18/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s18/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s18/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s21",
@@ -1119,7 +1220,8 @@
     "target_cif_sha256": "50bc77bf5ec59e9c370fa293ce4f884afd37240ff2c581393e58318446d2bd5c",
     "initial": "instances/insert_between_atoms_action/s21/initial.cif",
     "target": "instances/insert_between_atoms_action/s21/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s21/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s21/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s24",
@@ -1130,7 +1232,8 @@
     "target_cif_sha256": "341afa82c101687b0dd5202fd17a5344b99f6cc87b8936f62ffb03e6b8ca779f",
     "initial": "instances/insert_between_atoms_action/s24/initial.cif",
     "target": "instances/insert_between_atoms_action/s24/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s24/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s24/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s25",
@@ -1141,7 +1244,8 @@
     "target_cif_sha256": "10790ea6c974ad3cb8e70b4b358a7020456532021ac00fbfc36528d9cef7bc30",
     "initial": "instances/insert_between_atoms_action/s25/initial.cif",
     "target": "instances/insert_between_atoms_action/s25/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s25/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s25/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s26",
@@ -1152,7 +1256,8 @@
     "target_cif_sha256": "316867e267c7f7781ee2465ce0ea8f768b1ab52f79a2e550a88ca590f5fbaca2",
     "initial": "instances/insert_between_atoms_action/s26/initial.cif",
     "target": "instances/insert_between_atoms_action/s26/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s26/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s26/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s27",
@@ -1163,7 +1268,8 @@
     "target_cif_sha256": "b6736cfbadc4bfbf4cbb0269ac17c123701b082e9f75dce3071da02217a4a1d5",
     "initial": "instances/insert_between_atoms_action/s27/initial.cif",
     "target": "instances/insert_between_atoms_action/s27/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s27/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s27/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s30",
@@ -1174,7 +1280,8 @@
     "target_cif_sha256": "8e2335c5f588a78f429aacfbeab928ff0f61ec7f13ab3f6d9fa944438b7d4362",
     "initial": "instances/insert_between_atoms_action/s30/initial.cif",
     "target": "instances/insert_between_atoms_action/s30/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s30/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s30/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s32",
@@ -1185,7 +1292,8 @@
     "target_cif_sha256": "d829bb28b7af6cc65493bbf2b1068f9b244cdf078e219c7c7a20a338fa74f92d",
     "initial": "instances/insert_between_atoms_action/s32/initial.cif",
     "target": "instances/insert_between_atoms_action/s32/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s32/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s32/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s35",
@@ -1196,7 +1304,8 @@
     "target_cif_sha256": "66c6944abb3240bb319bff96ea41a14f7633b80866a26eb714e9a2614e634944",
     "initial": "instances/insert_between_atoms_action/s35/initial.cif",
     "target": "instances/insert_between_atoms_action/s35/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s35/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s35/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s36",
@@ -1207,7 +1316,8 @@
     "target_cif_sha256": "951890b907efcfb932c3d106c6008c201e0e6533d148254868302d3f0e3105e9",
     "initial": "instances/insert_between_atoms_action/s36/initial.cif",
     "target": "instances/insert_between_atoms_action/s36/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s36/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s36/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s39",
@@ -1218,7 +1328,8 @@
     "target_cif_sha256": "5ccc7344ca23fce4951d8c356e1bf92145e0d773e14035bcb39370513908675e",
     "initial": "instances/insert_between_atoms_action/s39/initial.cif",
     "target": "instances/insert_between_atoms_action/s39/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s39/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s39/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s40",
@@ -1229,7 +1340,8 @@
     "target_cif_sha256": "1721d16e3e646387441401904e564faf2ca7b7a71f559cba8af0dde64c63270b",
     "initial": "instances/insert_between_atoms_action/s40/initial.cif",
     "target": "instances/insert_between_atoms_action/s40/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s40/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s40/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s41",
@@ -1240,7 +1352,8 @@
     "target_cif_sha256": "1c0e0b25b21dfaa22a18d507ab3543feaa3040f42f9bdd70c32edee0a363f3cd",
     "initial": "instances/insert_between_atoms_action/s41/initial.cif",
     "target": "instances/insert_between_atoms_action/s41/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s41/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s41/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s43",
@@ -1251,7 +1364,8 @@
     "target_cif_sha256": "cd23adda1a2601f95167132c4919e74645b51ff7c81f27cee7dd9ae285a54614",
     "initial": "instances/insert_between_atoms_action/s43/initial.cif",
     "target": "instances/insert_between_atoms_action/s43/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s43/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s43/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s44",
@@ -1262,7 +1376,8 @@
     "target_cif_sha256": "a5fab35285c4a32ab7e8fe0d8ed5403f8a069eeef06ce3c03dcb0d6c34831536",
     "initial": "instances/insert_between_atoms_action/s44/initial.cif",
     "target": "instances/insert_between_atoms_action/s44/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s44/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s44/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s45",
@@ -1273,7 +1388,8 @@
     "target_cif_sha256": "246694db097563dc9109992bc9061fe54d3484eda620e1346655e9e435f1da04",
     "initial": "instances/insert_between_atoms_action/s45/initial.cif",
     "target": "instances/insert_between_atoms_action/s45/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s45/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s45/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s46",
@@ -1284,7 +1400,8 @@
     "target_cif_sha256": "f86cd4aed4de13512b02c2e505d52860965674c37cee5048f3ae6fc5a0bb7818",
     "initial": "instances/insert_between_atoms_action/s46/initial.cif",
     "target": "instances/insert_between_atoms_action/s46/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s46/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s46/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s47",
@@ -1295,7 +1412,8 @@
     "target_cif_sha256": "3a6677352b832037f6d952d512f64118b089d15e515dc975c5ba4f9c607d2f9a",
     "initial": "instances/insert_between_atoms_action/s47/initial.cif",
     "target": "instances/insert_between_atoms_action/s47/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s47/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s47/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s48",
@@ -1306,7 +1424,8 @@
     "target_cif_sha256": "ca6f15a7247d31367fef936e773424341cdceb027760698bb7ae980fb9ad1ded",
     "initial": "instances/insert_between_atoms_action/s48/initial.cif",
     "target": "instances/insert_between_atoms_action/s48/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s48/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s48/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "insert_between_atoms_action/s49",
@@ -1317,7 +1436,8 @@
     "target_cif_sha256": "e66075ee0174bc34a5f2710b8cba14250590356e87ef198304e0aaeb3ff54198",
     "initial": "instances/insert_between_atoms_action/s49/initial.cif",
     "target": "instances/insert_between_atoms_action/s49/target.cif",
-    "prompt": "instances/insert_between_atoms_action/s49/prompt.txt"
+    "prompt": "instances/insert_between_atoms_action/s49/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s00",
@@ -1328,7 +1448,8 @@
     "target_cif_sha256": "cc1f86165732ada382fe61472e2868250bcd9c1869b601b8500df6da94efad8c",
     "initial": "instances/move_towards_atom_action/s00/initial.cif",
     "target": "instances/move_towards_atom_action/s00/target.cif",
-    "prompt": "instances/move_towards_atom_action/s00/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s00/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s02",
@@ -1339,7 +1460,8 @@
     "target_cif_sha256": "0dec13e52ab8b3abe9dc5b0e44f999724fd8dbfe9caaeafd380a2c2c95359cc9",
     "initial": "instances/move_towards_atom_action/s02/initial.cif",
     "target": "instances/move_towards_atom_action/s02/target.cif",
-    "prompt": "instances/move_towards_atom_action/s02/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s02/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s04",
@@ -1350,7 +1472,8 @@
     "target_cif_sha256": "4c9eb480eb534a9b758409f38ffe1c95a96b99c58327a468b398fd18b910de66",
     "initial": "instances/move_towards_atom_action/s04/initial.cif",
     "target": "instances/move_towards_atom_action/s04/target.cif",
-    "prompt": "instances/move_towards_atom_action/s04/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s04/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s05",
@@ -1361,7 +1484,8 @@
     "target_cif_sha256": "3d97e073f495988b766b908586f0b37e342db269b08b522195e80686d0219f54",
     "initial": "instances/move_towards_atom_action/s05/initial.cif",
     "target": "instances/move_towards_atom_action/s05/target.cif",
-    "prompt": "instances/move_towards_atom_action/s05/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s05/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s06",
@@ -1372,7 +1496,8 @@
     "target_cif_sha256": "dd5cef590450dec747839038ce5f35af7751b33b3ff27573e45d874bc807a942",
     "initial": "instances/move_towards_atom_action/s06/initial.cif",
     "target": "instances/move_towards_atom_action/s06/target.cif",
-    "prompt": "instances/move_towards_atom_action/s06/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s06/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s08",
@@ -1383,7 +1508,8 @@
     "target_cif_sha256": "d1dea6e1fd92dce60f9f3ad25e04e667ff9a528de75f3694f8ce597a23836108",
     "initial": "instances/move_towards_atom_action/s08/initial.cif",
     "target": "instances/move_towards_atom_action/s08/target.cif",
-    "prompt": "instances/move_towards_atom_action/s08/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s08/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s10",
@@ -1394,7 +1520,8 @@
     "target_cif_sha256": "7af12b17f7729fa748a0e20fb8696a266a0c28b4382290a94f136f26ed417270",
     "initial": "instances/move_towards_atom_action/s10/initial.cif",
     "target": "instances/move_towards_atom_action/s10/target.cif",
-    "prompt": "instances/move_towards_atom_action/s10/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s10/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s12",
@@ -1405,7 +1532,8 @@
     "target_cif_sha256": "fc3b484b2c9b9e53c1fdc3fbde96f93cb03096dcfcec110853fa368529f85bd3",
     "initial": "instances/move_towards_atom_action/s12/initial.cif",
     "target": "instances/move_towards_atom_action/s12/target.cif",
-    "prompt": "instances/move_towards_atom_action/s12/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s12/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s15",
@@ -1416,7 +1544,8 @@
     "target_cif_sha256": "7fbce01e8440958fdccf97076cec5a82b1a68044eb8a11f511255d410ca1c9fd",
     "initial": "instances/move_towards_atom_action/s15/initial.cif",
     "target": "instances/move_towards_atom_action/s15/target.cif",
-    "prompt": "instances/move_towards_atom_action/s15/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s15/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s17",
@@ -1427,7 +1556,8 @@
     "target_cif_sha256": "473fabf82ed9818e40bc0cabe51998a24e62798252a7b5cfe816564d5ee1d918",
     "initial": "instances/move_towards_atom_action/s17/initial.cif",
     "target": "instances/move_towards_atom_action/s17/target.cif",
-    "prompt": "instances/move_towards_atom_action/s17/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s17/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s18",
@@ -1438,7 +1568,8 @@
     "target_cif_sha256": "7c88ca6712bbca991b77b2b8e8d7fa739f281cb76356dad13282e5339f656c09",
     "initial": "instances/move_towards_atom_action/s18/initial.cif",
     "target": "instances/move_towards_atom_action/s18/target.cif",
-    "prompt": "instances/move_towards_atom_action/s18/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s18/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s21",
@@ -1449,7 +1580,8 @@
     "target_cif_sha256": "92d9628cd467a2d0c12b1fbeee84439f8c6e04e1a80b98458c8edfd1c7a0cd40",
     "initial": "instances/move_towards_atom_action/s21/initial.cif",
     "target": "instances/move_towards_atom_action/s21/target.cif",
-    "prompt": "instances/move_towards_atom_action/s21/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s21/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s24",
@@ -1460,7 +1592,8 @@
     "target_cif_sha256": "ec7564087b9a2c9581c70ab8f332a0cf37ede9a10e0775d99e7d3169258732a4",
     "initial": "instances/move_towards_atom_action/s24/initial.cif",
     "target": "instances/move_towards_atom_action/s24/target.cif",
-    "prompt": "instances/move_towards_atom_action/s24/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s24/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s25",
@@ -1471,7 +1604,8 @@
     "target_cif_sha256": "d52aa325704dccf64f62d239cb56a299a283f6dcb70c143cd96b038de013cd55",
     "initial": "instances/move_towards_atom_action/s25/initial.cif",
     "target": "instances/move_towards_atom_action/s25/target.cif",
-    "prompt": "instances/move_towards_atom_action/s25/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s25/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s26",
@@ -1482,7 +1616,8 @@
     "target_cif_sha256": "f1e5e2739cc5ce9a8dc0417c9736896db078fbd27a316a4ae55116ffe0440123",
     "initial": "instances/move_towards_atom_action/s26/initial.cif",
     "target": "instances/move_towards_atom_action/s26/target.cif",
-    "prompt": "instances/move_towards_atom_action/s26/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s26/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s27",
@@ -1493,7 +1628,8 @@
     "target_cif_sha256": "ed53616916d07bc7685231c3cdbd1e87db43216eaa8056a08e3486a4593892b4",
     "initial": "instances/move_towards_atom_action/s27/initial.cif",
     "target": "instances/move_towards_atom_action/s27/target.cif",
-    "prompt": "instances/move_towards_atom_action/s27/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s27/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s30",
@@ -1504,7 +1640,8 @@
     "target_cif_sha256": "9768e0836a3df09a08a7a74efed00a96fc2434d5159698191434a11707bfa89a",
     "initial": "instances/move_towards_atom_action/s30/initial.cif",
     "target": "instances/move_towards_atom_action/s30/target.cif",
-    "prompt": "instances/move_towards_atom_action/s30/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s30/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s32",
@@ -1515,7 +1652,8 @@
     "target_cif_sha256": "8f01d33fa1495dad92a5ee18c6108f343fc435dffc21e0145a660e7711ecf33a",
     "initial": "instances/move_towards_atom_action/s32/initial.cif",
     "target": "instances/move_towards_atom_action/s32/target.cif",
-    "prompt": "instances/move_towards_atom_action/s32/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s32/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s35",
@@ -1526,7 +1664,8 @@
     "target_cif_sha256": "c8658a5fa75041c2e1b7adb2dc0ea54fe609e414a67feaeb08e7964b9563b1f7",
     "initial": "instances/move_towards_atom_action/s35/initial.cif",
     "target": "instances/move_towards_atom_action/s35/target.cif",
-    "prompt": "instances/move_towards_atom_action/s35/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s35/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s36",
@@ -1537,7 +1676,8 @@
     "target_cif_sha256": "13256992be78e80834e0a9688e0b4c26fef512294a2fcc637418c2e022e232d3",
     "initial": "instances/move_towards_atom_action/s36/initial.cif",
     "target": "instances/move_towards_atom_action/s36/target.cif",
-    "prompt": "instances/move_towards_atom_action/s36/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s36/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s39",
@@ -1548,7 +1688,8 @@
     "target_cif_sha256": "0bd561f0b813d6de17aed08acec959e13e1869f74a82a58d1f3ac6019c4f14fd",
     "initial": "instances/move_towards_atom_action/s39/initial.cif",
     "target": "instances/move_towards_atom_action/s39/target.cif",
-    "prompt": "instances/move_towards_atom_action/s39/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s39/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s40",
@@ -1559,7 +1700,8 @@
     "target_cif_sha256": "246dcbd7b19c9edcbb27bc72b7ac7adb6e31d338df9c25ada75043598aafd10b",
     "initial": "instances/move_towards_atom_action/s40/initial.cif",
     "target": "instances/move_towards_atom_action/s40/target.cif",
-    "prompt": "instances/move_towards_atom_action/s40/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s40/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s41",
@@ -1570,7 +1712,8 @@
     "target_cif_sha256": "187a0ad191b88a29e8b9a3b57d8be087cb7f96881b9eabc61b5dd89e72aaefb7",
     "initial": "instances/move_towards_atom_action/s41/initial.cif",
     "target": "instances/move_towards_atom_action/s41/target.cif",
-    "prompt": "instances/move_towards_atom_action/s41/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s41/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s43",
@@ -1581,7 +1724,8 @@
     "target_cif_sha256": "e53b899ca784499c62ed4a35f8189f173d13b390a4db503d35f72ee3005e2ef9",
     "initial": "instances/move_towards_atom_action/s43/initial.cif",
     "target": "instances/move_towards_atom_action/s43/target.cif",
-    "prompt": "instances/move_towards_atom_action/s43/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s43/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s44",
@@ -1592,7 +1736,8 @@
     "target_cif_sha256": "8a7a0cbdac61836277836dbf230baa94ac3a290eb51fb14a14ea34f9bbd9468d",
     "initial": "instances/move_towards_atom_action/s44/initial.cif",
     "target": "instances/move_towards_atom_action/s44/target.cif",
-    "prompt": "instances/move_towards_atom_action/s44/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s44/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s45",
@@ -1603,7 +1748,8 @@
     "target_cif_sha256": "8e31c0562f481555bca0e57c2fd8ed5e6845918b4d9cb543a270da06fa85a985",
     "initial": "instances/move_towards_atom_action/s45/initial.cif",
     "target": "instances/move_towards_atom_action/s45/target.cif",
-    "prompt": "instances/move_towards_atom_action/s45/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s45/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s46",
@@ -1614,7 +1760,8 @@
     "target_cif_sha256": "a73e2f7515116d8b3c2bd9108c10bb4482e4f338bbe38fd4061a5a41799c3178",
     "initial": "instances/move_towards_atom_action/s46/initial.cif",
     "target": "instances/move_towards_atom_action/s46/target.cif",
-    "prompt": "instances/move_towards_atom_action/s46/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s46/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s47",
@@ -1625,7 +1772,8 @@
     "target_cif_sha256": "03769cc09c4264788f706466ace628b0f301ad17865403c4607fba0da8ca5fd8",
     "initial": "instances/move_towards_atom_action/s47/initial.cif",
     "target": "instances/move_towards_atom_action/s47/target.cif",
-    "prompt": "instances/move_towards_atom_action/s47/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s47/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s48",
@@ -1636,7 +1784,8 @@
     "target_cif_sha256": "da19beddd6af4d2ca62935ec8403426fc06314dbf0985462152700e6e0763de8",
     "initial": "instances/move_towards_atom_action/s48/initial.cif",
     "target": "instances/move_towards_atom_action/s48/target.cif",
-    "prompt": "instances/move_towards_atom_action/s48/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s48/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "move_towards_atom_action/s49",
@@ -1647,7 +1796,8 @@
     "target_cif_sha256": "2ee0c476708c2b1f7344820f3e3b962f006e014504af8c2211f3f18011cb7569",
     "initial": "instances/move_towards_atom_action/s49/initial.cif",
     "target": "instances/move_towards_atom_action/s49/target.cif",
-    "prompt": "instances/move_towards_atom_action/s49/prompt.txt"
+    "prompt": "instances/move_towards_atom_action/s49/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s00",
@@ -1658,7 +1808,8 @@
     "target_cif_sha256": "f93ba8f2a3d3648f04ba71a3892c4f90c3c08be6140bee105d36e168422bf0d7",
     "initial": "instances/rotate_around_atom_action/s00/initial.cif",
     "target": "instances/rotate_around_atom_action/s00/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s00/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s00/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s02",
@@ -1669,7 +1820,8 @@
     "target_cif_sha256": "77e625ec12e39fc7b39eab1fea2dbdffb1d1c92d929d3f99fb565bfcbbcd3b2d",
     "initial": "instances/rotate_around_atom_action/s02/initial.cif",
     "target": "instances/rotate_around_atom_action/s02/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s02/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s02/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s04",
@@ -1680,7 +1832,8 @@
     "target_cif_sha256": "28e444ea97376edf6c5999a8ba695b8abf1606fefe804df0420f2a4e5898004d",
     "initial": "instances/rotate_around_atom_action/s04/initial.cif",
     "target": "instances/rotate_around_atom_action/s04/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s04/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s04/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s05",
@@ -1691,7 +1844,8 @@
     "target_cif_sha256": "5e6010915ff523251764fa7e1feed206c01e14604e717eab4a8546969d6b21de",
     "initial": "instances/rotate_around_atom_action/s05/initial.cif",
     "target": "instances/rotate_around_atom_action/s05/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s05/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s05/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s06",
@@ -1702,7 +1856,8 @@
     "target_cif_sha256": "425b820ce6f7dcd1a4c4509a7b303f1d837566a9173cc3824238e05fd61a26bd",
     "initial": "instances/rotate_around_atom_action/s06/initial.cif",
     "target": "instances/rotate_around_atom_action/s06/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s06/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s06/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s08",
@@ -1713,7 +1868,8 @@
     "target_cif_sha256": "1c061b7d72a3758a9bfa2e35569546918bf843b4e4f9c7f09b037ba89369ccfa",
     "initial": "instances/rotate_around_atom_action/s08/initial.cif",
     "target": "instances/rotate_around_atom_action/s08/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s08/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s08/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s10",
@@ -1724,7 +1880,8 @@
     "target_cif_sha256": "c2dd0957b3fb66efedd3d9c8d91dfc6006ff452c48fe96ee0c7e02bad243479c",
     "initial": "instances/rotate_around_atom_action/s10/initial.cif",
     "target": "instances/rotate_around_atom_action/s10/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s10/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s10/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s12",
@@ -1735,7 +1892,8 @@
     "target_cif_sha256": "15e4ff16668476b2f2a7b1f6f7242d251013542db687692f467336c52f1acddb",
     "initial": "instances/rotate_around_atom_action/s12/initial.cif",
     "target": "instances/rotate_around_atom_action/s12/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s12/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s12/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s15",
@@ -1746,7 +1904,8 @@
     "target_cif_sha256": "3ac67fd6990494de8a367d0d88215c474c9c8de3ff934fd68a8d3138e2e04dbb",
     "initial": "instances/rotate_around_atom_action/s15/initial.cif",
     "target": "instances/rotate_around_atom_action/s15/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s15/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s15/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s17",
@@ -1757,7 +1916,8 @@
     "target_cif_sha256": "549da71c4cd36bce6f15a3ef3bd06392b8a6ede9c39a1f5a60f143b2e0f8e8f5",
     "initial": "instances/rotate_around_atom_action/s17/initial.cif",
     "target": "instances/rotate_around_atom_action/s17/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s17/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s17/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s18",
@@ -1768,7 +1928,8 @@
     "target_cif_sha256": "dee6859781d1d714b872c6fc06f1e984cf252c9f3cd99a619c90041c53d5ce1e",
     "initial": "instances/rotate_around_atom_action/s18/initial.cif",
     "target": "instances/rotate_around_atom_action/s18/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s18/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s18/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s21",
@@ -1779,7 +1940,8 @@
     "target_cif_sha256": "47175b68f46679e2a7d279c612bd225adad74c45b40b4605b42c7c0b98089568",
     "initial": "instances/rotate_around_atom_action/s21/initial.cif",
     "target": "instances/rotate_around_atom_action/s21/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s21/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s21/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s24",
@@ -1790,7 +1952,8 @@
     "target_cif_sha256": "5b0bcd7c805773f5d3f269f15632f4d8aaa9020ec555221f47f3b59de0057f35",
     "initial": "instances/rotate_around_atom_action/s24/initial.cif",
     "target": "instances/rotate_around_atom_action/s24/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s24/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s24/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s25",
@@ -1801,7 +1964,8 @@
     "target_cif_sha256": "183de884b1c923ae33c6bf556706264deb9e6d5279f5d3baead4dfe56bb4110d",
     "initial": "instances/rotate_around_atom_action/s25/initial.cif",
     "target": "instances/rotate_around_atom_action/s25/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s25/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s25/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s26",
@@ -1812,7 +1976,8 @@
     "target_cif_sha256": "00355a39bec460f3535e0e9af0a62c4b770d01bc792a31b4e2ce8521d46667e6",
     "initial": "instances/rotate_around_atom_action/s26/initial.cif",
     "target": "instances/rotate_around_atom_action/s26/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s26/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s26/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s27",
@@ -1823,7 +1988,8 @@
     "target_cif_sha256": "397e9bce22707856960c3881099746fa2276ece9ebabf75993fe7894e1896fe8",
     "initial": "instances/rotate_around_atom_action/s27/initial.cif",
     "target": "instances/rotate_around_atom_action/s27/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s27/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s27/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s30",
@@ -1834,7 +2000,8 @@
     "target_cif_sha256": "49f031b682f555dc606480c8c8b16e2dc4c65f44148f39b5f8051173d7103807",
     "initial": "instances/rotate_around_atom_action/s30/initial.cif",
     "target": "instances/rotate_around_atom_action/s30/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s30/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s30/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s32",
@@ -1845,7 +2012,8 @@
     "target_cif_sha256": "f3c7687bbd53135742de72a48f302c818e918162dd8090f645b4c9ee1b2399d8",
     "initial": "instances/rotate_around_atom_action/s32/initial.cif",
     "target": "instances/rotate_around_atom_action/s32/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s32/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s32/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s35",
@@ -1856,7 +2024,8 @@
     "target_cif_sha256": "2a55932c552b3a25e760aa9cdd04590c3d8f5bf94c1a396c59560325188c96cf",
     "initial": "instances/rotate_around_atom_action/s35/initial.cif",
     "target": "instances/rotate_around_atom_action/s35/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s35/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s35/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s36",
@@ -1867,7 +2036,8 @@
     "target_cif_sha256": "ec48bcca2dcbf1d1e2c85fcb66b35687524911c2964b51743bf3f93e44f86f05",
     "initial": "instances/rotate_around_atom_action/s36/initial.cif",
     "target": "instances/rotate_around_atom_action/s36/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s36/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s36/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s39",
@@ -1878,7 +2048,8 @@
     "target_cif_sha256": "79f490890b701b21b13726dc3d0666c8fa6878cb928221e40e184242adc424d5",
     "initial": "instances/rotate_around_atom_action/s39/initial.cif",
     "target": "instances/rotate_around_atom_action/s39/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s39/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s39/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s40",
@@ -1889,7 +2060,8 @@
     "target_cif_sha256": "6b24ef2635cc3a7c0ff750665f31cf5be33ad424551c55e19dbe18fbc0a0af0b",
     "initial": "instances/rotate_around_atom_action/s40/initial.cif",
     "target": "instances/rotate_around_atom_action/s40/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s40/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s40/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s41",
@@ -1900,7 +2072,8 @@
     "target_cif_sha256": "226c5871f790e0951a21a5bfb55274634839a7f7580acf17796140ad9f369cdf",
     "initial": "instances/rotate_around_atom_action/s41/initial.cif",
     "target": "instances/rotate_around_atom_action/s41/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s41/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s41/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s43",
@@ -1911,7 +2084,8 @@
     "target_cif_sha256": "3970c4c06ce58eea641cae72b01d00940d3ab30170b53666adba4a1bf39ea433",
     "initial": "instances/rotate_around_atom_action/s43/initial.cif",
     "target": "instances/rotate_around_atom_action/s43/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s43/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s43/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s44",
@@ -1922,7 +2096,8 @@
     "target_cif_sha256": "b2e506a8f163c8d2f665dad2ecddebc57c89f6bdf5b71ee9e0fdbc2690a0f5ad",
     "initial": "instances/rotate_around_atom_action/s44/initial.cif",
     "target": "instances/rotate_around_atom_action/s44/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s44/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s44/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s45",
@@ -1933,7 +2108,8 @@
     "target_cif_sha256": "950e2be0f6e148f19a82a1c9e2c073dac7333c314691b6e0772c0ade4cbd18a6",
     "initial": "instances/rotate_around_atom_action/s45/initial.cif",
     "target": "instances/rotate_around_atom_action/s45/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s45/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s45/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s46",
@@ -1944,7 +2120,8 @@
     "target_cif_sha256": "fad8d16f152f261c68264d577d3ce78e4c71e0c0ea619f72ee09a5ca1d64797e",
     "initial": "instances/rotate_around_atom_action/s46/initial.cif",
     "target": "instances/rotate_around_atom_action/s46/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s46/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s46/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s47",
@@ -1955,7 +2132,8 @@
     "target_cif_sha256": "6d73c4ead9e6defe04271670a5defecdd9112c22bb3160af3a4b132a2276c4b2",
     "initial": "instances/rotate_around_atom_action/s47/initial.cif",
     "target": "instances/rotate_around_atom_action/s47/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s47/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s47/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s48",
@@ -1966,7 +2144,8 @@
     "target_cif_sha256": "afa1fe8b3a4b4c69d66f07a51b919d1388d515e21c16af189764d22d57300d6e",
     "initial": "instances/rotate_around_atom_action/s48/initial.cif",
     "target": "instances/rotate_around_atom_action/s48/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s48/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s48/prompt.txt",
+    "variant": null
   },
   {
     "instance_id": "rotate_around_atom_action/s49",
@@ -1977,6 +2156,7 @@
     "target_cif_sha256": "8b3266fa7b1353c105af5c7e91d05266f6a4bd4363faaac0865aee8d6a94d7fa",
     "initial": "instances/rotate_around_atom_action/s49/initial.cif",
     "target": "instances/rotate_around_atom_action/s49/target.cif",
-    "prompt": "instances/rotate_around_atom_action/s49/prompt.txt"
+    "prompt": "instances/rotate_around_atom_action/s49/prompt.txt",
+    "variant": null
   }
 ]

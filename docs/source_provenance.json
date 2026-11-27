@@ -1,144 +1,127 @@
 {
-  "scope": "Current local active code, not a reconstructed historical code snapshot",
+  "scope": "Current active implementation with public paths and environment-only credential loading",
   "files": [
     {
-      "release_path": "src/agentv2/vision_agent.py",
-      "source_path": "src/agentv2/vision_agent.py",
-      "source_sha256": "dfaa68991c3028ae92efe882de801756406b02a6b25314c9e44e0a02509dcf28",
-      "release_sha256": "4cb24d05e921ff71d7cc416235469d29717ecd7f4d9ed629ce9dacce68e250f8",
-      "active_AST_preserved": true,
+      "release_path": "src/agentv2/run_agent_demo.py",
+      "source_sha256": "628c4eb8659dd503a59879717c02ec674692cfff66bd8ec4a287d8866ecb26d4",
+      "release_sha256": "12f6035b9d295ee2a63dd939ded57b8ca81eb06c58538fd86240e235d17586dd",
       "changes": [
-        "Inactive comments omitted; AST formatting only"
+        "API key loaded from environment only",
+        "Default task data directory resolves to paper_data/runtime; explicit paths unchanged",
+        "Inactive comments and documentation omitted; active implementation retained"
       ]
     },
     {
-      "release_path": "src/agentv2/run_agent_demo.py",
-      "source_path": "src/agentv2/run_agent_demo.py",
-      "source_sha256": "de203dd7d0dfdee86cd2d85d594a05d608cd3bc4cc91a198b974968cc740d2a0",
-      "release_sha256": "1cb3ec3b31f49ddadab2a5bf583ca3ace665b285e685916ad4a3e10974d13ff3",
-      "active_AST_preserved": true,
+      "release_path": "src/agentv2/vision_agent.py",
+      "source_sha256": "dfaa68991c3028ae92efe882de801756406b02a6b25314c9e44e0a02509dcf28",
+      "release_sha256": "3ff40475a2c4a4424ef259e540cb5cff5b0fe54f3f63d2b260c05601fe3300d8",
       "changes": [
-        "Inactive comments omitted; AST formatting only",
-        "API key now read only from environment variables; no embedded key distributed"
+        "Inactive comments and documentation omitted; active implementation retained"
       ]
     },
     {
       "release_path": "src/agentv2/structure_env.py",
-      "source_path": "src/agentv2/structure_env.py",
       "source_sha256": "dd2e2e4417d21f842fe3b98f7904ae3ac4aea085a85ade10a5373a825d36cb85",
-      "release_sha256": "7e96463ce3b5273afcf55a1a821616b71ab95fd840090df62f121fe873dcafb3",
-      "active_AST_preserved": true,
+      "release_sha256": "2d6dceb425671c4e87c7975a150485d3b5fb3f6b2636107420a663fb22834d86",
       "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
+        "Inactive comments and documentation omitted; active implementation retained"
       ]
     },
     {
       "release_path": "src/agentv2/tools_schema.py",
-      "source_path": "src/agentv2/tools_schema.py",
       "source_sha256": "66e84f0266fe69d4de8c905b3bbeb63f7ea88889a8a6502d5f028ecfff810d02",
-      "release_sha256": "9b378f5fa682026d8d6babb3e3eeb5fdaac8713675b6ae7bc5c79b60570af585",
-      "active_AST_preserved": true,
+      "release_sha256": "519563c82b0bc63967e8834b104687a1dd8770d65d3121d672e4ce7cda62ccc4",
       "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/evaluation/evaluator.py",
-      "source_path": "src/evaluation/evaluator.py",
-      "source_sha256": "7d2fdf63a8e66a2b113dbfe50a075ae6a7753617050ece53668372334d72525d",
-      "release_sha256": "732c97bb4b440b4f0beeb99914d41db79372cf4cb751890d2b7036cc49ad2fde",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/evaluation/base_evaluator.py",
-      "source_path": "src/evaluation/base_evaluator.py",
-      "source_sha256": "326ae4ab5ef8e648c5892fd7aa00e7f446d5aec50bd869f3b759e7c40c532e20",
-      "release_sha256": "51499d0f5cae2c0592ce13f6ea580626f5055ce36e6637fe7a54ef8207783be9",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/evaluation/metrics.py",
-      "source_path": "src/evaluation/metrics.py",
-      "source_sha256": "9fdea1746cd009474e985fcda6e88f4e58f6d66a4e3148393603fa562461c7e8",
-      "release_sha256": "4c2dada4e34f6bf921774309336bccbb7ecdc4cee5865c1b3a1008a626599a13",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/utils/dataloader.py",
-      "source_path": "src/utils/dataloader.py",
-      "source_sha256": "30ed0a649415aa2010f22b469524a5805ad6cf4c784e2ac89dac7aeeab8bc1f3",
-      "release_sha256": "e2ae118d2a1d07b7ff0cc0464ca8abc90772b68d9f58bd58ca6ffe5be7b3be62",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/utils/extract_data.py",
-      "source_path": "src/utils/extract_data.py",
-      "source_sha256": "011dc7b801221d3e6de6bfa2cf9cfe7b4330fb1f973e8433fa45f353a500cb5e",
-      "release_sha256": "b954145d4f69277ba55aa46da70cc00f44ce96e09206f942f3212ffbfc5f6016",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/utils/logger.py",
-      "source_path": "src/utils/logger.py",
-      "source_sha256": "9898553a8c6d1967d04fde0f2f4f3dda2dd46a8d2aac614b49e7f49c3035a551",
-      "release_sha256": "9d577ea245216ded2e53f062b2fdc38c1698df9f875ac5b2c3952138d0dd504e",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/scripts/load_data_from_h5.py",
-      "source_path": "src/scripts/load_data_from_h5.py",
-      "source_sha256": "83f380e4329755ec21e0171690f601d4f556310f6fd2d11b8dfd45f209b410a0",
-      "release_sha256": "3d7a6a21d49b97e9d176c8f2081cf1dabce368c39105e45ffb79a4c3b0e773d3",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/prompts/cif_action_prompt.py",
-      "source_path": "src/prompts/cif_action_prompt.py",
-      "source_sha256": "f0dc16836048e54eb69bb6b18540fea01f081e68a428d2fc330d5c5ee061bf9b",
-      "release_sha256": "3a099fec2a264886c74dc36c93eaae0a4e879d729c005810a50ea638ae63552a",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
-      ]
-    },
-    {
-      "release_path": "src/models/base_model.py",
-      "source_path": "src/models/base_model.py",
-      "source_sha256": "8016518334ae32145e9611d0cf7ce70384feddf012a626435f2d7bdaa14baa40",
-      "release_sha256": "402ad459c721a8788ec24b7ccc5d82c5cee54aec8366b44c48e99b63031dcf53",
-      "active_AST_preserved": true,
-      "changes": [
-        "Existing release omits inactive comments/docstrings; active AST verified against actual local source"
+        "Inactive comments and documentation omitted; active implementation retained"
       ]
     },
     {
       "release_path": "src/agentv2/offline_noop_filter.py",
-      "source_path": "src/agentv2/offline_noop_filter.py",
       "source_sha256": "0f96198f60246b23098a3694e22415dbfe372ce549d3b7e2eab27107aac128fb",
-      "release_sha256": "0f96198f60246b23098a3694e22415dbfe372ce549d3b7e2eab27107aac128fb",
-      "byte_identical": true,
-      "changes": []
+      "release_sha256": "44f5fc9696cb7c2fa7a507f17b79c2c44834d4ef0b0259ace194fad55d268d1f",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/evaluation/evaluator.py",
+      "source_sha256": "7d2fdf63a8e66a2b113dbfe50a075ae6a7753617050ece53668372334d72525d",
+      "release_sha256": "ab78b73f8adcbbea5074ff9e0d157599011463d90f0800e0df0606a5c9236a46",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/evaluation/base_evaluator.py",
+      "source_sha256": "326ae4ab5ef8e648c5892fd7aa00e7f446d5aec50bd869f3b759e7c40c532e20",
+      "release_sha256": "0177cc21556fc5bf1025d5e76d016990061bafa148086fd7e8eee2dc002e8912",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/evaluation/metrics.py",
+      "source_sha256": "9fdea1746cd009474e985fcda6e88f4e58f6d66a4e3148393603fa562461c7e8",
+      "release_sha256": "f0e9993ba6f712f57a7a9f42d4d0e4bd74989a963714512e7a38e641e2b8b7f2",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/utils/dataloader.py",
+      "source_sha256": "30ed0a649415aa2010f22b469524a5805ad6cf4c784e2ac89dac7aeeab8bc1f3",
+      "release_sha256": "80e2284cb3c139e3674cf241235722272068850b31790efac834d3710b5feb06",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/utils/extract_data.py",
+      "source_sha256": "011dc7b801221d3e6de6bfa2cf9cfe7b4330fb1f973e8433fa45f353a500cb5e",
+      "release_sha256": "58aec8edc75c8a97ea48447f528156bbb6282bac11e2fa1d87ed4be74bdf712d",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/utils/logger.py",
+      "source_sha256": "9898553a8c6d1967d04fde0f2f4f3dda2dd46a8d2aac614b49e7f49c3035a551",
+      "release_sha256": "77f2cf413003667dc0ed838143f4e29c50b4cbb892689540fc003a2e3c530db4",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/scripts/load_data_from_h5.py",
+      "source_sha256": "83f380e4329755ec21e0171690f601d4f556310f6fd2d11b8dfd45f209b410a0",
+      "release_sha256": "b9ab1e27b1559014daedba81775fb1800376e61850cefac392712f88aecd579c",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/prompts/cif_action_prompt.py",
+      "source_sha256": "f0dc16836048e54eb69bb6b18540fea01f081e68a428d2fc330d5c5ee061bf9b",
+      "release_sha256": "2c06cf376967e7698b64ea3b4315292f82cf7db71793d8a671979c26a90ad7cc",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/models/base_model.py",
+      "source_sha256": "8016518334ae32145e9611d0cf7ce70384feddf012a626435f2d7bdaa14baa40",
+      "release_sha256": "779ab2398387347f110b3ae9f42bdcb5a1b277b188197c3c1cf960d5f0bff952",
+      "changes": [
+        "Inactive comments and documentation omitted; active implementation retained"
+      ]
+    },
+    {
+      "release_path": "src/atom_world/actions.py",
+      "source_sha256": "faccb9afe116a1eeac3e8dc21e1868e9d62e51876e4a9327052bf305cfa1c0a9",
+      "release_sha256": "ce9f210e487f52ecbefaf1c31e5a56c7c0f6c6e40cb3b0a65027d4c839db569a",
+      "changes": [
+        "Only evaluated atom-edit reference classes and their helper dependencies retained; DeleteBelowAtomAction copied unchanged"
+      ]
     }
   ]
 }

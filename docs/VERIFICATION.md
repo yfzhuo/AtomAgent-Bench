@@ -1,21 +1,18 @@
-# Release verification
+# Verification of the current release
 
-The published six-task result set is matched by `paper_data/instance_manifest.json`: 1800 configurations, 180 task instances, 1810 saved candidate logs, and 3398 visual observations. Six historical source identities remain ambiguous and all candidates are disclosed; each configuration is counted once.
+The current manifest contains 1800 configurations and 180 task instances. It maps 1809 saved source-candidate trajectories, 3281 visual observations and all final submitted CIFs to the manuscript results. Five configurations retain multiple source candidates; all candidates agree and each configuration is counted once.
 
-Checks actually performed:
+Checks performed for this release:
 
-1. Created a clean Python 3.12 virtual environment and installed the runtime/test requirements. `pip check` passed. A later compatible transitive-dependency lock removed the encountered Monty deprecation warning; all seven runtime tests then passed without warnings.
-2. Runtime tests exercised the actual CLI, OpenAI SDK HTTP transport against a deterministic localhost mock, submit/repair flow, binary feedback, view ON/OFF, CIF export, rendering, stage exhaustion and fresh repeat state. The same seven tests passed after cloning the public repository into a new directory.
-3. Recomputed all 1800 archived final outcomes with the actual current live evaluator classes. All 1810 candidate logs agreed with their existing final audit; 1583 PASS, 217 FAIL, zero unresolved. 650 distinct action/input/target/prompt/final-input combinations were scored, with exact-input caching. The full audit was repeated under the final pinned dependencies with the same PASS/FAIL result. Parser warnings, where present, remain in the audit output.
-4. Verified every candidate/run/final-CIF hash, input/target/prompt correspondence, model configuration and all 3398 PNGs. Fig2–4 counts matched the manifest. Rebuilt final paper figures in an independent directory: numerical data and all four reference PNG files were byte-identical on this machine. Font fallback on other systems may differ.
-5. Reaggregated the position-error table's 1800 records and all eight task/total rows: 1583 successful records and 37 strict-zero matches. These remain dimensionless matched/aligned values, not fixed-frame angstrom errors.
-6. Published the public GitHub repository and Release archive. Downloaded the full 505157350-byte asset from its public URL using the released downloader; SHA256 matched `384fbccbda9c4813438512b41626ec361f83c43325549aef4a775d8b5d6ce5e4`. Extracted it in the fresh clone and reran complete integrity checks and a scoring smoke test.
-7. Checked Bash syntax, the 30-instance wrapper and all 60 generated model–task–view commands (1800 configuration entries). The default full-benchmark script is dry-run to avoid accidentally launching paid requests.
+1. Nine tests passed (seven runtime tests and two canonical-dataset tests), exercising the real CLI and OpenAI HTTP transport against a deterministic local mock, view ON/OFF, binary feedback, submit/repair transitions, rendering, CIF export, budget exhaustion and repeat initialization.
+2. The actual published DeleteBelowAtomAction passed 308 reference-operation scenarios, including Including/Excluding boundaries, non-orthogonal cells, retained coordinates and lattice, prompt consistency, CIF round trips and randomized valid tasks.
+3. The published runtime evaluator reassessed all 1800 final outputs: **1607 PASS, 193 FAIL, zero unresolved and complete agreement**. All 1809 source candidates were checked, using 629 cached distinct structure combinations. The full results and parser warnings are recorded in `final_score_recheck.json`.
+4. Every saved input, prompt, reference, trajectory, model configuration and final-CIF hash was verified, as were all 3281 PNG observations. Figure counts match the manifest. The verification report is `release_integrity.json`.
+5. Figures 2–4 were regenerated in a separate directory, with exact byte agreement for the supplied figure PNGs on this machine. The framework figure is preserved.
+6. Input-cluster bootstrap and paired cluster sign-flip analyses were recomputed with the published code and match all supplied results.
+7. Position-error records are matched to all 1800 current configurations; means use the 1607 successful final outcomes and contain 37 strict-zero matches. The table retains the manuscript's adopted matcher measurements. Recorded online metrics can differ at numerical precision; they are not substituted for the adopted position-error table.
+8. Bash syntax and the 60 generated model–task–view commands were checked. Full evaluation is opt-in and incurs provider API usage.
 
-Scope: no real Qwen/DeepSeek API request was made during this verification; no environment API key was configured. Local mock tests verify the code/transport flow, not provider-side model access, stochastic independence, or equality to historical model snapshots. Live users must supply their own key and compatible endpoint. No archived model-generated Python was executed. The actual unrestricted `run_python` implementation is not an OS-isolated ground-truth environment.
+No real model API requests were made during these verification steps, and archived model-generated Python was not executed. Offline mock tests establish runnable code and HTTP/tool flow; provider account access and stochastic responses require the user's own credentials. `run_python` executes in the host process and is not an OS sandbox.
 
-## Suggested repository-publication response
-
-We have made the evaluated instance list, submitted structures, saved interaction trajectories, available model configurations, scoring code, and figure-generation scripts publicly available on GitHub. The release maps these materials to the 1800 configurations used for the revised six-task results and provides executable Bash commands, pinned runtime dependencies, and verification records. Large archived outputs are supplied as a checksum-verified GitHub Release asset.
-
-This statement concerns public materials and runnable code; it does not assert operating-system ground-truth isolation or completeness of unrecorded historical API parameters.
+Only the current Delete Below inputs, prompts and references are distributed in `paper_data/runtime/delete_below_atom_action.json`. Runtime defaults resolve to the current canonical data directory. The public files contain no real API key.

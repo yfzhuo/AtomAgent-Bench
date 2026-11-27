@@ -1,0 +1,1375 @@
+{
+  "method": {
+    "bootstrap": "stratified input-cluster percentile bootstrap; complete ON/OFF pairs and all associated model/task outcomes resampled together",
+    "bootstrap_replicates": 100000,
+    "seed": 20261126,
+    "rng": "PCG64",
+    "confidence_interval": "two-sided 95% percentile, NumPy linear quantiles",
+    "test": "exact two-sided paired cluster sign-flip test for the sum of ON-OFF outcomes; dynamic programming enumerates the exact distribution",
+    "test_assumption": "under the null, complete ON/OFF labels are exchangeable within each independent input cluster (conditional sign symmetry). This is not proof of randomized assignment or a causal visual effect.",
+    "cluster_unit": "30 shared crystal inputs for the original five tasks; 30 separate molecule inputs for Remove Molecule. All-six analyses resample these two input groups separately, preserving the 5:1 task weight.",
+    "material_interpretation": "60 unique input structures, not an assertion of 60 independent parent materials; parent genealogy for molecule inputs is not present in the adopted result records.",
+    "multiplicity": "Holm correction within declared families: original-five pooled endpoints (2), all-six pooled endpoints (2), molecule endpoints (2), model-by-endpoint comparisons (10), task-by-endpoint comparisons (12).",
+    "McNemar": "A pooled 900-pair McNemar test is not used because repeated tasks/models on the same input violate pair independence.",
+    "scope": "Empirical uncertainty over the tested input structures, conditional on models, task templates and the recorded runs. Not repeated-model-sampling uncertainty or equivalence testing."
+  },
+  "input_sha256": "f11141dfae938d011b0ca866845f284dc2271dc5faa094667452a80dea7abea9",
+  "results": [
+    {
+      "scope": "original_five_tasks",
+      "label": "Five atomic-edit tasks",
+      "endpoint": "initial",
+      "paired_configurations": 750,
+      "configurations": 1500,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 505,
+      "OFF_successes": 488,
+      "ON_pct": 67.33333333333333,
+      "ON_CI95_pct": [
+        63.33333333333333,
+        71.2
+      ],
+      "OFF_pct": 65.06666666666666,
+      "OFF_CI95_pct": [
+        60.93333333333333,
+        69.33333333333334
+      ],
+      "pooled_pct": 66.2,
+      "pooled_CI95_pct": [
+        62.46666666666667,
+        69.93333333333334
+      ],
+      "ON_minus_OFF_pp": 2.2666666666666666,
+      "difference_CI95_pp": [
+        -0.9333333333333305,
+        5.466666666666664
+      ],
+      "paired_outcomes": {
+        "both_success": 397,
+        "ON_only_success": 108,
+        "OFF_only_success": 91,
+        "both_failure": 154
+      },
+      "cluster_signflip": {
+        "p": 0.20829501748085022,
+        "nonzero_clusters": 26,
+        "observed_sum": 17,
+        "tail_numerator": "13978442",
+        "permutations_denominator": "67108864"
+      },
+      "p_Holm_within_scope": 0.41659003496170044,
+      "multiplicity_family_size": 2
+    },
+    {
+      "scope": "original_five_tasks",
+      "label": "Five atomic-edit tasks",
+      "endpoint": "final",
+      "paired_configurations": 750,
+      "configurations": 1500,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 668,
+      "OFF_successes": 676,
+      "ON_pct": 89.06666666666668,
+      "ON_CI95_pct": [
+        86.0,
+        92.0
+      ],
+      "OFF_pct": 90.13333333333333,
+      "OFF_CI95_pct": [
+        86.66666666666667,
+        93.33333333333333
+      ],
+      "pooled_pct": 89.60000000000001,
+      "pooled_CI95_pct": [
+        86.66666666666667,
+        92.39999999999999
+      ],
+      "ON_minus_OFF_pp": -1.0666666666666667,
+      "difference_CI95_pp": [
+        -3.733333333333333,
+        1.6000000000000014
+      ],
+      "paired_outcomes": {
+        "both_success": 642,
+        "ON_only_success": 26,
+        "OFF_only_success": 34,
+        "both_failure": 48
+      },
+      "cluster_signflip": {
+        "p": 0.5014357566833496,
+        "nonzero_clusters": 23,
+        "observed_sum": -8,
+        "tail_numerator": "4206348",
+        "permutations_denominator": "8388608"
+      },
+      "p_Holm_within_scope": 0.5014357566833496,
+      "multiplicity_family_size": 2
+    },
+    {
+      "scope": "all_six_tasks",
+      "label": "All six tasks",
+      "endpoint": "initial",
+      "paired_configurations": 900,
+      "configurations": 1800,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 579,
+      "OFF_successes": 576,
+      "ON_pct": 64.33333333333333,
+      "ON_CI95_pct": [
+        60.333333333333336,
+        68.22222222222221
+      ],
+      "OFF_pct": 64.0,
+      "OFF_CI95_pct": [
+        59.77777777777777,
+        68.22222222222221
+      ],
+      "pooled_pct": 64.16666666666667,
+      "pooled_CI95_pct": [
+        60.33333333333333,
+        67.94444444444446
+      ],
+      "ON_minus_OFF_pp": 0.33333333333333337,
+      "difference_CI95_pp": [
+        -2.5555555555555554,
+        3.2222222222222263
+      ],
+      "paired_outcomes": {
+        "both_success": 461,
+        "ON_only_success": 118,
+        "OFF_only_success": 115,
+        "both_failure": 206
+      },
+      "cluster_signflip": {
+        "p": 0.8870975692088905,
+        "nonzero_clusters": 41,
+        "observed_sum": 3,
+        "tail_numerator": "1950748184634",
+        "permutations_denominator": "2199023255552"
+      },
+      "p_Holm_within_scope": 0.8870975692088905,
+      "multiplicity_family_size": 2
+    },
+    {
+      "scope": "all_six_tasks",
+      "label": "All six tasks",
+      "endpoint": "final",
+      "paired_configurations": 900,
+      "configurations": 1800,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 798,
+      "OFF_successes": 809,
+      "ON_pct": 88.66666666666667,
+      "ON_CI95_pct": [
+        86.0,
+        91.22222222222223
+      ],
+      "OFF_pct": 89.88888888888889,
+      "OFF_CI95_pct": [
+        86.8888888888889,
+        92.77777777777779
+      ],
+      "pooled_pct": 89.27777777777777,
+      "pooled_CI95_pct": [
+        86.66666666666667,
+        91.77777777777779
+      ],
+      "ON_minus_OFF_pp": -1.2222222222222223,
+      "difference_CI95_pp": [
+        -3.44444444444445,
+        1.0000000000000009
+      ],
+      "paired_outcomes": {
+        "both_success": 768,
+        "ON_only_success": 30,
+        "OFF_only_success": 41,
+        "both_failure": 61
+      },
+      "cluster_signflip": {
+        "p": 0.345659077167511,
+        "nonzero_clusters": 28,
+        "observed_sum": -11,
+        "tail_numerator": "92787152",
+        "permutations_denominator": "268435456"
+      },
+      "p_Holm_within_scope": 0.691318154335022,
+      "multiplicity_family_size": 2
+    },
+    {
+      "scope": "molecule_task",
+      "label": "Remove Molecule",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "molecule_inputs": 30
+      },
+      "ON_successes": 74,
+      "OFF_successes": 88,
+      "ON_pct": 49.333333333333336,
+      "ON_CI95_pct": [
+        35.333333333333336,
+        62.66666666666667
+      ],
+      "OFF_pct": 58.666666666666664,
+      "OFF_CI95_pct": [
+        44.666666666666664,
+        72.0
+      ],
+      "pooled_pct": 54.0,
+      "pooled_CI95_pct": [
+        40.666666666666664,
+        67.0
+      ],
+      "ON_minus_OFF_pp": -9.333333333333334,
+      "difference_CI95_pp": [
+        -16.666666666666664,
+        -2.666666666666667
+      ],
+      "paired_outcomes": {
+        "both_success": 64,
+        "ON_only_success": 10,
+        "OFF_only_success": 24,
+        "both_failure": 52
+      },
+      "cluster_signflip": {
+        "p": 0.0191650390625,
+        "nonzero_clusters": 15,
+        "observed_sum": -14,
+        "tail_numerator": "628",
+        "permutations_denominator": "32768"
+      },
+      "p_Holm_within_scope": 0.038330078125,
+      "multiplicity_family_size": 2
+    },
+    {
+      "scope": "molecule_task",
+      "label": "Remove Molecule",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "molecule_inputs": 30
+      },
+      "ON_successes": 130,
+      "OFF_successes": 133,
+      "ON_pct": 86.66666666666667,
+      "ON_CI95_pct": [
+        81.33333333333333,
+        92.0
+      ],
+      "OFF_pct": 88.66666666666667,
+      "OFF_CI95_pct": [
+        82.66666666666667,
+        94.0
+      ],
+      "pooled_pct": 87.66666666666667,
+      "pooled_CI95_pct": [
+        82.0,
+        92.66666666666666
+      ],
+      "ON_minus_OFF_pp": -2.0,
+      "difference_CI95_pp": [
+        -4.666666666666675,
+        0.666666666666671
+      ],
+      "paired_outcomes": {
+        "both_success": 126,
+        "ON_only_success": 4,
+        "OFF_only_success": 7,
+        "both_failure": 13
+      },
+      "cluster_signflip": {
+        "p": 0.375,
+        "nonzero_clusters": 5,
+        "observed_sum": -3,
+        "tail_numerator": "12",
+        "permutations_denominator": "32"
+      },
+      "p_Holm_within_scope": 0.375,
+      "multiplicity_family_size": 2
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3-VL-Plus",
+      "endpoint": "initial",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 101,
+      "OFF_successes": 102,
+      "ON_pct": 56.111111111111114,
+      "ON_CI95_pct": [
+        50.55555555555556,
+        61.66666666666667
+      ],
+      "OFF_pct": 56.666666666666664,
+      "OFF_CI95_pct": [
+        50.0,
+        63.33333333333333
+      ],
+      "pooled_pct": 56.388888888888886,
+      "pooled_CI95_pct": [
+        51.11111111111111,
+        61.66666666666667
+      ],
+      "ON_minus_OFF_pp": -0.5555555555555556,
+      "difference_CI95_pp": [
+        -6.666666666666665,
+        5.000000000000004
+      ],
+      "paired_outcomes": {
+        "both_success": 82,
+        "ON_only_success": 19,
+        "OFF_only_success": 20,
+        "both_failure": 59
+      },
+      "cluster_signflip": {
+        "p": 1.0,
+        "nonzero_clusters": 20,
+        "observed_sum": -1,
+        "tail_numerator": "1048576",
+        "permutations_denominator": "1048576"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3-VL-Plus",
+      "endpoint": "final",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 134,
+      "OFF_successes": 144,
+      "ON_pct": 74.44444444444444,
+      "ON_CI95_pct": [
+        69.44444444444444,
+        79.44444444444444
+      ],
+      "OFF_pct": 80.0,
+      "OFF_CI95_pct": [
+        75.55555555555556,
+        84.44444444444444
+      ],
+      "pooled_pct": 77.22222222222223,
+      "pooled_CI95_pct": [
+        73.05555555555556,
+        81.38888888888889
+      ],
+      "ON_minus_OFF_pp": -5.555555555555555,
+      "difference_CI95_pp": [
+        -10.555555555555552,
+        -1.1111111111111072
+      ],
+      "paired_outcomes": {
+        "both_success": 129,
+        "ON_only_success": 5,
+        "OFF_only_success": 15,
+        "both_failure": 31
+      },
+      "cluster_signflip": {
+        "p": 0.0462646484375,
+        "nonzero_clusters": 14,
+        "observed_sum": -10,
+        "tail_numerator": "758",
+        "permutations_denominator": "16384"
+      },
+      "p_Holm_within_scope": 0.4163818359375,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3.5-Plus",
+      "endpoint": "initial",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 111,
+      "OFF_successes": 126,
+      "ON_pct": 61.66666666666667,
+      "ON_CI95_pct": [
+        54.44444444444444,
+        69.44444444444444
+      ],
+      "OFF_pct": 70.0,
+      "OFF_CI95_pct": [
+        62.22222222222222,
+        77.22222222222223
+      ],
+      "pooled_pct": 65.83333333333333,
+      "pooled_CI95_pct": [
+        60.0,
+        71.66666666666667
+      ],
+      "ON_minus_OFF_pp": -8.333333333333332,
+      "difference_CI95_pp": [
+        -17.22222222222223,
+        1.1111111111111072
+      ],
+      "paired_outcomes": {
+        "both_success": 91,
+        "ON_only_success": 20,
+        "OFF_only_success": 35,
+        "both_failure": 34
+      },
+      "cluster_signflip": {
+        "p": 0.11062786728143692,
+        "nonzero_clusters": 31,
+        "observed_sum": -15,
+        "tail_numerator": "237571536",
+        "permutations_denominator": "2147483648"
+      },
+      "p_Holm_within_scope": 0.8850229382514954,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3.5-Plus",
+      "endpoint": "final",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 159,
+      "OFF_successes": 164,
+      "ON_pct": 88.33333333333333,
+      "ON_CI95_pct": [
+        83.33333333333334,
+        92.77777777777779
+      ],
+      "OFF_pct": 91.11111111111111,
+      "OFF_CI95_pct": [
+        87.22222222222223,
+        95.0
+      ],
+      "pooled_pct": 89.72222222222223,
+      "pooled_CI95_pct": [
+        85.83333333333334,
+        93.33333333333333
+      ],
+      "ON_minus_OFF_pp": -2.7777777777777777,
+      "difference_CI95_pp": [
+        -7.22222222222223,
+        1.6666666666666607
+      ],
+      "paired_outcomes": {
+        "both_success": 152,
+        "ON_only_success": 7,
+        "OFF_only_success": 12,
+        "both_failure": 9
+      },
+      "cluster_signflip": {
+        "p": 0.336669921875,
+        "nonzero_clusters": 14,
+        "observed_sum": -5,
+        "tail_numerator": "5516",
+        "permutations_denominator": "16384"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3.7-Plus",
+      "endpoint": "initial",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 119,
+      "OFF_successes": 129,
+      "ON_pct": 66.11111111111111,
+      "ON_CI95_pct": [
+        59.44444444444444,
+        72.77777777777777
+      ],
+      "OFF_pct": 71.66666666666667,
+      "OFF_CI95_pct": [
+        65.55555555555556,
+        77.22222222222223
+      ],
+      "pooled_pct": 68.88888888888889,
+      "pooled_CI95_pct": [
+        63.61111111111111,
+        74.16666666666667
+      ],
+      "ON_minus_OFF_pp": -5.555555555555555,
+      "difference_CI95_pp": [
+        -12.222222222222223,
+        1.1111111111111072
+      ],
+      "paired_outcomes": {
+        "both_success": 107,
+        "ON_only_success": 12,
+        "OFF_only_success": 22,
+        "both_failure": 39
+      },
+      "cluster_signflip": {
+        "p": 0.14521145820617676,
+        "nonzero_clusters": 24,
+        "observed_sum": -10,
+        "tail_numerator": "2436244",
+        "permutations_denominator": "16777216"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3.7-Plus",
+      "endpoint": "final",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 167,
+      "OFF_successes": 167,
+      "ON_pct": 92.77777777777779,
+      "ON_CI95_pct": [
+        89.44444444444444,
+        96.11111111111111
+      ],
+      "OFF_pct": 92.77777777777779,
+      "OFF_CI95_pct": [
+        89.44444444444444,
+        95.55555555555556
+      ],
+      "pooled_pct": 92.77777777777779,
+      "pooled_CI95_pct": [
+        90.0,
+        95.27777777777777
+      ],
+      "ON_minus_OFF_pp": 0.0,
+      "difference_CI95_pp": [
+        -3.3333333333333326,
+        3.3333333333333326
+      ],
+      "paired_outcomes": {
+        "both_success": 162,
+        "ON_only_success": 5,
+        "OFF_only_success": 5,
+        "both_failure": 8
+      },
+      "cluster_signflip": {
+        "p": 1.0,
+        "nonzero_clusters": 10,
+        "observed_sum": 0,
+        "tail_numerator": "1024",
+        "permutations_denominator": "1024"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3.8-Max",
+      "endpoint": "initial",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 126,
+      "OFF_successes": 108,
+      "ON_pct": 70.0,
+      "ON_CI95_pct": [
+        64.44444444444444,
+        75.55555555555556
+      ],
+      "OFF_pct": 60.0,
+      "OFF_CI95_pct": [
+        53.888888888888886,
+        66.11111111111111
+      ],
+      "pooled_pct": 65.0,
+      "pooled_CI95_pct": [
+        60.0,
+        70.0
+      ],
+      "ON_minus_OFF_pp": 10.0,
+      "difference_CI95_pp": [
+        2.777777777777779,
+        16.666666666666675
+      ],
+      "paired_outcomes": {
+        "both_success": 90,
+        "ON_only_success": 36,
+        "OFF_only_success": 18,
+        "both_failure": 36
+      },
+      "cluster_signflip": {
+        "p": 0.021293580532073975,
+        "nonzero_clusters": 29,
+        "observed_sum": 18,
+        "tail_numerator": "11431904",
+        "permutations_denominator": "536870912"
+      },
+      "p_Holm_within_scope": 0.21293580532073975,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "Qwen3.8-Max",
+      "endpoint": "final",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 166,
+      "OFF_successes": 165,
+      "ON_pct": 92.22222222222223,
+      "ON_CI95_pct": [
+        88.88888888888889,
+        95.55555555555556
+      ],
+      "OFF_pct": 91.66666666666666,
+      "OFF_CI95_pct": [
+        87.77777777777777,
+        95.55555555555556
+      ],
+      "pooled_pct": 91.94444444444444,
+      "pooled_CI95_pct": [
+        88.61111111111111,
+        95.0
+      ],
+      "ON_minus_OFF_pp": 0.5555555555555556,
+      "difference_CI95_pp": [
+        -2.2222222222222254,
+        3.3333333333333326
+      ],
+      "paired_outcomes": {
+        "both_success": 161,
+        "ON_only_success": 5,
+        "OFF_only_success": 4,
+        "both_failure": 10
+      },
+      "cluster_signflip": {
+        "p": 1.0,
+        "nonzero_clusters": 7,
+        "observed_sum": 1,
+        "tail_numerator": "128",
+        "permutations_denominator": "128"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "DeepSeek-V4-Flash",
+      "endpoint": "initial",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 122,
+      "OFF_successes": 111,
+      "ON_pct": 67.77777777777779,
+      "ON_CI95_pct": [
+        62.22222222222222,
+        73.88888888888889
+      ],
+      "OFF_pct": 61.66666666666667,
+      "OFF_CI95_pct": [
+        55.00000000000001,
+        68.33333333333333
+      ],
+      "pooled_pct": 64.72222222222223,
+      "pooled_CI95_pct": [
+        59.72222222222222,
+        69.72222222222221
+      ],
+      "ON_minus_OFF_pp": 6.111111111111111,
+      "difference_CI95_pp": [
+        -1.1111111111111183,
+        13.33333333333333
+      ],
+      "paired_outcomes": {
+        "both_success": 91,
+        "ON_only_success": 31,
+        "OFF_only_success": 20,
+        "both_failure": 38
+      },
+      "cluster_signflip": {
+        "p": 0.1862781774252653,
+        "nonzero_clusters": 33,
+        "observed_sum": 11,
+        "tail_numerator": "1600117360",
+        "permutations_denominator": "8589934592"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "model_six_tasks",
+      "label": "DeepSeek-V4-Flash",
+      "endpoint": "final",
+      "paired_configurations": 180,
+      "configurations": 360,
+      "clusters": 60,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30,
+        "molecule_inputs": 30
+      },
+      "ON_successes": 172,
+      "OFF_successes": 169,
+      "ON_pct": 95.55555555555556,
+      "ON_CI95_pct": [
+        92.77777777777779,
+        98.33333333333333
+      ],
+      "OFF_pct": 93.88888888888889,
+      "OFF_CI95_pct": [
+        90.0,
+        97.22222222222221
+      ],
+      "pooled_pct": 94.72222222222221,
+      "pooled_CI95_pct": [
+        92.22222222222223,
+        97.22222222222221
+      ],
+      "ON_minus_OFF_pp": 1.6666666666666667,
+      "difference_CI95_pp": [
+        -2.2222222222222254,
+        6.111111111111112
+      ],
+      "paired_outcomes": {
+        "both_success": 164,
+        "ON_only_success": 8,
+        "OFF_only_success": 5,
+        "both_failure": 3
+      },
+      "cluster_signflip": {
+        "p": 0.63671875,
+        "nonzero_clusters": 11,
+        "observed_sum": 3,
+        "tail_numerator": "1304",
+        "permutations_denominator": "2048"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 10
+    },
+    {
+      "scope": "task",
+      "label": "Delete Below",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 139,
+      "OFF_successes": 130,
+      "ON_pct": 92.66666666666666,
+      "ON_CI95_pct": [
+        88.66666666666667,
+        96.66666666666667
+      ],
+      "OFF_pct": 86.66666666666667,
+      "OFF_CI95_pct": [
+        82.0,
+        91.33333333333333
+      ],
+      "pooled_pct": 89.66666666666666,
+      "pooled_CI95_pct": [
+        86.33333333333333,
+        93.0
+      ],
+      "ON_minus_OFF_pp": 6.0,
+      "difference_CI95_pp": [
+        0.6666666666666599,
+        12.0
+      ],
+      "paired_outcomes": {
+        "both_success": 120,
+        "ON_only_success": 19,
+        "OFF_only_success": 10,
+        "both_failure": 1
+      },
+      "cluster_signflip": {
+        "p": 0.0780029296875,
+        "nonzero_clusters": 15,
+        "observed_sum": 9,
+        "tail_numerator": "2556",
+        "permutations_denominator": "32768"
+      },
+      "p_Holm_within_scope": 0.8580322265625,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Delete Below",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 149,
+      "OFF_successes": 150,
+      "ON_pct": 99.33333333333333,
+      "ON_CI95_pct": [
+        98.0,
+        100.0
+      ],
+      "OFF_pct": 100.0,
+      "OFF_CI95_pct": [
+        100.0,
+        100.0
+      ],
+      "pooled_pct": 99.66666666666667,
+      "pooled_CI95_pct": [
+        99.0,
+        100.0
+      ],
+      "ON_minus_OFF_pp": -0.6666666666666667,
+      "difference_CI95_pp": [
+        -2.0000000000000018,
+        0.0
+      ],
+      "paired_outcomes": {
+        "both_success": 149,
+        "ON_only_success": 0,
+        "OFF_only_success": 1,
+        "both_failure": 0
+      },
+      "cluster_signflip": {
+        "p": 1.0,
+        "nonzero_clusters": 1,
+        "observed_sum": -1,
+        "tail_numerator": "2",
+        "permutations_denominator": "2"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Delete Around",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 102,
+      "OFF_successes": 93,
+      "ON_pct": 68.0,
+      "ON_CI95_pct": [
+        59.333333333333336,
+        76.0
+      ],
+      "OFF_pct": 62.0,
+      "OFF_CI95_pct": [
+        55.333333333333336,
+        68.66666666666667
+      ],
+      "pooled_pct": 65.0,
+      "pooled_CI95_pct": [
+        58.666666666666664,
+        71.33333333333334
+      ],
+      "ON_minus_OFF_pp": 6.0,
+      "difference_CI95_pp": [
+        -2.6666666666666616,
+        14.66666666666666
+      ],
+      "paired_outcomes": {
+        "both_success": 71,
+        "ON_only_success": 31,
+        "OFF_only_success": 22,
+        "both_failure": 26
+      },
+      "cluster_signflip": {
+        "p": 0.2367560863494873,
+        "nonzero_clusters": 25,
+        "observed_sum": 9,
+        "tail_numerator": "7944216",
+        "permutations_denominator": "33554432"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Delete Around",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 145,
+      "OFF_successes": 149,
+      "ON_pct": 96.66666666666667,
+      "ON_CI95_pct": [
+        93.33333333333333,
+        99.33333333333333
+      ],
+      "OFF_pct": 99.33333333333333,
+      "OFF_CI95_pct": [
+        98.0,
+        100.0
+      ],
+      "pooled_pct": 98.0,
+      "pooled_CI95_pct": [
+        96.0,
+        99.66666666666666
+      ],
+      "ON_minus_OFF_pp": -2.666666666666667,
+      "difference_CI95_pp": [
+        -6.000000000000005,
+        0.0
+      ],
+      "paired_outcomes": {
+        "both_success": 145,
+        "ON_only_success": 0,
+        "OFF_only_success": 4,
+        "both_failure": 1
+      },
+      "cluster_signflip": {
+        "p": 0.25,
+        "nonzero_clusters": 3,
+        "observed_sum": -4,
+        "tail_numerator": "2",
+        "permutations_denominator": "8"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Insert Between",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 91,
+      "OFF_successes": 98,
+      "ON_pct": 60.66666666666667,
+      "ON_CI95_pct": [
+        50.0,
+        71.33333333333334
+      ],
+      "OFF_pct": 65.33333333333333,
+      "OFF_CI95_pct": [
+        55.333333333333336,
+        75.33333333333333
+      ],
+      "pooled_pct": 63.0,
+      "pooled_CI95_pct": [
+        53.333333333333336,
+        72.66666666666666
+      ],
+      "ON_minus_OFF_pp": -4.666666666666667,
+      "difference_CI95_pp": [
+        -12.666666666666659,
+        3.3333333333333326
+      ],
+      "paired_outcomes": {
+        "both_success": 75,
+        "ON_only_success": 16,
+        "OFF_only_success": 23,
+        "both_failure": 36
+      },
+      "cluster_signflip": {
+        "p": 0.33642578125,
+        "nonzero_clusters": 12,
+        "observed_sum": -7,
+        "tail_numerator": "1378",
+        "permutations_denominator": "4096"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Insert Between",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 135,
+      "OFF_successes": 138,
+      "ON_pct": 90.0,
+      "ON_CI95_pct": [
+        84.66666666666667,
+        94.66666666666667
+      ],
+      "OFF_pct": 92.0,
+      "OFF_CI95_pct": [
+        85.33333333333334,
+        97.33333333333334
+      ],
+      "pooled_pct": 91.0,
+      "pooled_CI95_pct": [
+        86.66666666666667,
+        95.0
+      ],
+      "ON_minus_OFF_pp": -2.0,
+      "difference_CI95_pp": [
+        -9.999999999999998,
+        6.000000000000005
+      ],
+      "paired_outcomes": {
+        "both_success": 126,
+        "ON_only_success": 9,
+        "OFF_only_success": 12,
+        "both_failure": 3
+      },
+      "cluster_signflip": {
+        "p": 0.749267578125,
+        "nonzero_clusters": 14,
+        "observed_sum": -3,
+        "tail_numerator": "12276",
+        "permutations_denominator": "16384"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Move Towards",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 123,
+      "OFF_successes": 125,
+      "ON_pct": 82.0,
+      "ON_CI95_pct": [
+        75.33333333333333,
+        88.0
+      ],
+      "OFF_pct": 83.33333333333334,
+      "OFF_CI95_pct": [
+        77.33333333333333,
+        89.33333333333333
+      ],
+      "pooled_pct": 82.66666666666667,
+      "pooled_CI95_pct": [
+        78.0,
+        87.33333333333333
+      ],
+      "ON_minus_OFF_pp": -1.3333333333333335,
+      "difference_CI95_pp": [
+        -9.333333333333327,
+        6.000000000000005
+      ],
+      "paired_outcomes": {
+        "both_success": 102,
+        "ON_only_success": 21,
+        "OFF_only_success": 23,
+        "both_failure": 4
+      },
+      "cluster_signflip": {
+        "p": 0.867889404296875,
+        "nonzero_clusters": 17,
+        "observed_sum": -2,
+        "tail_numerator": "113756",
+        "permutations_denominator": "131072"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Move Towards",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 147,
+      "OFF_successes": 150,
+      "ON_pct": 98.0,
+      "ON_CI95_pct": [
+        95.33333333333334,
+        100.0
+      ],
+      "OFF_pct": 100.0,
+      "OFF_CI95_pct": [
+        100.0,
+        100.0
+      ],
+      "pooled_pct": 99.0,
+      "pooled_CI95_pct": [
+        97.66666666666667,
+        100.0
+      ],
+      "ON_minus_OFF_pp": -2.0,
+      "difference_CI95_pp": [
+        -4.666666666666663,
+        0.0
+      ],
+      "paired_outcomes": {
+        "both_success": 147,
+        "ON_only_success": 0,
+        "OFF_only_success": 3,
+        "both_failure": 0
+      },
+      "cluster_signflip": {
+        "p": 0.25,
+        "nonzero_clusters": 3,
+        "observed_sum": -3,
+        "tail_numerator": "2",
+        "permutations_denominator": "8"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Rotate Around",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 50,
+      "OFF_successes": 42,
+      "ON_pct": 33.33333333333333,
+      "ON_CI95_pct": [
+        20.666666666666668,
+        46.666666666666664
+      ],
+      "OFF_pct": 28.000000000000004,
+      "OFF_CI95_pct": [
+        17.333333333333336,
+        39.33333333333333
+      ],
+      "pooled_pct": 30.666666666666664,
+      "pooled_CI95_pct": [
+        19.333333333333336,
+        42.666666666666664
+      ],
+      "ON_minus_OFF_pp": 5.333333333333334,
+      "difference_CI95_pp": [
+        -1.3333333333333364,
+        12.666666666666664
+      ],
+      "paired_outcomes": {
+        "both_success": 29,
+        "ON_only_success": 21,
+        "OFF_only_success": 13,
+        "both_failure": 87
+      },
+      "cluster_signflip": {
+        "p": 0.218994140625,
+        "nonzero_clusters": 17,
+        "observed_sum": 8,
+        "tail_numerator": "28704",
+        "permutations_denominator": "131072"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Rotate Around",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "crystal_inputs": 30
+      },
+      "ON_successes": 92,
+      "OFF_successes": 89,
+      "ON_pct": 61.33333333333333,
+      "ON_CI95_pct": [
+        49.333333333333336,
+        72.66666666666667
+      ],
+      "OFF_pct": 59.333333333333336,
+      "OFF_CI95_pct": [
+        45.33333333333333,
+        72.66666666666667
+      ],
+      "pooled_pct": 60.333333333333336,
+      "pooled_CI95_pct": [
+        48.33333333333333,
+        72.0
+      ],
+      "ON_minus_OFF_pp": 2.0,
+      "difference_CI95_pp": [
+        -6.000000000000005,
+        10.666666666666668
+      ],
+      "paired_outcomes": {
+        "both_success": 75,
+        "ON_only_success": 17,
+        "OFF_only_success": 14,
+        "both_failure": 44
+      },
+      "cluster_signflip": {
+        "p": 0.761962890625,
+        "nonzero_clusters": 16,
+        "observed_sum": 3,
+        "tail_numerator": "49936",
+        "permutations_denominator": "65536"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Remove Molecule",
+      "endpoint": "initial",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "molecule_inputs": 30
+      },
+      "ON_successes": 74,
+      "OFF_successes": 88,
+      "ON_pct": 49.333333333333336,
+      "ON_CI95_pct": [
+        35.333333333333336,
+        62.66666666666667
+      ],
+      "OFF_pct": 58.666666666666664,
+      "OFF_CI95_pct": [
+        44.666666666666664,
+        72.0
+      ],
+      "pooled_pct": 54.0,
+      "pooled_CI95_pct": [
+        40.666666666666664,
+        67.0
+      ],
+      "ON_minus_OFF_pp": -9.333333333333334,
+      "difference_CI95_pp": [
+        -16.666666666666664,
+        -2.666666666666667
+      ],
+      "paired_outcomes": {
+        "both_success": 64,
+        "ON_only_success": 10,
+        "OFF_only_success": 24,
+        "both_failure": 52
+      },
+      "cluster_signflip": {
+        "p": 0.0191650390625,
+        "nonzero_clusters": 15,
+        "observed_sum": -14,
+        "tail_numerator": "628",
+        "permutations_denominator": "32768"
+      },
+      "p_Holm_within_scope": 0.22998046875,
+      "multiplicity_family_size": 12
+    },
+    {
+      "scope": "task",
+      "label": "Remove Molecule",
+      "endpoint": "final",
+      "paired_configurations": 150,
+      "configurations": 300,
+      "clusters": 30,
+      "clusters_by_stratum": {
+        "molecule_inputs": 30
+      },
+      "ON_successes": 130,
+      "OFF_successes": 133,
+      "ON_pct": 86.66666666666667,
+      "ON_CI95_pct": [
+        81.33333333333333,
+        92.0
+      ],
+      "OFF_pct": 88.66666666666667,
+      "OFF_CI95_pct": [
+        82.66666666666667,
+        94.0
+      ],
+      "pooled_pct": 87.66666666666667,
+      "pooled_CI95_pct": [
+        82.0,
+        92.66666666666666
+      ],
+      "ON_minus_OFF_pp": -2.0,
+      "difference_CI95_pp": [
+        -4.666666666666675,
+        0.666666666666671
+      ],
+      "paired_outcomes": {
+        "both_success": 126,
+        "ON_only_success": 4,
+        "OFF_only_success": 7,
+        "both_failure": 13
+      },
+      "cluster_signflip": {
+        "p": 0.375,
+        "nonzero_clusters": 5,
+        "observed_sum": -3,
+        "tail_numerator": "12",
+        "permutations_denominator": "32"
+      },
+      "p_Holm_within_scope": 1.0,
+      "multiplicity_family_size": 12
+    }
+  ]
+}

@@ -1,22 +1,36 @@
 # AtomAgent-Bench
 
-An interactive benchmark for atomic-scale crystal-structure editing by multimodal LLM agents. Agents inspect structures, execute Python operations and submit CIF structures for automated scoring, with iterative feedback available after unsuccessful submissions.
+An interactive benchmark for atomic-scale crystal-structure editing by multimodal LLM agents. Agents inspect input structures, execute Python operations and submit CIFs for automated scoring and iterative feedback.
 
-The repository provides the `agentv2` runtime, the `lattice-noop` scorer, evaluated task instances, submitted structures, interaction traces, model configurations and figure-generation scripts.
+## Benchmark
 
-## Benchmark and results
+- Six tasks: Delete Below, Delete Around, Insert Between, Move Towards, Rotate Around and Remove Molecule.
+- Five models, each evaluated with view ON and view OFF.
+- 180 task instances and **1800 configurations**: 5 models × 2 visual conditions × 6 tasks × 30 instances.
+- **1155 initial successes, 452 repair-stage successes and 193 failures; final success 1607/1800 (89.28%).**
 
-- **Six tasks:** Delete Below, Delete Around, Insert Between, Move Towards, Rotate Around and Remove Molecule.
-- **Five models:** Qwen3-VL-Plus, Qwen3.5-Plus, Qwen3.7-Plus, Qwen3.8-Max and DeepSeek-V4-Flash.
-- **Two visual conditions:** view ON and view OFF.
-- **180 task instances and 1800 configurations:** five models × two visual conditions × six tasks × 30 instances. Configuration counts are not counts of distinct materials.
-- **Initial-stage success / repair-stage success / failure:** 1042 / 541 / 217. Final success: **1583/1800 (87.94%)**. Remove Molecule: **263/300 (87.67%)**.
+| Task | Final successes / 300 | Final pass rate |
+| --- | ---: | ---: |
+| Delete Below | 299 | 99.67% |
+| Delete Around | 294 | 98.00% |
+| Insert Between | 273 | 91.00% |
+| Move Towards | 297 | 99.00% |
+| Rotate Around | 181 | 60.33% |
+| Remove Molecule | 263 | 87.67% |
 
-Results count each configuration once. Successful outputs are grouped by the first accepted stage recorded in their saved traces. `paper_data/instance_manifest.json` maps all 1800 configurations to their submitted structures, trajectories and model configurations; `paper_data/six_task_statistics.json` contains the aggregate counts. Supplementary feedback and repeated-run experiments are separate from the main result set.
+Each configuration is counted once. `paper_data/instance_manifest.json` identifies the evaluated instance, input, prompt, reference, saved final output, source trajectory and model configuration. `paper_data/six_task_statistics.json` and `paper_data/positional_summary.json` contain the current aggregate results and normalized position-error statistics. Mean normalized RMSD and maximum displacement over 1607 successful outputs are **0.00649** and **0.0223**; **37 (2.30%)** have both unrounded matcher displacement values equal to zero.
+
+### Delete Below
+
+The canonical dataset is `paper_data/runtime/delete_below_atom_action.json`. It contains the same 30 sample indices used throughout the benchmark, with 10 Including and 20 Excluding instances per model and visual condition.
+
+Height is the stored **Cartesian z** coordinate, with a **0.1 angstrom** same-height tolerance around the specified zero-based atom index. Including deletes the center, the same-height atoms and the atoms below this group. Excluding retains the center and same-height atoms and deletes only atoms below this group. The input lattice and positions of retained atoms are preserved. No alternate Delete Below dataset is supplied.
+
+The deterministic reference implementation is provided in `src/atom_world/actions.py`; `tools/check_delete_below.py` tests its boundaries, non-orthogonal cells, preserved positions and prompt consistency.
 
 ## Installation
 
-Use Python **3.12**. The runtime does not require Torch, Transformers, vLLM or the full AtomWorld package.
+Use Python **3.12**. This minimal runtime does not require Torch, Transformers or vLLM.
 
 ```bash
 git clone https://github.com/yfzhuo/AtomAgent-Bench.git
@@ -26,86 +40,72 @@ source .venv/bin/activate
 python -m pip install -r requirements-test.txt
 python -m pip check
 python -m pytest tests -q
+python tools/check_delete_below.py
 ```
 
-`requirements.txt` contains runtime dependencies; `requirements-test.txt` adds pytest. The tested package versions are listed in `docs/tested_environment.lock.txt`.
+The tested dependencies are recorded in `docs/tested_environment.lock.txt`. Use your own API key and a compatible endpoint; **no real API credential is included**.
 
-## Run an evaluation
-
-Set your own API key and a compatible provider endpoint. **No API key is included in this repository.** Model access depends on your provider account and permissions.
+## Evaluation commands
 
 ```bash
 export DASHSCOPE_API_KEY='YOUR_API_KEY'
 export BASE_URL='https://dashscope.aliyuncs.com/compatible-mode/v1'
 
-# Qwen3.8-Max, Insert Between, 30 instances, view ON:
+# Delete Below, Qwen3.8-Max, view ON:
+ACTION=delete_below_atom_action bash bash/run_30.sh
+
+# Delete Below, view OFF:
+ACTION=delete_below_atom_action bash bash/run_30.sh --no-view
+
+# Insert Between, view ON:
 bash bash/run_30.sh
-
-# View OFF:
-bash bash/run_30.sh --no-view
-
-# Binary submission feedback, view ON:
-bash bash/run_30.sh --feedback-mode binary
-
-# Five separately initialized runs per instance, view OFF:
-bash bash/run_30.sh --no-view --repeat 5
 
 # Remove Molecule, view ON:
 ACTION=RemoveMoleculeAction bash bash/run_30.sh
 ```
 
-The equivalent explicit command, from the repository root, is:
+The complete explicit Delete Below command is:
 
 ```bash
 python -m src.agentv2.run_agent_demo \
   -m qwen3.8-max \
-  --action insert_between_atoms_action \
-  --data-dir ./paper_data/runtime \
+  --action delete_below_atom_action \
   --samples 0,2,4,5,6,8,10,12,15,17,18,21,24,25,26,27,30,32,35,36,39,40,41,43,44,45,46,47,48,49 \
   --max-steps 20 --max-repairs 5 \
-  --scorer lattice-noop \
-  --feedback-mode error-type
+  --scorer lattice-noop
 ```
 
-Add `--no-view` to disable visual access. Use `--feedback-mode binary` for PASS/FAIL-only submission feedback; code output and execution-error feedback remain available.
+Add `--no-view` for view OFF. The default data directory is `paper_data/runtime`; an explicit `--data-dir` overrides it. Files retain 50 index slots, of which the selected 30 contain data. Do not substitute indices `0..29`.
 
-Each instance starts with an initial attempt. A failed submission or exhaustion of the stage's 20-interaction budget starts the next repair stage, with at most five repairs. A successful submission terminates the run. Each repeat initializes a new structure, conversation and repair count.
-
-`paper_data/runtime` uses stable sample indices in 50 slots: 30 selected slots contain task data and the other 20 are empty. Evaluate only the listed indices; do not replace them with `0..29`.
-
-To print all 60 model–task–view commands without sending API requests:
+To print all 60 model–task–view commands without API calls:
 
 ```bash
 bash bash/run_1800.sh
 ```
 
-To execute the full 1800-configuration evaluation, explicitly enable API requests:
+To execute them, explicitly enable API requests:
 
 ```bash
 bash bash/run_1800.sh --execute
 ```
 
-API execution may incur charges. Outputs are written to `src/agent/runs/` without overwriting the downloadable result archive. Independent runs need not produce identical model responses.
+Execution may incur API charges. Fresh outputs are written to `src/agent/runs/`. Provider-side model availability and stochastic responses depend on the user's account and service.
+
+Each instance begins with one initial attempt. A failed submission or exhaustion of its 20-interaction limit starts the next repair stage, with at most five repairs. Success ends the run. Every repeat initializes a new structure, conversation and repair count. For supplementary protocols, add `--feedback-mode binary` or `--no-view --repeat 5` to the relevant command.
 
 ## Scoring
 
-The evaluation commands above explicitly select `--scorer lattice-noop`. Its success condition is:
+Commands explicitly select `--scorer lattice-noop`. Acceptance requires valid CIF output and parsing, matching elemental counts and reference geometry, preservation of the input lattice, and exclusion of near-initial outputs.
 
-```text
-reference_match_PASS AND lattice_same AND NOT near_initial
+- Reference StructureMatcher site tolerance: **0.5**.
+- Near-initial matcher: site tolerance **0.05**, scale enabled.
+- Lattice-matrix entrywise relative tolerance: **1e-6**; absolute tolerance: **1e-6 angstrom**.
 
-target StructureMatcher stol = 0.5
-noop_stol = 0.05; noop_scale = true
-lattice_rtol = 1e-6; lattice_atol = 1e-6 angstrom
-```
-
-The scorer checks CIF output, parsing and elemental atom counts before reference matching, lattice preservation and near-initial exclusion. The same selected scorer is used for submission feedback and final-output scoring.
-
-Available tolerance options are `--noop-stol`, `--noop-scale true|false`, `--lattice-rtol` and `--lattice-atol`. This score measures agreement with an editing target; it is not an operation-specific verifier or a physical-stability test. The scoring helpers are supplied in `src/agentv2/offline_noop_filter.py`.
+Reference and near-initial site tolerances are normalized matcher parameters, not the Delete Below height tolerance. The selected evaluator supplies submission feedback and scores the final export. The score concerns agreement with an editing target, not energetic or dynamical stability.
 
 ## Download and verify results
 
-The result archive is distributed as a GitHub Release asset. It includes saved `run.json` traces, final submitted CIFs, model configurations, input/target CIFs, task prompts, **3398** referenced visual observations, provenance records and checksums. Trajectory entries refer to the saved `run.json` files and their `trace` fields.
+The checksum-verified Release archive contains **1809 source-candidate logs for 1800 configurations**, submitted CIFs, task inputs and references, recorded model settings and **3281 visual observations**. Five configurations retain multiple matching source candidates; candidates are provenance records, not additional denominator entries. Every candidate must agree with its configuration's accepted result.
 
 ```bash
 python tools/fetch_archive.py
@@ -113,20 +113,27 @@ python tools/verify_release.py --archive ./artifacts --out local_integrity.json
 python tools/recheck_final.py --archive ./artifacts --out local_final_scores.json
 ```
 
-The scoring command uses the same evaluator classes as the runtime and evaluates saved final CIFs without executing recorded Python or calling model APIs. Expected totals are **1800 configurations, 1583 PASS, 217 FAIL and zero unresolved results**. All mapped source candidates must agree; each configuration is counted once. Use `--limit 3` for a short scoring check.
+Expected totals: **1800 configurations, 1607 PASS, 193 FAIL, zero unresolved and complete agreement**. These commands read saved final outputs; they neither call model APIs nor execute archived model-generated Python. Use `--limit 3` for a brief scoring check.
 
-## Generate figures
+## Figures and analyses
 
 ```bash
 python paper_figures/make_figures.py
+
+# Input-cluster confidence intervals and paired cluster tests:
+python analysis/cluster/compute_statistics.py --output local_cluster_results.json
+
+# Reference-site-tolerance sensitivity at 0.5, 0.2, 0.1 and 0.05:
+mkdir -p local_tolerance
+python analysis/tolerance/scan_tolerances.py --workers 2 --output-dir local_tolerance
 ```
 
-The figure directory contains the framework figure, six-task plots, supporting data and PDF/PNG outputs. Fig.2–4 read the supplied Markdown tables and per-instance evidence. Delete Below Including/Excluding groups are displayed separately without adding instances or changing model-level denominators. Curves accumulate final outputs that satisfy the scoring criteria, grouped by their recorded first accepted stage.
+Figures 2–4 use the supplied current result tables and per-instance evidence. Including/Excluding are separate display groups within Delete Below, not extra tasks. Curves accumulate accepted final outcomes by their recorded first accepted stage. The plotting scripts retain the manuscript style; a documented font fallback applies if Helvetica is unavailable.
 
-The scripts retain the supplied plotting style. If Helvetica is unavailable, the documented font fallback is used; pixel-identical output across operating systems is not guaranteed. No proprietary font is redistributed.
+`analysis/cluster` preserves ON/OFF pairs and repeated tasks within input clusters, with separate strata for the shared atomic-edit inputs and molecule inputs. `analysis/tolerance` varies only reference matching site tolerance and fixes the lattice, near-initial and height tolerances. All data and code needed for these offline analyses are included.
 
-## Execution and reproducibility notes
+## Execution and security
 
-Recorded model names, prompts, structures, traces and available configuration settings accompany the results. Package installation and runtime checks are documented in `docs/VERIFICATION.md`. Offline HTTP tests use a deterministic local mock endpoint and require no real API credentials.
+The environment provides no predefined task-level editing tools. Agents write editing code and may use scientific-library APIs. References are used by the scorer and are not supplied in model prompts or normal tool responses.
 
-**Security:** `run_python` executes unrestricted Python in the host process. It is not an OS sandbox and does not enforce ground-truth isolation. Reference structures are public for offline verification. Run model-generated code in an appropriate disposable environment with access controls, and keep credentials outside tracked files.
+**`run_python` executes unrestricted Python in the host process; it is not an OS sandbox.** Use a disposable environment with appropriate access controls for model-generated code. Keep API credentials outside tracked files. Offline HTTP tests use a local deterministic mock endpoint and need no real API key. Verification details are recorded in `docs/VERIFICATION.md`.

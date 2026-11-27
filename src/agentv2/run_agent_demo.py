@@ -1,22 +1,3 @@
-"""Current agentv2 implementation; see docs/source_provenance.json for release transformations."""
-"""
-最小闭环 demo (step 1 + step 2):
-读样本(含 ground-truth) -> 跑 vision agent 导出 CIF -> 调 evaluator 打分 -> 打印结果。
-支持:
-    --n         从 --sample 起连跑多个连续样本
-    --samples   跑离散样本下标（跳着跑，日志仍在同一 batch 目录）
-    --repeat    每个样本独立重跑几次（用于统计 pass@k 曲线）
-    --group     难度分组标签(hard/medium/simple)，写入存档 & 图表
-跑完自动在 batch 目录生成 plot.png:
-    左：single-step / multi-step / exact 成功率 bar
-    右：pass@k 曲线（x=允许尝试次数 k, y=至少一次通过的样本比例）
-用法:
-    cd "<项目根目录>"
-    export DASHSCOPE_API_KEY=REDACTED_API_KEY
-    python3 ./src/agent/run_agent_demo.py -m qwen-vl-max -a add_atom_action --sample 6
-    python3 ./src/agent/run_agent_demo.py -m qwen-vl-max -a add_atom_action --samples 5,6,17,24
-    python3 ./src/agent/run_agent_demo.py -a add_atom_action --group hard --repeat 5 --samples 5,6,17,24
-"""
 import os
 for k in ['http_proxy', 'https_proxy', 'HTTP_PROXY', 'HTTPS_PROXY', 'all_proxy', 'ALL_PROXY']:
     os.environ.pop(k, None)
@@ -36,7 +17,6 @@ from evaluation.evaluator import AtomWorldEvaluator
 
 @dataclass(frozen=True)
 class LatticeNoopConfig:
-    """One immutable configuration shared by submit and final-export scoring."""
     noop_stol: float = 0.05
     noop_scale: bool = True
     lattice_rtol: float = 1e-06
@@ -51,13 +31,6 @@ class LatticeNoopConfig:
             raise ValueError('lattice-rtol and lattice-atol must be finite and non-negative')
 
 class LatticeNoopEvaluator(AtomWorldEvaluator):
-    """Original scorer + lattice preservation + near-initial exclusion.
-
-    Original target-scoring settings and error order are preserved. The original
-    score is freshly computed for EACH submitted structure, not read from an old
-    run. This adapter uses the helpers from the latest offline_noop_filter.py.
-    It is NOT an action-specific scorer and adds no execution isolation.
-    """
 
     def __init__(self, *args, guard_config=None, **kwargs):
         self.guard_config = guard_config or LatticeNoopConfig()
@@ -99,10 +72,13 @@ class LatticeNoopEvaluator(AtomWorldEvaluator):
             result['wrong_type'] = 'NearInitialStructure'
         return result
 
+def resolve_data_dir(action_name, data_dir=None):
+    if data_dir is not None:
+        return os.fspath(data_dir)
+    return str(Path(SRC_DIR).parent / 'paper_data' / 'runtime')
+
 def build_evaluator(action_name, data_dir=None, input_cifs_file='input_cifs.hdf5', *, scorer='original', noop_stol=0.05, noop_scale=True, lattice_rtol=1e-06, lattice_atol=1e-06):
-    """Build one scorer used by every submit and the final exported structure."""
-    if data_dir is None:
-        data_dir = os.path.join(SRC_DIR, 'data')
+    data_dir = resolve_data_dir(action_name, data_dir)
     kwargs = dict(model=None, data_folder=data_dir, action_name=action_name, input_cifs_filename=input_cifs_file)
     if scorer == 'original':
         return AtomWorldEvaluator(**kwargs)
@@ -119,7 +95,7 @@ def score_with_evaluator(evaluator, row, agent_cif):
 def print_score(result):
     print('\n========== Score ==========')
     if result.get('is_error'):
-        print(f"[FAIL] wrong_type = {result.get('wrong_type')}")
+        print(f'[FAIL] wrong_type = {result.get('wrong_type')}')
         if result.get('scorer_config', {}).get('name') == 'lattice-noop':
             print('  说明: 原评分未通过，或晶格发生变化，或输出仍与初始结构高度匹配。')
         else:
@@ -137,34 +113,34 @@ def write_run_txt(run_dir, args, sample_idx, rep, task_prompt, agent, result, ci
     lines = []
     lines.append(f'model   : {args.model}')
     lines.append(f'action  : {args.action}   sample: {sample_idx}   rep: {rep}   group: {args.group}')
-    lines.append(f"vision  : {('OFF (ablation)' if args.no_vision else 'ON')}")
-    lines.append(f"view    : {('OFF (tool removed)' if args.no_view else 'ON')}")
+    lines.append(f'vision  : {('OFF (ablation)' if args.no_vision else 'ON')}')
+    lines.append(f'view    : {('OFF (tool removed)' if args.no_view else 'ON')}')
     lines.append(f'task    : {task_prompt}')
     if getattr(args, 'feedback_mode', 'error-type') == 'binary':
         lines.append('feedback: binary (submission PASS/FAIL only; tool feedback unchanged)')
     if result.get('scorer_config'):
-        lines.append(f"scorer  : {result['scorer_config']}")
-        lines.append(f"guard   : {result.get('guard_status')}; lattice_same={result.get('lattice_same')}; near_initial={result.get('near_initial')}")
+        lines.append(f'scorer  : {result['scorer_config']}')
+        lines.append(f'guard   : {result.get('guard_status')}; lattice_same={result.get('lattice_same')}; near_initial={result.get('near_initial')}')
     lines.append('=' * 60)
     for rec in agent.trace:
         if rec.get('type') == 'init':
-            lines.append(f"[init] n_atoms={rec['init_n_atoms']} image={rec.get('image_file')}")
+            lines.append(f'[init] n_atoms={rec['init_n_atoms']} image={rec.get('image_file')}')
             continue
-        lines.append(f"\n[Step {rec['step']}]")
+        lines.append(f'\n[Step {rec['step']}]')
         if rec.get('model_content'):
-            lines.append(f"  model said: {rec['model_content']}")
+            lines.append(f'  model said: {rec['model_content']}')
         if rec.get('model_tool_calls'):
-            lines.append(f"  native tool_calls: {rec['model_tool_calls']}")
+            lines.append(f'  native tool_calls: {rec['model_tool_calls']}')
         for a in rec.get('actions', []):
-            score_str = f" | score={a.get('score')}" if 'score' in a else ''
-            lines.append(f"  -> [{a.get('channel')}] {a.get('name')} {a.get('args', '')} | {a.get('result', a.get('note', ''))} | n_atoms={a.get('n_atoms')} | img={a.get('image_file')}{score_str}")
+            score_str = f' | score={a.get('score')}' if 'score' in a else ''
+            lines.append(f'  -> [{a.get('channel')}] {a.get('name')} {a.get('args', '')} | {a.get('result', a.get('note', ''))} | n_atoms={a.get('n_atoms')} | img={a.get('image_file')}{score_str}')
     lines.append('\n' + '=' * 60)
     lines.append(f'usage  : {agent.usage}')
-    lines.append(f"repairs: attempts={agent.usage.get('repair_attempts')} history={agent.usage.get('repair_history')}")
+    lines.append(f'repairs: attempts={agent.usage.get('repair_attempts')} history={agent.usage.get('repair_history')}')
     if result.get('is_error'):
-        lines.append(f"SCORE: FAIL ({result.get('wrong_type')})")
+        lines.append(f'SCORE: FAIL ({result.get('wrong_type')})')
     else:
-        lines.append(f"SCORE: PASS  RMSD={result['rmsd']}  MaxDiff={result['max_diff']}")
+        lines.append(f'SCORE: PASS  RMSD={result['rmsd']}  MaxDiff={result['max_diff']}')
     lines.append('\n----- Exported CIF -----')
     lines.append(cif_out)
     lines = [str(x) if x is not None else '<<None>>' for x in lines]
@@ -186,7 +162,7 @@ def run_one(client, args, evaluator, sample_idx, batch_dir, rep=0):
         if res.get('is_error'):
             wt = res.get('wrong_type')
             return (False, wt, f'structure rejected by evaluator ({wt})')
-        return (True, None, f"matched (rmsd={res.get('rmsd')}, max_diff={res.get('max_diff')})")
+        return (True, None, f'matched (rmsd={res.get('rmsd')}, max_diff={res.get('max_diff')})')
     agent = VisionModelingAgent(client, args.model, max_steps=args.max_steps, verbose=True, allow_imaging=not args.no_vision, use_view=not args.no_view, feedback_mode=getattr(args, 'feedback_mode', 'error-type'))
     cif_out = agent.run(init_cif, task_prompt, log_dir=run_dir, score_fn=score_fn, max_repairs=args.max_repairs)
     if cif_out is not None and (not isinstance(cif_out, str)):
@@ -202,7 +178,7 @@ def run_one(client, args, evaluator, sample_idx, batch_dir, rep=0):
     else:
         result = score_with_evaluator(evaluator, row, cif_out)
         print_score(result)
-    print(f"[Repair] attempts={agent.usage.get('repair_attempts')} history={agent.usage.get('repair_history')}")
+    print(f'[Repair] attempts={agent.usage.get('repair_attempts')} history={agent.usage.get('repair_history')}')
     archive = {'model': args.model, 'action': args.action, 'sample': sample_idx, 'repeat': rep, 'group': args.group, 'allow_imaging': not args.no_vision, 'use_view': not args.no_view, 'task_prompt': task_prompt, 'input_cif': init_cif, 'target_cif': row.get('output_cif'), 'exported_cif': cif_out, 'score': {k: v for k, v in result.items() if k in ('is_error', 'wrong_type', 'rmsd', 'max_diff')}, 'repair_attempts': agent.usage.get('repair_attempts'), 'repair_history': agent.usage.get('repair_history'), 'usage': agent.usage, 'trace': agent.trace}
     if getattr(args, 'feedback_mode', 'error-type') == 'binary':
         archive['feedback_mode'] = 'binary'
@@ -218,18 +194,6 @@ def run_one(client, args, evaluator, sample_idx, batch_dir, rep=0):
     return {'sample': sample_idx, 'repeat': rep, 'group': args.group, 'passed': passed, 'wrong_type': result.get('wrong_type'), 'rmsd': result.get('rmsd'), 'max_diff': result.get('max_diff'), 'exact': bool(passed and result.get('rmsd') == 0 and (result.get('max_diff') == 0)), 'repair_attempts': agent.usage.get('repair_attempts'), 'repair_history': agent.usage.get('repair_history'), 'usage': agent.usage, 'run_dir': run_dir}
 
 def compute_stats(summaries, repeat, max_repairs):
-    """
-    从 summaries 算统计:
-      三个互斥比例（加起来=100%）:
-        - single_rate: 一次成功（repair_attempts==0 且 passed）
-        - multi_rate : 多次才成（repair_attempts>=1 且 passed）
-        - fail_rate  : 用完 budget 仍失败
-      累计通过率曲线（cumulative pass rate vs repair budget k）:
-        - x = k，从 0 到 max_repairs
-        - y = 用不超过 k 次 repair 就 pass 的 run 占总 run 的比例
-        - 单调不降；y[0]=single_rate; y[max_repairs]=single_rate+multi_rate=1-fail_rate
-      同时保留 exact_rate（rmsd=0）作参考。
-    """
     n = len(summaries)
     if n == 0:
         return None
@@ -270,10 +234,6 @@ def _get_matplotlib():
         return None
 
 def make_stacked_plot(batch_dir, group_label, action_label, stats, max_repairs):
-    """
-    图1: 单根堆叠柱, 显示 single / multi / fail 三段占比 (和 = 100%)。
-    风格参考附件: 绿色=一次成功, 橙色=多次成功, 红色=失败。
-    """
     plt = _get_matplotlib()
     if plt is None:
         return
@@ -293,7 +253,7 @@ def make_stacked_plot(batch_dir, group_label, action_label, stats, max_repairs):
         ax.text(0, single + multi + fail / 2, f'{fail:.1f}%', ha='center', va='center', color='white', fontsize=12)
     ax.set_ylim(0, 100)
     ax.set_ylabel('proportion (%)')
-    title = f"Outcome breakdown — {action_label}\n(runs={stats['n_runs']}, max_repairs={max_repairs})"
+    title = f'Outcome breakdown — {action_label}\n(runs={stats['n_runs']}, max_repairs={max_repairs})'
     if group_label:
         title += f'   group={group_label}'
     ax.set_title(title)
@@ -306,11 +266,6 @@ def make_stacked_plot(batch_dir, group_label, action_label, stats, max_repairs):
     print(f'[Log] 堆叠图已保存: {out}')
 
 def make_cumulative_plot(batch_dir, group_label, action_label, stats, max_repairs):
-    """
-    图2: 累计正确率曲线。
-    x = repair budget k (0..max_repairs)
-    y = cumulative pass rate (%) 即"允许最多 k 次 repair 时的整体通过率"
-    """
     plt = _get_matplotlib()
     if plt is None:
         return
@@ -328,7 +283,7 @@ def make_cumulative_plot(batch_dir, group_label, action_label, stats, max_repair
     ax.set_ylabel('cumulative pass rate (%)')
     ax.set_xticks(xs)
     ax.set_ylim(0, 110)
-    title = f"Cumulative pass rate vs repair budget — {action_label}\n(runs={stats['n_runs']}, AUC={auc:.3f})"
+    title = f'Cumulative pass rate vs repair budget — {action_label}\n(runs={stats['n_runs']}, AUC={auc:.3f})'
     if group_label:
         title += f'   group={group_label}'
     ax.set_title(title)
@@ -351,7 +306,7 @@ def main():
     ap.add_argument('--samples', type=str, default=None, help='逗号分隔的离散样本下标，优先于 --sample/--n')
     ap.add_argument('--repeat', type=int, default=1, help='每个样本独立重跑几次（画 pass@k 曲线用；师兄示例=5）')
     ap.add_argument('--group', default=None, help='难度分组标签(hard/medium/simple)，写入存档 & 图表标题')
-    ap.add_argument('--data-dir', default=None, help='数据目录；不填用 src/data(v1: csv+hdf5)')
+    ap.add_argument('--data-dir', default=None, help='Task data directory; defaults to paper_data/runtime. Explicit paths take precedence.')
     ap.add_argument('--base-url', default='https://dashscope.aliyuncs.com/compatible-mode/v1')
     ap.add_argument('--max-steps', type=int, default=20)
     ap.add_argument('--max-repairs', type=int, default=5, help='单次运行内 submit FAIL 后最多再让 agent 修几次；0=不重试')
@@ -365,6 +320,10 @@ def main():
     ap.add_argument('--lattice-rtol', type=float, default=1e-06, help='晶格矩阵逐元素相对容差（无单位）')
     ap.add_argument('--lattice-atol', type=float, default=1e-06, help='晶格矩阵逐元素绝对容差（Å）')
     args = ap.parse_args()
+    try:
+        args.data_dir = resolve_data_dir(args.action, args.data_dir)
+    except FileNotFoundError as e:
+        ap.error(str(e))
     if args.scorer == 'lattice-noop':
         try:
             LatticeNoopConfig(noop_stol=args.noop_stol, noop_scale=args.noop_scale == 'true', lattice_rtol=args.lattice_rtol, lattice_atol=args.lattice_atol)
@@ -390,7 +349,7 @@ def main():
         idx_tag = f's{args.sample}_n{args.n}'
     grp_tag = f'_{args.group}' if args.group else ''
     rep_tag = f'_x{args.repeat}' if args.repeat > 1 else ''
-    batch_dir = os.path.join(SRC_DIR, 'agent', 'runs', f"{ts}_{args.model}_{args.action}{grp_tag}{('_scorer-lattice-noop' if args.scorer == 'lattice-noop' else '')}{('_feedback-binary' if args.feedback_mode == 'binary' else '')}_{idx_tag}{rep_tag}")
+    batch_dir = os.path.join(SRC_DIR, 'agent', 'runs', f'{ts}_{args.model}_{args.action}{grp_tag}{('_scorer-lattice-noop' if args.scorer == 'lattice-noop' else '')}{('_feedback-binary' if args.feedback_mode == 'binary' else '')}_{idx_tag}{rep_tag}')
     os.makedirs(batch_dir, exist_ok=True)
     print(f'[Log] batch dir: {batch_dir}')
     print(f'[Log] 计划样本下标: {sample_indices}  x{args.repeat} 次  group={args.group}')
@@ -428,34 +387,34 @@ def main():
         batch['scorer_config'] = dict(evaluator.scorer_config)
     with open(os.path.join(batch_dir, 'batch.json'), 'w') as f:
         json.dump(batch, f, ensure_ascii=False, indent=2)
-    lines = [f'model : {args.model}', f'action: {args.action}', f'group : {args.group}   repeat: {args.repeat}', f"data  : {args.data_dir or os.path.join(SRC_DIR, 'data')}", f"vision: {('OFF' if args.no_vision else 'ON')}   view: {('OFF (removed)' if args.no_view else 'ON')}", f'samples: {sample_indices}', f'repair: max_repairs={args.max_repairs}', '=' * 60]
+    lines = [f'model : {args.model}', f'action: {args.action}', f'group : {args.group}   repeat: {args.repeat}', f'data  : {args.data_dir or os.path.join(SRC_DIR, 'data')}', f'vision: {('OFF' if args.no_vision else 'ON')}   view: {('OFF (removed)' if args.no_view else 'ON')}', f'samples: {sample_indices}', f'repair: max_repairs={args.max_repairs}', '=' * 60]
     if args.feedback_mode == 'binary':
         lines.insert(-1, 'feedback: binary (submission PASS/FAIL only; tool feedback unchanged)')
     if args.scorer == 'lattice-noop':
         lines.insert(-1, f'scorer: {evaluator.scorer_config}')
     for s in summaries:
         rp = s.get('repair_attempts')
-        tag_id = f"s{s['sample']}_r{s.get('repeat')}"
+        tag_id = f's{s['sample']}_r{s.get('repeat')}'
         if s.get('passed'):
             tag = 'EXACT' if s.get('exact') else 'PASS'
-            lines.append(f"  {tag_id:<10} {tag:<5} rmsd={s.get('rmsd')} max_diff={s.get('max_diff')} repairs={rp}")
+            lines.append(f'  {tag_id:<10} {tag:<5} rmsd={s.get('rmsd')} max_diff={s.get('max_diff')} repairs={rp}')
         else:
-            lines.append(f"  {tag_id:<10} FAIL  ({s.get('wrong_type')}) repairs={rp} history={s.get('repair_history')}")
+            lines.append(f'  {tag_id:<10} FAIL  ({s.get('wrong_type')}) repairs={rp} history={s.get('repair_history')}')
     lines.append('=' * 60)
     lines.append(f'PASSED {n_pass}/{n_run}   (exact match: {n_exact}/{n_run})')
     if stats:
-        lines.append(f"single-step (first try) : {stats['single_rate'] * 100:6.2f}%  ({stats['n_single']}/{stats['n_runs']})")
-        lines.append(f"multi-step  (with repair): {stats['multi_rate'] * 100:6.2f}%  ({stats['n_multi']}/{stats['n_runs']})")
-        lines.append(f"fail        (out of budget): {stats['fail_rate'] * 100:6.2f}%  ({stats['n_fail']}/{stats['n_runs']})")
-        lines.append(f"exact-match (rmsd=0)     : {stats['exact_rate'] * 100:6.2f}%  ({stats['n_exact']}/{stats['n_runs']})")
+        lines.append(f'single-step (first try) : {stats['single_rate'] * 100:6.2f}%  ({stats['n_single']}/{stats['n_runs']})')
+        lines.append(f'multi-step  (with repair): {stats['multi_rate'] * 100:6.2f}%  ({stats['n_multi']}/{stats['n_runs']})')
+        lines.append(f'fail        (out of budget): {stats['fail_rate'] * 100:6.2f}%  ({stats['n_fail']}/{stats['n_runs']})')
+        lines.append(f'exact-match (rmsd=0)     : {stats['exact_rate'] * 100:6.2f}%  ({stats['n_exact']}/{stats['n_runs']})')
         lines.append('-' * 60)
         lines.append(f'cumulative pass rate by repair budget k:')
-        lines.append(f"  k       : {stats['cumulative_k']}")
-        lines.append(f"  pass(%) : {[round(p * 100, 2) for p in stats['cumulative_pass_at_k']]}")
+        lines.append(f'  k       : {stats['cumulative_k']}')
+        lines.append(f'  pass(%) : {[round(p * 100, 2) for p in stats['cumulative_pass_at_k']]}')
         if stats.get('auc') is not None:
-            lines.append(f"  AUC (normalized [0,1]) : {stats['auc']:.4f}")
+            lines.append(f'  AUC (normalized [0,1]) : {stats['auc']:.4f}')
         if stats.get('pass_at_k_by_rep'):
-            lines.append(f"pass@k over --repeat (k={stats['repeat_k']}): {[round(p * 100, 2) for p in stats['pass_at_k_by_rep']]}")
+            lines.append(f'pass@k over --repeat (k={stats['repeat_k']}): {[round(p * 100, 2) for p in stats['pass_at_k_by_rep']]}')
     summary_txt = '\n'.join(lines)
     with open(os.path.join(batch_dir, 'summary.txt'), 'w') as f:
         f.write(summary_txt)

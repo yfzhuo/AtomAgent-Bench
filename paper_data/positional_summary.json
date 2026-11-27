@@ -1,99 +1,91 @@
 {
   "configuration_count": 1800,
-  "source_logs_checked": 1810,
-  "multi_candidate_configurations": 6,
-  "successes": 1583,
-  "failures_excluded_from_metric_means": 217,
+  "source_logs_checked": 1809,
+  "successes": 1607,
+  "failures_excluded_from_metric_means": 193,
   "summary": [
     {
-      "action": "delete_below_atom_action",
       "label": "Delete Below",
-      "n_success": 275,
-      "mean_rmsd_normalized": 1.9982688629312106e-07,
-      "median_rmsd_normalized": 2.560115463742793e-16,
-      "mean_max_displacement_normalized": 2.650569652113777e-07,
-      "exact_zero_count": 10,
-      "exact_zero_percent_of_successes": 3.6363636363636362
+      "n_success": 299,
+      "mean_rmsd_normalized": 1.3810835236160396e-07,
+      "mean_max_displacement_normalized": 1.790583855670456e-07,
+      "exact_count": 10,
+      "exact_percent": 3.3444816053511706
     },
     {
-      "action": "delete_around_atom_action",
+      "label": "Delete Below (Including)",
+      "n_success": 100,
+      "mean_rmsd_normalized": 1.77635046823739e-07,
+      "mean_max_displacement_normalized": 1.7807418404168672e-07,
+      "exact_count": 0,
+      "exact_percent": 0.0
+    },
+    {
+      "label": "Delete Below (Excluding)",
+      "n_success": 199,
+      "mean_rmsd_normalized": 1.1824569182786774e-07,
+      "mean_max_displacement_normalized": 1.795529591978792e-07,
+      "exact_count": 10,
+      "exact_percent": 5.025125628140704
+    },
+    {
       "label": "Delete Around",
       "n_success": 294,
       "mean_rmsd_normalized": 1.283829890297245e-07,
-      "median_rmsd_normalized": 2.4322699190208446e-16,
-      "mean_max_displacement_normalized": 1.9193833754863784e-07,
-      "exact_zero_count": 10,
-      "exact_zero_percent_of_successes": 3.4013605442176873
+      "mean_max_displacement_normalized": 1.919383375486378e-07,
+      "exact_count": 10,
+      "exact_percent": 3.4013605442176873
     },
     {
-      "action": "insert_between_atoms_action",
       "label": "Insert Between",
       "n_success": 273,
       "mean_rmsd_normalized": 0.00978887365415159,
-      "median_rmsd_normalized": 0.0001938782940117975,
       "mean_max_displacement_normalized": 0.04421842173293988,
-      "exact_zero_count": 0,
-      "exact_zero_percent_of_successes": 0.0
+      "exact_count": 0,
+      "exact_percent": 0.0
     },
     {
-      "action": "move_towards_atom_action",
       "label": "Move Towards",
       "n_success": 297,
-      "mean_rmsd_normalized": 0.0053710641416084915,
-      "median_rmsd_normalized": 2.5784353894349024e-16,
+      "mean_rmsd_normalized": 0.005371064141608492,
       "mean_max_displacement_normalized": 0.020373072958493874,
-      "exact_zero_count": 8,
-      "exact_zero_percent_of_successes": 2.6936026936026933
+      "exact_count": 8,
+      "exact_percent": 2.6936026936026933
     },
     {
-      "action": "rotate_around_atom_action",
       "label": "Rotate Around",
       "n_success": 181,
       "mean_rmsd_normalized": 0.0340154302530647,
-      "median_rmsd_normalized": 2.560487202549907e-16,
-      "mean_max_displacement_normalized": 0.0976353296347339,
-      "exact_zero_count": 9,
-      "exact_zero_percent_of_successes": 4.972375690607735
+      "mean_max_displacement_normalized": 0.09763532963473388,
+      "exact_count": 9,
+      "exact_percent": 4.972375690607735
     },
     {
-      "action": "RemoveMoleculeAction",
       "label": "Remove Molecule",
       "n_success": 263,
       "mean_rmsd_normalized": 2.1565722848486084e-09,
-      "median_rmsd_normalized": 7.60558451474782e-16,
-      "mean_max_displacement_normalized": 3.4459385635561508e-09,
-      "exact_zero_count": 0,
-      "exact_zero_percent_of_successes": 0.0
+      "mean_max_displacement_normalized": 3.445938563556151e-09,
+      "exact_count": 0,
+      "exact_percent": 0.0
     },
     {
-      "action": "Original five tasks",
-      "label": "Original five tasks",
-      "n_success": 1320,
-      "mean_rmsd_normalized": 0.007897313735180548,
-      "median_rmsd_normalized": 3.1266374714807076e-16,
-      "mean_max_displacement_normalized": 0.027117087716809676,
-      "exact_zero_count": 37,
-      "exact_zero_percent_of_successes": 2.803030303030303
+      "label": "Five atomic-edit tasks",
+      "n_success": 1344,
+      "mean_rmsd_normalized": 0.007756280113424068,
+      "mean_max_displacement_normalized": 0.026632839608616538,
+      "exact_count": 37,
+      "exact_percent": 2.7529761904761902
     },
     {
-      "action": "All six tasks",
       "label": "All six tasks",
-      "n_success": 1583,
-      "mean_rmsd_normalized": 0.0065852524937566855,
-      "median_rmsd_normalized": 3.9074278494245384e-16,
-      "mean_max_displacement_normalized": 0.02261184882657651,
-      "exact_zero_count": 37,
-      "exact_zero_percent_of_successes": 2.337334175615919
+      "n_success": 1607,
+      "mean_rmsd_normalized": 0.00648689548202891,
+      "mean_max_displacement_normalized": 0.022274136490518025,
+      "exact_count": 37,
+      "exact_percent": 2.3024268823895455
     }
   ],
-  "scope": "Original five tasks: retained final submissions from prior enhanced offline reassessment; Remove Molecule: selected original final submissions. No binary or repeat5 runs.",
-  "metric_definition": "Dimensionless original StructureMatcher get_rms_dist values after matching/alignment, normalized by per-atom free length; not absolute fixed-frame coordinate errors.",
-  "exact_definition": "Both saved matcher RMSD and maximum displacement equal exactly 0; no tolerance, rounding, CIF-byte equality, or operation-specific correctness implied.",
-  "aggregation": "Arithmetic mean over retained successful configurations, not an unweighted mean of task averages; failures omitted, never zero-filled.",
-  "multi_candidate_rule": "All candidate logs checked; success metric pairs identical within every ambiguous configuration; each configuration counted once.",
-  "input_hashes": {
-    "combined_configurations.json": "0442f2b2add38d65cb5cde01fcff054b5affa768b9aa647eb5b462a7de7f925a",
-    "candidate_results.jsonl": "301523d15bd06632d5aa6a7a694e96162607b9a570f25b6ff10cd711be82379b"
-  },
-  "model_scorer_or_archived_code_executed": false
+  "metric_definition": "Dimensionless StructureMatcher post-alignment RMSD and maximum displacement normalized by per-atom free length.",
+  "exact_definition": "Both unrounded matcher displacements strictly zero.",
+  "aggregation": "Arithmetic mean over successful configurations; failures excluded, never zero-filled."
 }

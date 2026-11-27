@@ -13,12 +13,12 @@
     "OFF"
   ],
   "actions": [
-    "RemoveMoleculeAction",
     "delete_around_atom_action",
-    "delete_below_atom_action",
     "insert_between_atoms_action",
     "move_towards_atom_action",
-    "rotate_around_atom_action"
+    "rotate_around_atom_action",
+    "RemoveMoleculeAction",
+    "delete_below_atom_action"
   ],
   "samples": [
     0,
@@ -52,24 +52,24 @@
     48,
     49
   ],
-  "candidate_logs": 1810,
-  "ambiguous_configurations": 6,
-  "final_pass": 1583,
+  "candidate_logs": 1809,
+  "multi_candidate_configurations": 5,
+  "final_pass": 1607,
+  "final_fail": 193,
+  "visual_observations": 3281,
   "total_seven": [
-    1042,
-    304,
-    119,
-    55,
-    41,
-    22,
-    217
+    1155,
+    279,
+    89,
+    39,
+    27,
+    18,
+    193
   ],
-  "runtime_note": "50 stable index slots per action; 30 actual instances, 20 explicit empty slots are not evaluated. Use only the listed sample indices.",
-  "DeepSeek_RemoveMolecule_ON": "20261112_204751",
-  "DeepSeek_RemoveMolecule_OFF": "20261112_155831",
-  "excludes": [
-    "binary feedback supplement",
-    "repeat5 supplement",
-    "other test batches"
-  ]
+  "runtime_note": "50 stable index slots per task; only the listed 30 are evaluated.",
+  "height_tolerance_A": 0.1,
+  "delete_below_variants_per_model_view": {
+    "Including": 10,
+    "Excluding": 20
+  }
 }

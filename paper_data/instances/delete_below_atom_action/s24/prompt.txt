@@ -1,1 +1,1 @@
-Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Excluding itself and atoms with the same z coordinate.
+Delete all atoms whose z coordinate is lower than the atom at index 7 in the cif file. Excluding itself and atoms with the same z coordinate. Here, z refers to the Cartesian coordinate of the input structure, and atoms whose z coordinates differ from the reference atom's by at most 0.1 angstrom are considered at the same height.

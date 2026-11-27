@@ -1,0 +1,1349 @@
+{
+  "input_sha256": "0d7aa244c5f3ff7b6e298088dbeb25c17b6f6f3d4d293d09a69b183cd976a0f3",
+  "tolerances": [
+    0.5,
+    0.2,
+    0.1,
+    0.05
+  ],
+  "parameters": {
+    "target_matcher": {
+      "ltol": 0.2,
+      "angle_tol": 5,
+      "primitive_cell": false,
+      "scale": true,
+      "attempt_supercell": false,
+      "allow_subset": false,
+      "supercell_size": "num_sites",
+      "ignored_species": []
+    },
+    "noop_stol": 0.05,
+    "noop_scale": true,
+    "lattice_rtol": 1e-06,
+    "lattice_atol_A": 1e-06,
+    "height_tolerance_A": 0.1
+  },
+  "configuration_count": 1800,
+  "candidate_count": 1809,
+  "unique_structure_triples": 629,
+  "baseline_matches_current_manuscript": true,
+  "candidate_disagreements": [],
+  "pooled_tasks": [
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 300,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 299,
+          "passes_max": 299,
+          "rate_min_pct": 99.66666666666667,
+          "rate_max_pct": 99.66666666666667
+        },
+        "0.2": {
+          "passes_min": 299,
+          "passes_max": 299,
+          "rate_min_pct": 99.66666666666667,
+          "rate_max_pct": 99.66666666666667
+        },
+        "0.1": {
+          "passes_min": 299,
+          "passes_max": 299,
+          "rate_min_pct": 99.66666666666667,
+          "rate_max_pct": 99.66666666666667
+        },
+        "0.05": {
+          "passes_min": 299,
+          "passes_max": 299,
+          "rate_min_pct": 99.66666666666667,
+          "rate_max_pct": 99.66666666666667
+        }
+      }
+    },
+    {
+      "action": "delete_around_atom_action",
+      "task": "Delete Around",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 300,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 294,
+          "passes_max": 294,
+          "rate_min_pct": 98.0,
+          "rate_max_pct": 98.0
+        },
+        "0.2": {
+          "passes_min": 294,
+          "passes_max": 294,
+          "rate_min_pct": 98.0,
+          "rate_max_pct": 98.0
+        },
+        "0.1": {
+          "passes_min": 294,
+          "passes_max": 294,
+          "rate_min_pct": 98.0,
+          "rate_max_pct": 98.0
+        },
+        "0.05": {
+          "passes_min": 294,
+          "passes_max": 294,
+          "rate_min_pct": 98.0,
+          "rate_max_pct": 98.0
+        }
+      }
+    },
+    {
+      "action": "insert_between_atoms_action",
+      "task": "Insert Between",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 300,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 273,
+          "passes_max": 273,
+          "rate_min_pct": 91.0,
+          "rate_max_pct": 91.0
+        },
+        "0.2": {
+          "passes_min": 248,
+          "passes_max": 248,
+          "rate_min_pct": 82.66666666666667,
+          "rate_max_pct": 82.66666666666667
+        },
+        "0.1": {
+          "passes_min": 233,
+          "passes_max": 233,
+          "rate_min_pct": 77.66666666666666,
+          "rate_max_pct": 77.66666666666666
+        },
+        "0.05": {
+          "passes_min": 219,
+          "passes_max": 219,
+          "rate_min_pct": 73.0,
+          "rate_max_pct": 73.0
+        }
+      }
+    },
+    {
+      "action": "move_towards_atom_action",
+      "task": "Move Towards",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 300,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 297,
+          "passes_max": 297,
+          "rate_min_pct": 99.0,
+          "rate_max_pct": 99.0
+        },
+        "0.2": {
+          "passes_min": 280,
+          "passes_max": 280,
+          "rate_min_pct": 93.33333333333333,
+          "rate_max_pct": 93.33333333333333
+        },
+        "0.1": {
+          "passes_min": 280,
+          "passes_max": 280,
+          "rate_min_pct": 93.33333333333333,
+          "rate_max_pct": 93.33333333333333
+        },
+        "0.05": {
+          "passes_min": 279,
+          "passes_max": 279,
+          "rate_min_pct": 93.0,
+          "rate_max_pct": 93.0
+        }
+      }
+    },
+    {
+      "action": "rotate_around_atom_action",
+      "task": "Rotate Around",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 300,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 181,
+          "passes_max": 181,
+          "rate_min_pct": 60.333333333333336,
+          "rate_max_pct": 60.333333333333336
+        },
+        "0.2": {
+          "passes_min": 138,
+          "passes_max": 138,
+          "rate_min_pct": 46.0,
+          "rate_max_pct": 46.0
+        },
+        "0.1": {
+          "passes_min": 138,
+          "passes_max": 138,
+          "rate_min_pct": 46.0,
+          "rate_max_pct": 46.0
+        },
+        "0.05": {
+          "passes_min": 138,
+          "passes_max": 138,
+          "rate_min_pct": 46.0,
+          "rate_max_pct": 46.0
+        }
+      }
+    },
+    {
+      "action": "RemoveMoleculeAction",
+      "task": "Remove Molecule",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 300,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 263,
+          "passes_max": 263,
+          "rate_min_pct": 87.66666666666667,
+          "rate_max_pct": 87.66666666666667
+        },
+        "0.2": {
+          "passes_min": 263,
+          "passes_max": 263,
+          "rate_min_pct": 87.66666666666667,
+          "rate_max_pct": 87.66666666666667
+        },
+        "0.1": {
+          "passes_min": 263,
+          "passes_max": 263,
+          "rate_min_pct": 87.66666666666667,
+          "rate_max_pct": 87.66666666666667
+        },
+        "0.05": {
+          "passes_min": 263,
+          "passes_max": 263,
+          "rate_min_pct": 87.66666666666667,
+          "rate_max_pct": 87.66666666666667
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": null,
+      "n": 1800,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 1607,
+          "passes_max": 1607,
+          "rate_min_pct": 89.27777777777777,
+          "rate_max_pct": 89.27777777777777
+        },
+        "0.2": {
+          "passes_min": 1522,
+          "passes_max": 1522,
+          "rate_min_pct": 84.55555555555556,
+          "rate_max_pct": 84.55555555555556
+        },
+        "0.1": {
+          "passes_min": 1507,
+          "passes_max": 1507,
+          "rate_min_pct": 83.72222222222221,
+          "rate_max_pct": 83.72222222222221
+        },
+        "0.05": {
+          "passes_min": 1492,
+          "passes_max": 1492,
+          "rate_min_pct": 82.88888888888889,
+          "rate_max_pct": 82.88888888888889
+        }
+      }
+    }
+  ],
+  "task_view": [
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        },
+        "0.2": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        },
+        "0.1": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        },
+        "0.05": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        }
+      }
+    },
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.2": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.1": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.05": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        }
+      }
+    },
+    {
+      "action": "delete_around_atom_action",
+      "task": "Delete Around",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 145,
+          "passes_max": 145,
+          "rate_min_pct": 96.66666666666667,
+          "rate_max_pct": 96.66666666666667
+        },
+        "0.2": {
+          "passes_min": 145,
+          "passes_max": 145,
+          "rate_min_pct": 96.66666666666667,
+          "rate_max_pct": 96.66666666666667
+        },
+        "0.1": {
+          "passes_min": 145,
+          "passes_max": 145,
+          "rate_min_pct": 96.66666666666667,
+          "rate_max_pct": 96.66666666666667
+        },
+        "0.05": {
+          "passes_min": 145,
+          "passes_max": 145,
+          "rate_min_pct": 96.66666666666667,
+          "rate_max_pct": 96.66666666666667
+        }
+      }
+    },
+    {
+      "action": "delete_around_atom_action",
+      "task": "Delete Around",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        },
+        "0.2": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        },
+        "0.1": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        },
+        "0.05": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 99.33333333333333,
+          "rate_max_pct": 99.33333333333333
+        }
+      }
+    },
+    {
+      "action": "insert_between_atoms_action",
+      "task": "Insert Between",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 135,
+          "passes_max": 135,
+          "rate_min_pct": 90.0,
+          "rate_max_pct": 90.0
+        },
+        "0.2": {
+          "passes_min": 123,
+          "passes_max": 123,
+          "rate_min_pct": 82.0,
+          "rate_max_pct": 82.0
+        },
+        "0.1": {
+          "passes_min": 113,
+          "passes_max": 113,
+          "rate_min_pct": 75.33333333333333,
+          "rate_max_pct": 75.33333333333333
+        },
+        "0.05": {
+          "passes_min": 103,
+          "passes_max": 103,
+          "rate_min_pct": 68.66666666666667,
+          "rate_max_pct": 68.66666666666667
+        }
+      }
+    },
+    {
+      "action": "insert_between_atoms_action",
+      "task": "Insert Between",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 138,
+          "passes_max": 138,
+          "rate_min_pct": 92.0,
+          "rate_max_pct": 92.0
+        },
+        "0.2": {
+          "passes_min": 125,
+          "passes_max": 125,
+          "rate_min_pct": 83.33333333333334,
+          "rate_max_pct": 83.33333333333334
+        },
+        "0.1": {
+          "passes_min": 120,
+          "passes_max": 120,
+          "rate_min_pct": 80.0,
+          "rate_max_pct": 80.0
+        },
+        "0.05": {
+          "passes_min": 116,
+          "passes_max": 116,
+          "rate_min_pct": 77.33333333333333,
+          "rate_max_pct": 77.33333333333333
+        }
+      }
+    },
+    {
+      "action": "move_towards_atom_action",
+      "task": "Move Towards",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 147,
+          "passes_max": 147,
+          "rate_min_pct": 98.0,
+          "rate_max_pct": 98.0
+        },
+        "0.2": {
+          "passes_min": 136,
+          "passes_max": 136,
+          "rate_min_pct": 90.66666666666666,
+          "rate_max_pct": 90.66666666666666
+        },
+        "0.1": {
+          "passes_min": 136,
+          "passes_max": 136,
+          "rate_min_pct": 90.66666666666666,
+          "rate_max_pct": 90.66666666666666
+        },
+        "0.05": {
+          "passes_min": 135,
+          "passes_max": 135,
+          "rate_min_pct": 90.0,
+          "rate_max_pct": 90.0
+        }
+      }
+    },
+    {
+      "action": "move_towards_atom_action",
+      "task": "Move Towards",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.2": {
+          "passes_min": 144,
+          "passes_max": 144,
+          "rate_min_pct": 96.0,
+          "rate_max_pct": 96.0
+        },
+        "0.1": {
+          "passes_min": 144,
+          "passes_max": 144,
+          "rate_min_pct": 96.0,
+          "rate_max_pct": 96.0
+        },
+        "0.05": {
+          "passes_min": 144,
+          "passes_max": 144,
+          "rate_min_pct": 96.0,
+          "rate_max_pct": 96.0
+        }
+      }
+    },
+    {
+      "action": "rotate_around_atom_action",
+      "task": "Rotate Around",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 92,
+          "passes_max": 92,
+          "rate_min_pct": 61.33333333333333,
+          "rate_max_pct": 61.33333333333333
+        },
+        "0.2": {
+          "passes_min": 73,
+          "passes_max": 73,
+          "rate_min_pct": 48.66666666666667,
+          "rate_max_pct": 48.66666666666667
+        },
+        "0.1": {
+          "passes_min": 73,
+          "passes_max": 73,
+          "rate_min_pct": 48.66666666666667,
+          "rate_max_pct": 48.66666666666667
+        },
+        "0.05": {
+          "passes_min": 73,
+          "passes_max": 73,
+          "rate_min_pct": 48.66666666666667,
+          "rate_max_pct": 48.66666666666667
+        }
+      }
+    },
+    {
+      "action": "rotate_around_atom_action",
+      "task": "Rotate Around",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 89,
+          "passes_max": 89,
+          "rate_min_pct": 59.333333333333336,
+          "rate_max_pct": 59.333333333333336
+        },
+        "0.2": {
+          "passes_min": 65,
+          "passes_max": 65,
+          "rate_min_pct": 43.333333333333336,
+          "rate_max_pct": 43.333333333333336
+        },
+        "0.1": {
+          "passes_min": 65,
+          "passes_max": 65,
+          "rate_min_pct": 43.333333333333336,
+          "rate_max_pct": 43.333333333333336
+        },
+        "0.05": {
+          "passes_min": 65,
+          "passes_max": 65,
+          "rate_min_pct": 43.333333333333336,
+          "rate_max_pct": 43.333333333333336
+        }
+      }
+    },
+    {
+      "action": "RemoveMoleculeAction",
+      "task": "Remove Molecule",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 130,
+          "passes_max": 130,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        },
+        "0.2": {
+          "passes_min": 130,
+          "passes_max": 130,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        },
+        "0.1": {
+          "passes_min": 130,
+          "passes_max": 130,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        },
+        "0.05": {
+          "passes_min": 130,
+          "passes_max": 130,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        }
+      }
+    },
+    {
+      "action": "RemoveMoleculeAction",
+      "task": "Remove Molecule",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 150,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 133,
+          "passes_max": 133,
+          "rate_min_pct": 88.66666666666667,
+          "rate_max_pct": 88.66666666666667
+        },
+        "0.2": {
+          "passes_min": 133,
+          "passes_max": 133,
+          "rate_min_pct": 88.66666666666667,
+          "rate_max_pct": 88.66666666666667
+        },
+        "0.1": {
+          "passes_min": 133,
+          "passes_max": 133,
+          "rate_min_pct": 88.66666666666667,
+          "rate_max_pct": 88.66666666666667
+        },
+        "0.05": {
+          "passes_min": 133,
+          "passes_max": 133,
+          "rate_min_pct": 88.66666666666667,
+          "rate_max_pct": 88.66666666666667
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON",
+      "model": null,
+      "variant": null,
+      "n": 900,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 798,
+          "passes_max": 798,
+          "rate_min_pct": 88.66666666666667,
+          "rate_max_pct": 88.66666666666667
+        },
+        "0.2": {
+          "passes_min": 756,
+          "passes_max": 756,
+          "rate_min_pct": 84.0,
+          "rate_max_pct": 84.0
+        },
+        "0.1": {
+          "passes_min": 746,
+          "passes_max": 746,
+          "rate_min_pct": 82.88888888888889,
+          "rate_max_pct": 82.88888888888889
+        },
+        "0.05": {
+          "passes_min": 735,
+          "passes_max": 735,
+          "rate_min_pct": 81.66666666666667,
+          "rate_max_pct": 81.66666666666667
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "OFF",
+      "model": null,
+      "variant": null,
+      "n": 900,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 809,
+          "passes_max": 809,
+          "rate_min_pct": 89.88888888888889,
+          "rate_max_pct": 89.88888888888889
+        },
+        "0.2": {
+          "passes_min": 766,
+          "passes_max": 766,
+          "rate_min_pct": 85.11111111111111,
+          "rate_max_pct": 85.11111111111111
+        },
+        "0.1": {
+          "passes_min": 761,
+          "passes_max": 761,
+          "rate_min_pct": 84.55555555555556,
+          "rate_max_pct": 84.55555555555556
+        },
+        "0.05": {
+          "passes_min": 757,
+          "passes_max": 757,
+          "rate_min_pct": 84.11111111111111,
+          "rate_max_pct": 84.11111111111111
+        }
+      }
+    }
+  ],
+  "model_view": [
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON",
+      "model": "deepseek-v4-flash-0731",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 172,
+          "passes_max": 172,
+          "rate_min_pct": 95.55555555555556,
+          "rate_max_pct": 95.55555555555556
+        },
+        "0.2": {
+          "passes_min": 163,
+          "passes_max": 163,
+          "rate_min_pct": 90.55555555555556,
+          "rate_max_pct": 90.55555555555556
+        },
+        "0.1": {
+          "passes_min": 162,
+          "passes_max": 162,
+          "rate_min_pct": 90.0,
+          "rate_max_pct": 90.0
+        },
+        "0.05": {
+          "passes_min": 162,
+          "passes_max": 162,
+          "rate_min_pct": 90.0,
+          "rate_max_pct": 90.0
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "OFF",
+      "model": "deepseek-v4-flash-0731",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 169,
+          "passes_max": 169,
+          "rate_min_pct": 93.88888888888889,
+          "rate_max_pct": 93.88888888888889
+        },
+        "0.2": {
+          "passes_min": 160,
+          "passes_max": 160,
+          "rate_min_pct": 88.88888888888889,
+          "rate_max_pct": 88.88888888888889
+        },
+        "0.1": {
+          "passes_min": 160,
+          "passes_max": 160,
+          "rate_min_pct": 88.88888888888889,
+          "rate_max_pct": 88.88888888888889
+        },
+        "0.05": {
+          "passes_min": 160,
+          "passes_max": 160,
+          "rate_min_pct": 88.88888888888889,
+          "rate_max_pct": 88.88888888888889
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON",
+      "model": "qwen3-vl-plus",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 134,
+          "passes_max": 134,
+          "rate_min_pct": 74.44444444444444,
+          "rate_max_pct": 74.44444444444444
+        },
+        "0.2": {
+          "passes_min": 124,
+          "passes_max": 124,
+          "rate_min_pct": 68.88888888888889,
+          "rate_max_pct": 68.88888888888889
+        },
+        "0.1": {
+          "passes_min": 122,
+          "passes_max": 122,
+          "rate_min_pct": 67.77777777777779,
+          "rate_max_pct": 67.77777777777779
+        },
+        "0.05": {
+          "passes_min": 119,
+          "passes_max": 119,
+          "rate_min_pct": 66.11111111111111,
+          "rate_max_pct": 66.11111111111111
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "OFF",
+      "model": "qwen3-vl-plus",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 144,
+          "passes_max": 144,
+          "rate_min_pct": 80.0,
+          "rate_max_pct": 80.0
+        },
+        "0.2": {
+          "passes_min": 137,
+          "passes_max": 137,
+          "rate_min_pct": 76.11111111111111,
+          "rate_max_pct": 76.11111111111111
+        },
+        "0.1": {
+          "passes_min": 135,
+          "passes_max": 135,
+          "rate_min_pct": 75.0,
+          "rate_max_pct": 75.0
+        },
+        "0.05": {
+          "passes_min": 134,
+          "passes_max": 134,
+          "rate_min_pct": 74.44444444444444,
+          "rate_max_pct": 74.44444444444444
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON",
+      "model": "qwen3.5-plus",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 159,
+          "passes_max": 159,
+          "rate_min_pct": 88.33333333333333,
+          "rate_max_pct": 88.33333333333333
+        },
+        "0.2": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 83.33333333333334,
+          "rate_max_pct": 83.33333333333334
+        },
+        "0.1": {
+          "passes_min": 147,
+          "passes_max": 147,
+          "rate_min_pct": 81.66666666666667,
+          "rate_max_pct": 81.66666666666667
+        },
+        "0.05": {
+          "passes_min": 145,
+          "passes_max": 145,
+          "rate_min_pct": 80.55555555555556,
+          "rate_max_pct": 80.55555555555556
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "OFF",
+      "model": "qwen3.5-plus",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 164,
+          "passes_max": 164,
+          "rate_min_pct": 91.11111111111111,
+          "rate_max_pct": 91.11111111111111
+        },
+        "0.2": {
+          "passes_min": 156,
+          "passes_max": 156,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        },
+        "0.1": {
+          "passes_min": 156,
+          "passes_max": 156,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        },
+        "0.05": {
+          "passes_min": 156,
+          "passes_max": 156,
+          "rate_min_pct": 86.66666666666667,
+          "rate_max_pct": 86.66666666666667
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON",
+      "model": "qwen3.7-plus",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 167,
+          "passes_max": 167,
+          "rate_min_pct": 92.77777777777779,
+          "rate_max_pct": 92.77777777777779
+        },
+        "0.2": {
+          "passes_min": 162,
+          "passes_max": 162,
+          "rate_min_pct": 90.0,
+          "rate_max_pct": 90.0
+        },
+        "0.1": {
+          "passes_min": 161,
+          "passes_max": 161,
+          "rate_min_pct": 89.44444444444444,
+          "rate_max_pct": 89.44444444444444
+        },
+        "0.05": {
+          "passes_min": 160,
+          "passes_max": 160,
+          "rate_min_pct": 88.88888888888889,
+          "rate_max_pct": 88.88888888888889
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "OFF",
+      "model": "qwen3.7-plus",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 167,
+          "passes_max": 167,
+          "rate_min_pct": 92.77777777777779,
+          "rate_max_pct": 92.77777777777779
+        },
+        "0.2": {
+          "passes_min": 160,
+          "passes_max": 160,
+          "rate_min_pct": 88.88888888888889,
+          "rate_max_pct": 88.88888888888889
+        },
+        "0.1": {
+          "passes_min": 159,
+          "passes_max": 159,
+          "rate_min_pct": 88.33333333333333,
+          "rate_max_pct": 88.33333333333333
+        },
+        "0.05": {
+          "passes_min": 157,
+          "passes_max": 157,
+          "rate_min_pct": 87.22222222222223,
+          "rate_max_pct": 87.22222222222223
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "ON",
+      "model": "qwen3.8-max",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 166,
+          "passes_max": 166,
+          "rate_min_pct": 92.22222222222223,
+          "rate_max_pct": 92.22222222222223
+        },
+        "0.2": {
+          "passes_min": 157,
+          "passes_max": 157,
+          "rate_min_pct": 87.22222222222223,
+          "rate_max_pct": 87.22222222222223
+        },
+        "0.1": {
+          "passes_min": 154,
+          "passes_max": 154,
+          "rate_min_pct": 85.55555555555556,
+          "rate_max_pct": 85.55555555555556
+        },
+        "0.05": {
+          "passes_min": 149,
+          "passes_max": 149,
+          "rate_min_pct": 82.77777777777777,
+          "rate_max_pct": 82.77777777777777
+        }
+      }
+    },
+    {
+      "action": null,
+      "task": "All six tasks",
+      "view": "OFF",
+      "model": "qwen3.8-max",
+      "variant": null,
+      "n": 180,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 165,
+          "passes_max": 165,
+          "rate_min_pct": 91.66666666666666,
+          "rate_max_pct": 91.66666666666666
+        },
+        "0.2": {
+          "passes_min": 153,
+          "passes_max": 153,
+          "rate_min_pct": 85.0,
+          "rate_max_pct": 85.0
+        },
+        "0.1": {
+          "passes_min": 151,
+          "passes_max": 151,
+          "rate_min_pct": 83.88888888888889,
+          "rate_max_pct": 83.88888888888889
+        },
+        "0.05": {
+          "passes_min": 150,
+          "passes_max": 150,
+          "rate_min_pct": 83.33333333333334,
+          "rate_max_pct": 83.33333333333334
+        }
+      }
+    }
+  ],
+  "delete_below_variants": [
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "ON",
+      "model": null,
+      "variant": "Including",
+      "n": 50,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.2": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.1": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.05": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        }
+      }
+    },
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "OFF",
+      "model": null,
+      "variant": "Including",
+      "n": 50,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.2": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.1": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.05": {
+          "passes_min": 50,
+          "passes_max": 50,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        }
+      }
+    },
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": "Including",
+      "n": 100,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.2": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.1": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.05": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        }
+      }
+    },
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "ON",
+      "model": null,
+      "variant": "Excluding",
+      "n": 100,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 99,
+          "passes_max": 99,
+          "rate_min_pct": 99.0,
+          "rate_max_pct": 99.0
+        },
+        "0.2": {
+          "passes_min": 99,
+          "passes_max": 99,
+          "rate_min_pct": 99.0,
+          "rate_max_pct": 99.0
+        },
+        "0.1": {
+          "passes_min": 99,
+          "passes_max": 99,
+          "rate_min_pct": 99.0,
+          "rate_max_pct": 99.0
+        },
+        "0.05": {
+          "passes_min": 99,
+          "passes_max": 99,
+          "rate_min_pct": 99.0,
+          "rate_max_pct": 99.0
+        }
+      }
+    },
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "OFF",
+      "model": null,
+      "variant": "Excluding",
+      "n": 100,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.2": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.1": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        },
+        "0.05": {
+          "passes_min": 100,
+          "passes_max": 100,
+          "rate_min_pct": 100.0,
+          "rate_max_pct": 100.0
+        }
+      }
+    },
+    {
+      "action": "delete_below_atom_action",
+      "task": "Delete Below",
+      "view": "ON+OFF",
+      "model": null,
+      "variant": "Excluding",
+      "n": 200,
+      "by_stol": {
+        "0.5": {
+          "passes_min": 199,
+          "passes_max": 199,
+          "rate_min_pct": 99.5,
+          "rate_max_pct": 99.5
+        },
+        "0.2": {
+          "passes_min": 199,
+          "passes_max": 199,
+          "rate_min_pct": 99.5,
+          "rate_max_pct": 99.5
+        },
+        "0.1": {
+          "passes_min": 199,
+          "passes_max": 199,
+          "rate_min_pct": 99.5,
+          "rate_max_pct": 99.5
+        },
+        "0.05": {
+          "passes_min": 199,
+          "passes_max": 199,
+          "rate_min_pct": 99.5,
+          "rate_max_pct": 99.5
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 115.64308762500877,
+  "versions": {
+    "numpy": "2.4.1",
+    "pymatgen": "2025.6.14",
+    "scipy": "1.17.0"
+  },
+  "parser_warnings": {
+    "Issues encountered while parsing CIF: 16 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 22 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 9,
+    "Issues encountered while parsing CIF: 24 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 36,
+    "Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 20,
+    "Issues encountered while parsing CIF: 10 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 6,
+    "Issues encountered while parsing CIF: 12 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 17,
+    "No Pauling electronegativity for Nh. Setting to NaN. This has no physical meaning, and is mainly done to avoid errors caused by the code expecting a float.": 3,
+    "No Pauling electronegativity for He. Setting to NaN. This has no physical meaning, and is mainly done to avoid errors caused by the code expecting a float.": 2,
+    "Issues encountered while parsing CIF: 26 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 1 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 20 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 10,
+    "Issues encountered while parsing CIF: 8 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 6 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2,
+    "Issues encountered while parsing CIF: 84 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2,
+    "Issues encountered while parsing CIF: 17 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 35 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 136 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 3 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 202 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 6,
+    "Issues encountered while parsing CIF: 155 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 224 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 5,
+    "Issues encountered while parsing CIF: 56 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2,
+    "Issues encountered while parsing CIF: 102 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 8,
+    "Issues encountered while parsing CIF: 171 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2,
+    "Issues encountered while parsing CIF: 32 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 101 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 149 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2,
+    "Issues encountered while parsing CIF: 152 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 613 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 195 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 196 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 348 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 349 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 78 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 4,
+    "Issues encountered while parsing CIF: 13 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 442 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2,
+    "Issues encountered while parsing CIF: 69 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 11 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 107 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: 170 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 1,
+    "Issues encountered while parsing CIF: Some occupancies ([2.0]) sum to > 1! If they are within the occupancy_tolerance, they will be rescaled. The current occupancy_tolerance is set to: 1.0": 1,
+    "Some occupancies ([2.0]) sum to > 1! If they are within the occupancy_tolerance, they will be rescaled. The current occupancy_tolerance is set to: 1.0": 1,
+    "Issues encountered while parsing CIF: 18 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 3,
+    "Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.": 2
+  }
+}

@@ -48,9 +48,9 @@ def main():
    checks.append({'candidate':c['candidate_id'],'score':cache[key]})
   states={x['score']['pass'] for x in checks}
   passed=next(iter(states)) if len(states)==1 else None
-  result.append({'configuration_id':r['configuration_id'],'pass':passed,'agreement':passed==r['new_pass'],'candidates':checks})
+  result.append({'configuration_id':r['configuration_id'],'pass':passed,'agreement':passed==r['pass'],'candidates':checks})
   if len(result)%100==0:print('Audited',len(result),'configurations',flush=True)
- summary={'scope':'historical final submissions; no archived code/model execution','configuration_count':len(result),'candidate_count':sum(len(x['candidates']) for x in result),'scoring_calls':len(cache),'pass':sum(x['pass'] is True for x in result),'fail':sum(x['pass'] is False for x in result),'unresolved':sum(x['pass'] is None for x in result),'all_agree':all(x['agreement'] for x in result),'results':result}
+ summary={'scope':'Saved final submissions; no model or archived code execution','configuration_count':len(result),'candidate_count':sum(len(x['candidates']) for x in result),'scoring_calls':len(cache),'pass':sum(x['pass'] is True for x in result),'fail':sum(x['pass'] is False for x in result),'unresolved':sum(x['pass'] is None for x in result),'all_agree':all(x['agreement'] for x in result),'results':result}
  args.out.parent.mkdir(parents=True,exist_ok=True)
  with args.out.open('x',encoding='utf-8') as f:json.dump(summary,f,ensure_ascii=False,indent=2,allow_nan=False)
  print(json.dumps({k:v for k,v in summary.items() if k!='results'}))

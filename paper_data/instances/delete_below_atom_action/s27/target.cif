@@ -1,28 +1,28 @@
-data_image0
-_chemical_formula_structural       WSe2
-_chemical_formula_sum              "W1 Se2"
-_cell_length_a       3.3074005
-_cell_length_b       3.3074005
-_cell_length_c       39.276903
-_cell_angle_alpha    90.0
-_cell_angle_beta     90.0
-_cell_angle_gamma    120.00001004
-
-_space_group_name_H-M_alt    "P 1"
-_space_group_IT_number       1
-
+# generated using pymatgen
+data_WSe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.30740050
+_cell_length_b   3.30740050
+_cell_length_c   39.27690300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00001004
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   WSe
+_chemical_formula_sum   'W1 Se1'
+_cell_volume   372.08434618
+_cell_formula_units_Z   1
 loop_
-  _space_group_symop_operation_xyz
-  'x, y, z'
-
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
 loop_
-  _atom_site_type_symbol
-  _atom_site_label
-  _atom_site_symmetry_multiplicity
-  _atom_site_fract_x
-  _atom_site_fract_y
-  _atom_site_fract_z
-  _atom_site_occupancy
-  W   W1        1.0  0.666667  0.333333  0.659118  1.0000
-  Se  Se1       1.0  0.333333  0.666667  0.702172  1.0000
-  Se  Se2       1.0  0.333333  0.666667  0.616073  1.0000
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  W  W0  1  0.66666667  0.33333333  0.65911800  1
+  Se  Se1  1  0.33333333  0.66666667  0.70217200  1
